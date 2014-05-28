@@ -213,7 +213,7 @@ header {
         color: #ffd200;
         width: 120%;
         margin: 0;
-        font-size: 15px;
+        font-size: 18px;
         font-weight: lighter; }
         header .wrap > .info > .wrapper p > .wrapper, header section.programm h2 > .info > .wrapper p > .wrapper, section.programm header h2 > .info > .wrapper p > .wrapper, header section.programm .content .rule ul > .info > .wrapper p > .wrapper, section.programm .content .rule header ul > .info > .wrapper p > .wrapper, header section.map h2 > .info > .wrapper p > .wrapper, section.map header h2 > .info > .wrapper p > .wrapper {
           padding: 10px 20% 12px 20px;
@@ -236,8 +236,8 @@ header {
     margin: 0 0 27px 0; }
     header .timer p {
       text-transform: uppercase;
-      font-weight: lighter;
-      color: #4a4a4a;
+      font-weight: bold;
+      color: black;
       font-size: 16px;
       position: relative;
       left: -22px;
@@ -376,13 +376,17 @@ section.forwhom blockquote {
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 180px; }
+    width: 180px;
+    border-radius: 90px;
+    display: block; }
   section.forwhom blockquote h3 {
     color: gray;
     font-weight: lighter;
     font-size: 24px;
-    margin: 0 0 11px 0;
-    padding-top: 30px; }
+    padding-top: 30px;
+    margin: 0; }
+  section.forwhom blockquote .role {
+    margin: 0 0 11px 0; }
   section.forwhom blockquote .text {
     font-size: 13px;
     padding: 22px 33px;

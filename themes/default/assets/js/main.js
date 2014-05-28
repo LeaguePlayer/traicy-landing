@@ -282,6 +282,10 @@ $(document).ready(function(){
 
 	$('.menu').sticky({topSpacing:0});
 
+	$('#buy-trigger').on('click', function(){
+		window.location.href = "http://tracyacademy22.ticketforevent.com/";
+		return false;
+	});
 });
 
 $(window).resize(function(){
