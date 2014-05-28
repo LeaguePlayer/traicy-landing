@@ -2,7 +2,7 @@
 
 class SiteController extends FrontController
 {
-	public $layout = '//layouts/simple';
+	public $layout = '//layouts/main';
 	
 	/**
 	 * Declares class-based actions.

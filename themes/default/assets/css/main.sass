@@ -1,0 +1,2104 @@
+@charset "UTF-8"
+
+$realWhiteColor : #ffffff
+$whiteColor : #dedede
+$yellowColor : #ffd200
+$yellowDarkerColor : #b29200
+$yellowButtonColor : #ffd417
+$yellowButtonShadowColor : #cfa900
+$yellowButtonShadowMinorColor : #ffe517
+$yellowButtonDarkerColor : #DBB81A
+$yellowButtonDarkerShadowColor : #9E8101
+$yellowButtonDarkerShadowMinorColor : #DAC20E
+$blackColor : #000000
+$blackLightColor : #111111
+$grayColor : #808080
+$grayFillColor : #cfcfcf
+$grayBGColor : #f2f2f2
+$grayLightColor : #f3f3f3
+$grayLighterColor : #fafafa
+$grayTextColor : #b2b2b2
+$grayTextLightColor : #a6a6a6
+$grayAddressColor : #a3a3a3
+$grayInputBorderColor : #e3e3e3
+$grayBorderColor : #e7e7e7
+$grayTableBorderColor : #bdbdbd
+$grayRuleColor : #404040
+$graySummaryColor : #e0e0e0
+$graySelectColor : #757575
+$yellowButtonDisabledColor : #ffdc40
+$yellowButtonDisabledTextColor : #917f2d
+$yellowNavColor : #fdd317
+$yellowNavDotColor : #c8a304
+$yellowNavBorderColor : #fae116
+$yellowNavBorderDarkColor : #cea800
+$yellowNavHoverColor : #f4d239
+$yellowNavHoverBorderColor : #f6e239
+$yellowNavHoverBorderDarkColor : #e9be00
+$yellowPlayColor : rgba(255, 212, 11, 0.8)
+$yellowTableBorderColor : #cca808
+$yellowTableColor : #ffd40b
+$blueLinkColor : #00aeef
+$blueButtonColor : #00aeef
+$blueButtonShadowColor : #008cbf
+$blueButtonDarkerColor : #00aeef
+$footerGrayColor : #999999
+$footerGrayTextColor : #8a8a8a
+$footerBGColor : #333333
+$greenColor : #3fd073
+$eventGrayColor : #b3b3b3
+$eventGrayBorderColor : #828282
+$eventYellowColor : #ffd40b
+$eventYellowBorderColor : #d0aa02
+$eventGreenColor : #3fd073
+$eventGreenBorderColor : #2dad5a
+$eventRedColor : #ff2121
+$eventRedBorderColor : #cc1b1b
+
+.list-reset 
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+.inline-block-container-fix
+  font-size: 0px
+  letter-spacing: normal
+  word-spacing: normal
+.inline-block-fix
+  font-size: 14px
+  display: inline-block
+  vertical-align: top
+.borderbox
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+=transition($what, $time)
+  -webkit-transition: $what $time ease
+  -moz-transition: $what $time ease
+  -ms-transition: $what $time ease
+  -o-transition: $what $time ease
+  transition: $what $time ease
+.no-transition
+  -moz-transition: none !important
+  -webkit-transition: none !important
+  -ms-transition: none !important
+  -o-transition: color 0 ease-in !important
+  transition: none !important
+
+
+@font-face
+  font-family: "OpenSans"
+  src: url('../fonts/OpenSans-Regular.ttf')
+@font-face
+  font-family: "OpenSans"
+  src: url('../fonts/OpenSans-Bold.ttf')
+  font-weight: bold
+@font-face
+  font-family: "OpenSans"
+  src: url('../fonts/OpenSans-ExtraBold.ttf')
+  font-weight: 800
+@font-face
+  font-family: "OpenSans"
+  src: url('../fonts/OpenSans-Light.ttf')
+  font-weight: lighter
+
+@font-face
+  font-family: "OpenSans"
+  src: url('../fonts/OpenSans-Italic.ttf')
+  font-style: italic 
+@font-face
+  font-family: "OpenSans"
+  src: url('../fonts/OpenSans-BoldItalic.ttf')
+  font-weight: bold
+  font-style: italic 
+@font-face
+  font-family: "OpenSans"
+  src: url('../fonts/OpenSans-ExtraBoldItalic.ttf')
+  font-weight: bolder
+  font-style: italic 
+@font-face
+  font-family: "OpenSans"
+  src: url('../fonts/OpenSans-LightItalic.ttf')
+  font-weight: lighter
+  font-style: italic 
+
+html
+  -webkit-text-size-adjust: none
+  font-size: 1em
+  line-height: 1.4
+  min-width: 960px
+  max-width: 2000px
+  margin: 0 auto
+::-moz-selection 
+  background: #ffe052
+  color: white
+  text-shadow: none
+::selection 
+  background: #ffe052
+  color: white
+  text-shadow: none
+audio, canvas, img, video 
+  vertical-align: middle
+textarea 
+  resize: vertical
+.browsehappy 
+  margin: 0.2em 0
+  background: #ccc
+  color: #000
+  padding: 0.2em 0
+
+body
+  min-width: 320px
+  font-family: "OpenSans"
+  font-size: 14px
+  min-width: 940px
+
+.wrap
+  margin: 0 auto
+  padding: 0 10px
+  max-width: 1400px
+  position: relative
+
+em
+  font-style: normal
+  font-weight: bold
+
+
+
+header
+  height: 875px
+  background: url(../img/bg.jpg) center 0 no-repeat
+  position: relative
+  overflow: hidden
+  >div
+    z-index: 1
+  >.wrap
+    height: 875px
+
+  .light
+    height: 875px
+    width: 2000px
+    position: absolute
+    top: 0
+    left: -520px
+    background: url(../img/light.png) no-repeat
+    z-index: -1
+  .top
+    position: absolute
+    top: 0px
+    height: 111px
+    width: 100%
+    background: url(../img/top.png) center 0 no-repeat 
+    z-index: 0
+  .tracy
+    background: url(../img/tracy.png)  
+    position: absolute
+    width: 519px
+    height: 863px
+    bottom: 0px
+    right: 0px
+    z-index: 2
+
+
+  .contacts
+    @extend .inline-block-container-fix
+    .date
+      @extend .inline-block-fix
+      width: 132px
+      height: 132px
+      padding: 1px 29px 26px 1px
+      background: url(../img/date.png) no-repeat 
+      position: relative
+      color: $whiteColor
+      >span
+        text-align: center
+        display: block
+        line-height: 1em
+      .month, .weekday
+        font-weight: lighter
+        text-transform: uppercase
+        font-size: 16px
+      .day
+        font-weight: bold
+        font-size: 60px
+        margin: 0 0 5px 0
+      .month
+        margin: 19px 0 2px 0
+    .info
+      @extend .inline-block-fix
+      margin: 9px 0 0 -29px
+      position: relative
+      padding: 2px 37px 4px 33px
+      height: 84px
+      background: url(../img/address.png) no-repeat right top
+      address
+        font-style: normal
+        font-size: 30px
+        font-weight: lighter
+        color: $whiteColor
+        line-height: 1.2em
+      .phone
+        font-size: 18px
+        color: $yellowColor
+        font-weight: bold
+        span
+          font-weight: normal
+      .email a
+        font-weight: lighter
+        color: $yellowDarkerColor
+        font-size: 14px   
+  .phone-request
+    position: absolute
+    right: 10px
+    top: 30px
+    z-index: 3
+  .sponsors
+    margin: 0 0 20px 30px
+    a
+      display: inline-block
+      padding: 10px
+    img
+      display: inline-block
+  .wrap>.info
+    border: 4px rgba(255, 255, 255, 0.3) solid
+    text-align: center
+    margin: 0 0 23px 0
+    >.wrapper
+      width: 50%
+      h1
+        color: $realWhiteColor
+        font-size: 28px
+        font-weight: lighter
+        padding: 30px 20px 25px 20px 
+        margin: 0
+        em
+          font-weight: 800
+          display: block
+          text-transform: uppercase
+      p
+        color: $yellowColor
+        width: 120%
+        margin: 0
+        font-size: 15px
+        font-weight: lighter
+        >.wrapper
+          padding: 10px 20% 12px 20px
+          display: block
+          background: url(../img/info.png) right center no-repeat
+  .promo
+    border-left: 1px rgba(255, 255, 255, 0.3) solid
+    color: $yellowColor
+    font-size: 18px
+    font-weight: lighter
+    padding: 0 0 0 8px
+    width: 540px
+    background: url(../img/promo.png) right top no-repeat
+    margin: 0 0 40px 0
+    em
+      display: block
+  .timer
+    border: 4px rgba(255, 255, 255, 0.3) solid
+    padding: 8px 22px 0 22px
+    margin: 0 0 27px 0
+    p
+      text-transform: uppercase
+      font-weight: lighter
+      color: #4a4a4a
+      font-size: 16px
+      position: relative
+      left: -22px
+      top: -34px
+      margin: 0 
+  .actions
+    @extend .inline-block-container-fix
+    margin: 0 0 0 35px
+    div, span
+      @extend .inline-block-fix
+      vertical-align: middle
+    span
+      font-weight: lighter
+      font-size: 28px
+      color: $realWhiteColor
+      margin: 0 30px
+    .button
+      font-weight: bold
+      width: 175px
+nav.menu:after
+  content: ''
+  position: absolute
+  width: 100%
+  left: 0
+  bottom: -4px
+  height: 3px
+  background: $yellowNavBorderDarkColor
+.sticky-wrapper
+  margin: 0 0 54px 0
+nav.menu
+  width: 100%
+  z-index: 2
+  height: 58px
+  background: $yellowNavColor
+  border-top: 1px $yellowNavBorderColor solid
+  border-bottom: 1px $yellowNavBorderColor solid
+  position: relative
+  ul
+    text-align: center
+    @extend .inline-block-container-fix
+    li:last-child a span.dot
+      display: none !important
+    li
+      @extend .inline-block-fix
+      a:after
+        content: ''
+        position: absolute
+        width: 100%
+        left: 0
+        bottom: -3px
+        height: 3px
+        background: $yellowNavBorderDarkColor
+      a
+        display: block
+        padding: 0 20px
+        height: 58px
+        line-height: 58px
+        border-top: 1px $yellowNavBorderColor solid
+        border-bottom: 1px $yellowNavBorderColor solid
+        position: relative
+        text-decoration: none
+        color: $blackColor
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.7)
+        font-size: 14px
+        span.dot
+          position: absolute
+          display: block
+          width: 5px
+          height: 5px
+          top: 50%
+          margin-top: -2px
+          right: -2px
+          background: $yellowNavDotColor
+      a:hover
+        background: $yellowNavHoverColor
+        border: 1px $yellowNavHoverBorderColor solid
+        padding: 0 19px
+      a:hover:after
+        background: $yellowNavHoverBorderDarkColor
+        z-index: 2
+section
+  h2
+    text-align: center
+    font-weight: 800
+    text-transform: uppercase
+    font-size: 36px
+    height: 93px
+    background: url(../img/h2-arrows.png) no-repeat center 20px
+    margin: 0
+
+section.forwhom
+  .choices
+    @extend .inline-block-container-fix
+    top: -10px
+    background: url(../img/choices-arrows.png) no-repeat center bottom
+    padding: 0 0 30px 0
+    .choice
+      margin-right: 2.3%
+      width: 48.85%
+      position: relative
+      @extend .inline-block-fix
+      h3
+        font-weight: lighter
+        font-size: 24px
+        margin: 0 20px 14px 20px
+        color: $blackLightColor
+      .text
+        border: 3px $blackColor solid
+        padding: 20px 15px 20px 200px
+        color: $grayColor
+        font-size: 13px
+        margin-left: 20px
+      img
+        display: block
+        position: absolute
+        left: 0px
+        top: 30px
+    .right
+      margin-right: 0 
+      .text
+        padding: 20px 200px 20px 15px
+        margin-left: 0
+        margin-right: 20px
+      img
+        left: auto
+        right: 0px
+    .left
+      h3
+        text-align: right
+  .wrap >.text
+    border: 3px $grayFillColor solid
+    font-size: 13px
+    font-weight: lighter
+    padding: 15px 25px
+    margin: 30px
+  blockquote
+    min-height: 180px
+    padding: 0 0 0 205px
+    margin: 0 0 55px 0
+    position: relative
+    img
+      position: absolute
+      left: 0px
+      top: 0px
+      width: 180px
+    h3
+      color: $grayColor
+      font-weight: lighter
+      font-size: 24px
+      margin: 0 0 11px 0
+      padding-top: 30px
+    .text
+      font-size: 13px
+      padding: 22px 33px
+      position: relative
+    .text:before, .text:after
+      content: ''
+      display: block
+      position: absolute
+      width: 21px
+      height: 20px
+      background: url(../img/quotes.png) no-repeat
+    .text:before
+      top: 0px
+      left: 0px
+    .text:after
+      bottom: 0px
+      right: 0px
+      background-position: -21px 0
+
+section.youllknow
+  @extend .gray-section
+  padding: 64px 0 68px 0
+  font-size: 14px
+  font-weight: lighter
+  margin: 0 0 67px 0
+  h2
+    margin-bottom: 30px
+  .content
+    overflow: hidden
+    margin: 0 0 20px 0
+    .video
+      width: 56%
+      float: left
+      margin: 0 30px 10px 0
+    ul
+      margin: 0px
+      li
+        margin: 0 0 10px 0
+  .buttons
+    @extend .inline-block-container-fix
+    background: url(../img/buttons-arrows.png) no-repeat center top
+    padding: 33px 0 0 0
+    text-align: center
+    .button:first-child
+      margin: 0 20px 0 0
+    .button:before
+      content: ''
+      @extend .inline-block-fix
+      vertical-align: middle
+      margin: 0 12px 0 14px
+      width: 21px
+      height: 20px
+      background: url(../img/buttons-icons.png) no-repeat
+    .download:before
+      background-position: -21px 0
+
+    .button
+      padding: 0
+      span
+        width: 172px
+        display: inline-block
+        border-left: 1px $yellowButtonShadowColor solid
+
+section.speakers
+  margin: 0 0 60px 0
+  h2
+    margin-bottom: 40px
+  .items
+    position: relative
+    min-height: 620px
+    @extend .list-reset
+    .content
+      display: none
+    .current
+      .content
+        display: block
+      .bookmark
+        background: $grayLightColor
+    .bookmark:hover
+      background: $grayLighterColor
+      border-radius: 20px
+    .bookmark
+      display: block
+      border-top-left-radius: 20px
+      border-bottom-left-radius: 20px
+      padding: 15px 2% 12px 3%
+      width: 10%
+      text-align: center
+      font-size: 13px
+      font-weight: lighter
+      text-decoration: none
+      color: $blackColor
+      img
+        display: block
+        width: 90px
+        height: 90px
+        margin: 0 auto 10px auto
+        border-radius: 45px
+    .content
+      position: absolute
+      left: 15%
+      width: 85%
+      @extend .borderbox
+      top: 0%
+      padding: 0 295px 0 0
+      border-bottom-left-radius: 20px
+      .gradient
+        padding: 30px 0 25px 40px
+        background: $grayLightColor
+        background: -moz-linear-gradient(left,  $grayLightColor 0%, #ffffff 100%)
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,$grayLightColor), color-stop(100%,#ffffff))
+        background: -webkit-linear-gradient(left,  $grayLightColor 0%,#ffffff 100%)
+        background: -o-linear-gradient(left,  $grayLightColor 0%,#ffffff 100%)
+        background: -ms-linear-gradient(left,  $grayLightColor 0%,#ffffff 100%)
+        background: linear-gradient(to right,  $grayLightColor 0%,#ffffff 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$grayLightColor', endColorstr='#ffffff',GradientType=1 )
+        min-height: 420px
+      h3
+        font-size: 24px
+        font-weight: lighter
+        color: $blackLightColor
+        margin: 0 0 24px 0
+      p
+        font-style: 13px
+      .books
+        margin: 0 0 20px 0
+        h3
+          margin: 0
+          padding: 0 0 30px 0
+          background: url(../img/books-arrow.png) no-repeat 83px 17px
+        .carousel
+          width: 420px
+          text-align: center
+          margin: 0 0 0 30px
+      .clients
+        h3
+          margin: 0
+          padding: 0 0 30px 0
+          background: url(../img/books-arrow.png) no-repeat 108px 17px
+        .carousel
+          width: 420px
+          text-align: center
+          margin: 0 0 0 30px
+          img
+            max-width: 100px
+      .video
+        position: absolute
+        right: 0px
+        bottom: 0px
+        a
+          display: block
+        a:before
+          content: ''
+          display: block
+          width: 60px
+          height: 68px
+          position: absolute
+          background: url(../img/video-ico.png)
+          top: 10px
+          left: 10px
+        a:after
+          font-family: Arial
+          content: '►'
+          font-size: 18px
+          display: block
+          position: absolute
+          border-radius: 6px
+          width: 60px
+          height: 34px
+          line-height: 34px
+          text-align: center
+          color: $realWhiteColor
+          background: $yellowPlayColor
+          left: 50%
+          margin-left: -30px
+          top: 50%
+          +transition(all, 0.3s)
+        a:hover:after
+          background: $yellowColor
+
+section.history
+  @extend .gray-section-left
+  padding: 60px 0
+  margin: 0 0 90px 0
+  h2
+    font-weight: lighter
+    margin: 0 0 11px 0
+    font-size: 30px
+    background-image: url(../img/history-arrows.png)
+    em
+      font-weight: 800
+  .times:before
+    content: ''
+    display: block
+    width: 100%
+    height: 31px
+    border: 3px $grayBorderColor solid
+    top: 0px
+    position: absolute
+    @extend .borderbox
+  .times:after
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 8px
+    border-radius: 4px
+    background: #757575
+    background: -moz-linear-gradient(top,  #757575 0%, #949494 27%, #a1a1a1 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#757575), color-stop(27%,#949494), color-stop(100%,#a1a1a1))
+    background: -webkit-linear-gradient(top,  #757575 0%,#949494 27%,#a1a1a1 100%)
+    background: -o-linear-gradient(top,  #757575 0%,#949494 27%,#a1a1a1 100%)
+    background: -ms-linear-gradient(top,  #757575 0%,#949494 27%,#a1a1a1 100%)
+    background: linear-gradient(to bottom,  #757575 0%,#949494 27%,#a1a1a1 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757575', endColorstr='#a1a1a1',GradientType=0 )
+    top: 58px
+    z-index: 0
+  .times
+    @extend .inline-block-container-fix
+    @extend .list-reset
+    position: relative
+    text-align: center
+    margin: 0 0 32px 0
+    li:after
+      content: ''
+      display: block
+      width: 5px
+      height: 5px
+      background: $yellowColor
+      position: absolute
+      top: 14px
+      right: -2px
+    li:last-child:after
+      display: none
+    li.active
+      a, a:hover
+        color: $yellowColor
+        i
+          background-position: 0 0
+    li
+      position: relative
+      @extend .inline-block-fix
+      a:hover
+        color: $blueLinkColor
+        i
+          background-position: -37px 0
+      a
+        position: relative
+        display: block
+        text-decoration: none
+        color: $blackLightColor
+        height: 82px
+        line-height: 31px
+        padding: 0 30px
+        z-index: 1
+        i
+          display: block
+          width: 37px
+          height: 37px
+          background: url(../img/times-i.png) no-repeat -74px 0
+          position: absolute
+          top: 43px
+          left: 50%
+          margin-left: -18px
+  .wrap
+    z-index: 0
+    @media screen and (max-width: 1420px) 
+      .content:before, .content:after
+        display: none
+  .content:before, .content:after
+    content: ''
+    display: block
+    position: absolute
+    background: url(../img/history-bg.png) no-repeat
+    height: 268px
+    z-index: -1
+    bottom: -23px
+  .content:before
+    width: 290px
+    left: -14px
+  .content:after
+    width: 17px
+    right: -17px
+    background-position: right top 
+  .content
+    position: relative
+    background: $realWhiteColor
+    border-radius: 10px
+    padding: 20px 38px
+    @extend .inline-block-container-fix
+    @extend .borderbox
+    display: table
+    table-layout: fixed
+    .pointer
+      position: absolute
+      display: block
+      width: 14px
+      height: 26px
+      left: 100px
+      top: -26px
+      background: url(../img/pointer.png)
+    .left
+      width: 74%
+      padding: 0 3% 0 0 
+      @extend .inline-block-fix
+      display: table-cell
+      .title:after
+        content: ''
+        display: block
+        position: absolute
+        height: 35px
+        right: 0px
+        top: 16px
+        width: 91px
+        background: url(../img/history-arrow.png) no-repeat
+      .title
+        @extend .inline-block-container-fix
+        margin: 0 0 18px 0
+        position: relative
+        > *
+          @extend .inline-block-fix
+          vertical-align: bottom
+        h3
+          font-size: 24px
+          margin: 0
+          font-weight: lighter
+          color: $blackLightColor
+        .date
+          font-size: 13px
+          font-weight: lighter
+          color: $grayTextColor
+          position: relative
+          top: -4px
+          margin: 0 30px
+        .city:before
+          content: ''
+          display: block
+          position: absolute
+          width: 10px
+          height: 16px
+          top: 2px
+          right: -17px
+          background: url(../img/marker.png)
+
+        .city
+          font-size: 18px
+          font-weight: bold
+          position: relative
+          top: -2px
+      .text:after
+        content: ''
+        display: block
+        position: absolute
+        height: 100%
+        right: 0px
+        top: 0
+        width: 1px
+        background: url(../img/history-arrow.png) repeat-y -91px 0
+      .text
+        padding: 0 25px 40px 0
+        position: relative
+      .features:after
+        content: ''
+        display: block
+        position: absolute
+        height: 14px
+        right: 0px
+        top: 0
+        width: 16px
+        background: url(../img/history-arrow.png) no-repeat -92px -7px
+      .features
+        position: relative
+        @extend .inline-block-container-fix
+        @extend .list-reset
+        li:after
+          content: ''
+          display: block
+          position: absolute
+          top: 8px
+          right: -16px
+          width: 32px
+          height: 5px
+          background: url(../img/features-arrow.png)
+        li:last-child:after
+          display: none
+        li
+          @extend .inline-block-fix
+          width: 25%
+          position: relative
+          font-size: 16px
+          text-transform: uppercase
+          font-weight: bold
+          text-align: center
+          i
+            display: block
+            margin: 10px auto 0 auto
+            height: 60px
+            background-image: url(../img/history-icons.png)
+          i.peoples
+            width: 61px
+          i.city
+            width: 56px
+            background-position: -61px 0
+          i.speaker
+            width: 43px
+            background-position: -118px 0
+          i.video
+            width: 59px
+            background-position: -166px 0
+          a
+            color: $blackColor
+            text-decoration: none
+    .photos
+      @extend .inline-block-fix
+      width: 26%
+      height: 260px
+      vertical-align: middle
+      display: table-cell
+      .carousel
+        width: 200px
+        margin: 0 auto
+
+
+section.prices
+  margin: 0 0 70px 0
+  h2
+    margin: 0 0 25px 0
+    background-image: url(../img/prices-arrows.png)
+  .container
+    @extend .inline-block-container-fix
+    .left
+      @extend .inline-block-fix
+      width: 68%
+      margin: 0 2.3% 0 0
+      table
+        border-collapse: collapse
+        text-align: center
+        font-size: 13px
+        margin: 0 0 18px 0
+        width: 100%
+        tr
+          border: 1px $grayTableBorderColor solid
+          td, th
+            border: 1px $grayTableBorderColor solid
+            height: 50px
+            padding: 0 20px
+          th
+            text-transform: uppercase
+            font-size: 14px
+            border: 1px $yellowTableBorderColor solid
+            background: $yellowTableColor
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75)
+          td:first-child
+            background: $grayBGColor
+            text-align: left
+        tr:last-child
+          background: $graySummaryColor
+          text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75)
+          font-size: 14px
+          td:first-child
+            text-transform: uppercase
+            font-weight: bold
+            text-align: center
+      .action
+        display: table
+        table-layout: fixed
+        > *
+          display: table-cell
+        .help
+          width: 73%
+          border: 3px $grayFillColor solid
+          padding: 25px 27px
+          font-size: 16px
+          font-weight: bold
+          position: relative
+          .c:after
+            content: ''
+            display: block
+            position: absolute
+            width: 21px
+            height: 19px
+            right: -21px
+            top: 50%
+            background: url(../img/help-corder.png)
+        .button-holder
+          width: 27%
+          vertical-align: middle
+          text-align: right
+          .button
+            display: table
+            line-height: normal
+            padding: 0
+            float: right
+            table-layout: fixed
+            width: 80%
+            span
+              display: table-cell
+              font-size: 13px
+              vertical-align: middle
+    .right
+      @extend .inline-block-fix
+      width: 29.7%
+      .form
+        border: 3px $blackColor solid
+        padding: 15px 12px
+        font-weight: lighter
+        font-size: 13px
+        .inputs
+          display: none
+        .total
+          display: none
+        .row
+          margin: 0 0 9px 0
+          .slider
+            margin: 10px 0 0 0
+            background: #818181
+            border: 1px #818181 solid
+            height: 5px
+            .ui-slider-range
+              background: #f4f4f4
+            .ui-slider-handle
+              width: 20px
+              height: 19px
+              top: -8px
+              border: none
+              outline: none
+              background: url(../img/slider.png)
+              text-decoration: none
+              font-size: 11px
+              text-align: center
+              line-height: 19px
+              text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.75)
+        .order
+          overflow: hidden
+          height: 34px
+          line-height: 32px
+          .select
+            float: right
+        .info
+          color: $grayTextColor
+        .fright
+          text-align: right
+          input
+            height: 28px
+            width: 83px
+            text-align: center
+            @extend .borderbox
+            color: #727272
+            border-radius: 2px
+            border: 1px #e3e3e3 solid
+            margin-left: 10px
+          input:disabled
+            background: #f2f2f2
+        .wide
+          background: #e0e0e0
+          height: 50px
+          position: relative
+        .wide:before, .wide:after
+          width: 22px
+          height: 57px
+          content: ''
+          display: block
+          position: absolute
+          top: -7px
+          background: url(../img/wide.png)
+        .wide:before
+          left: -21px
+        .wide:after
+          right: -22px
+          background-position: right top
+        .subsum
+          text-align: center
+          line-height: 50px
+          font-weight: bold
+          input
+            width: 100px
+            height: 28px
+            line-height: 28px
+            font-weight: bold
+            margin-left: 20px
+            border: none
+            text-align: center
+          input:disabled
+            background: #fff
+            color: #000
+        .calc
+          text-align: center
+          margin-top: -10px
+          .button
+            height: 30px
+            line-height: 30px
+            border-top-left-radius: 0px
+            border-top-right-radius: 0px
+          .button:active
+            top: 0
+            position: static
+        .choice
+          text-align: center
+          i
+            display: inline-block
+            vertical-align: middle
+            width: 28px
+            height: 29px
+            background: url(../img/bag.png)
+            margin: 0 10px 0 0
+        .option:after
+          content: ''
+          display: block
+          position: absolute
+          background: url(../img/wide-l.png)
+          width: 10px
+          height: 66px
+          right: -10px
+          top: -6px
+        .option
+          @extend .inline-block-container-fix
+          margin-right: -12px
+          border-top: 1px #a6a6a6 dashed
+          border-bottom: 1px #a6a6a6 dashed
+          position: relative
+          margin-bottom: 15px
+          >*
+            @extend .inline-block-fix
+            font-size: 13px
+            width: 50%
+          .l
+            dl
+              padding: 3px 0
+              margin: 0
+              overflow: hidden
+              dt, dd
+                float: left
+              dt
+                clear: left
+              dd
+                clear: right
+                margin: 0 0 0 3px
+                font-weight: bold
+          .r
+            overflow: hidden 
+            p
+              float: right
+              clear: both
+              margin: 0
+              line-height: 30px
+              width: 97px
+              text-align: center
+              background: #f2f2f2
+              font-weight: bold
+              color: #56af4b
+              del
+                color: #ff2121
+        .summary:after
+          display: none
+        .summary
+          border: none
+          .l
+            font-weight: bold
+          .r
+            p
+              line-height: normal
+              background: none
+        .action:after
+          right: -10px
+        .action
+          padding-top: 7px
+          @extend .borderbox
+          @extend .inline-block-container-fix
+          margin-right: -12px
+          margin-bottom: 0
+          >*
+            @extend .inline-block-fix
+          .l
+            width: 63%
+            font-size: 11px
+          .r
+            width: 37%
+            p
+              float: right
+              clear: both
+              margin: 0
+              width: 97px
+              text-align: center
+              position: relative
+              z-index: 1
+              .button
+                width: 70px
+                height: 35px
+                padding: 0
+                line-height: 35px
+              .button:active
+                top: 0
+                position: static
+
+
+
+
+
+        .discount
+          input
+            font-weight: bold
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.programm
+  padding: 54px 0 36px 0
+  margin: 0 0 54px 0
+  @extend .gray-section
+  h2:after
+    content: ''
+    display: block
+    position: absolute
+    width: 100%
+    height: 244px
+    border: 3px $grayFillColor solid
+    border-top: none
+    z-index: 1
+    bottom: -250px
+    left: -3px
+  h2
+    background: none
+    padding: 0
+    line-height: 60px
+    border: 3px $blackColor solid
+    height: auto
+    @extend .wrap
+    position: relative
+    margin-bottom: 86px
+  .content
+    .rule
+      background: $grayRuleColor
+      position: relative
+      margin: 0 0 95px 0
+      ul
+        @extend .inline-block-container-fix
+        @extend .list-reset
+        @extend .wrap
+        @extend .borderbox
+        padding: 0 55px
+        text-align: center
+        li:first-child
+          width: 2.29%
+          span
+            left: -13px
+        li.last
+          width: 2.15%
+        li
+          @extend .inline-block-fix
+          position: relative
+          width: 4.34%
+          img
+            width: 100%
+          span
+            position: absolute
+            left: 16px
+            color: $realWhiteColor
+            font-size: 10px
+            font-weight: lighter
+            bottom: 16px
+    .events
+      .item
+        position: absolute
+        display: table
+        height: 46px
+        span
+          display: table-cell
+          font-size: 12px
+          font-weight: lighter
+          vertical-align: middle
+      .item.up
+        top: -50px
+        border-bottom: 4px solid
+      .item.down
+        bottom: -50px
+        border-top: 4px solid
+      .item.gray
+        background: $eventGrayColor
+      .item.gray
+        border-color: $eventGrayBorderColor
+      .item.yellow
+        background: $eventYellowColor
+      .item.yellow
+        border-color: $eventYellowBorderColor
+      .item.green
+        background: $eventGreenColor
+      .item.green
+        border-color: $eventGreenBorderColor
+      .item.red
+        background: $eventRedColor
+      .item.red
+        border-color: $eventRedBorderColor
+      .item:before, .item:after
+        content: ''
+        display: block
+        position: absolute
+        width: 11px
+        height: 50px
+        background: url(../img/events-corners.png)
+      .item:before
+        left: -11px
+      .item:after
+        right: -11px
+      .item.up:before, .item.up:after
+        top: 0px
+      .item.down:before, .item.down:after
+        bottom: 0px
+      .item.up.gray:before
+        background-position: 0 0
+      .item.up.gray:after
+        background-position: -11px 0
+      .item.up.yellow:before
+        background-position: 0 -100px
+      .item.up.yellow:after
+        background-position: -11px -100px
+      .item.up.green:before
+        background-position: 0 -200px
+      .item.up.green:after
+        background-position: -11px -200px
+      .item.up.red:before
+        background-position: 0 -300px
+      .item.up.red:after
+        background-position: -11px -300px
+      .item.down.gray:before
+        background-position: 0 -50px
+      .item.down.gray:after
+        background-position: -11px -50px
+      .item.down.yellow:before
+        background-position: 0 -150px
+      .item.down.yellow:after
+        background-position: -11px -150px
+      .item.down.green:before
+        background-position: 0 -250px
+      .item.down.green:after
+        background-position: -11px -250px
+      .item.down.red:before
+        background-position: 0 -350px
+      .item.down.red:after
+        background-position: -11px -350px
+  .buttons
+    @extend .inline-block-container-fix
+    background: url(../img/buttons-arrows.png) no-repeat center top
+    padding: 33px 0 0 0
+    text-align: center
+    .button:first-child
+      margin: 0 20px 0 0
+    .button:before
+      content: ''
+      @extend .inline-block-fix
+      vertical-align: middle
+      margin: 0 12px 0 14px
+      width: 21px
+      height: 20px
+      background: url(../img/buttons-icons.png) no-repeat
+    .download:before
+      background-position: -21px 0
+
+    .button
+      padding: 0
+      span
+        width: 172px
+        display: inline-block
+        border-left: 1px $yellowButtonShadowColor solid
+
+
+
+section.participants
+  margin: 0 0 60px 0
+  h2
+    background-image: url(../img/participants-arrows.png)
+    margin: 0 0 30px 0
+  .carousel
+    text-align: center
+    margin: 0 40px
+    .slick-prev, .slick-next
+      top: 40%
+    .image
+      margin: 0 0 15px 0
+    .name:before, .name:after
+      content: ''
+      display: block
+      position: absolute
+      background: $grayTextLightColor
+      width: 5px
+      height: 5px
+      top: 6px
+    .name:before
+      left: 0px
+    .name:after
+      right: 0px
+    .name
+      text-transform: uppercase
+      font-weight: bold
+      color: $blackLightColor
+      position: relative
+      display: inline-block
+      margin: 0 0 8px 0
+      padding: 0 12px
+    .role
+      font-weight: lighter
+      color: $grayTextLightColor
+
+section.companies:after
+  content: ''
+  display: block
+  position: absolute
+  height: 35px
+  bottom: -73px
+  width: 100%
+  background: url(../img/companies-arrows.png) no-repeat center -37px
+section.companies
+  margin: 0 0 148px 0
+  position: relative
+  h2
+    background-image: url(../img/companies-arrows.png)
+    font-weight: lighter
+    height: 58px
+    margin: 0 0 25px 0
+  .carousel
+    margin: 0 40px 40px 40px
+    .item
+      height: 60px
+      line-height: 60px
+      img
+        max-width: 120px
+
+section.reviews
+  @extend .gray-section-left
+  padding: 60px 0 55px 0
+  margin: 0 0 50px 0
+  .review
+    position: relative
+    min-height: 300px
+    padding: 40px 0 0 335px
+    h3
+      text-transform: uppercase
+      font-weight: bold
+      color: $blackLightColor
+      font-size: 18px
+      margin: 0
+    .role
+      font-weight: lighter
+      color: $grayTextLightColor
+      margin: 0 0 8px 0
+    .text
+      font-weight: lighter
+      font-size: 13px
+      padding: 20px 30px 17px 332px
+      border: 3px $grayFillColor solid
+      margin-left: -335px
+    img
+      position: absolute
+      left: 0px
+      top: 0px
+  .another
+    h2
+      text-align: left
+      color: $blackLightColor
+      font-weight: lighter
+      background: url(../img/another-arrow.png) no-repeat 326px 24px
+    .reviews
+      @extend .inline-block-container-fix
+      .wrapper:last-child
+        margin: 0
+      .wrapper
+        @extend .inline-block-fix
+        width: 32%
+        margin: 0 2% 0 0
+        .review
+          min-height: 155px
+          padding: 0 0 0 103px
+          h3
+            font-size: 11px
+          .text
+            margin-left: -100px
+            padding: 10px 10px 10px 130px
+            font-size: 12px
+          .role
+            font-size: 11px
+          img
+            left: -6px
+            top: 27px
+            border-radius: 64px
+            width: 128px
+
+section.additional
+  margin: 0 0 76px 0
+  background: url(../img/additional-arrows.png) no-repeat center 14px
+  h2
+    font-size: 24px
+    background: url(../img/additional-arrow.png) no-repeat center 60px
+  .email-request
+    text-align: center
+    margin: 0 0 87px 0
+    .title
+      color: $blackLightColor
+      font-size: 24px
+      font-weight: lighter
+      text-transform: uppercase
+      margin: 0 0 23px 0
+    .form
+      @extend .inline-block-container-fix
+      .column:last-child
+        margin: 0
+      .column
+        @extend .inline-block-fix
+        margin: 0 22px 0 0
+        input[type="email"]
+          @extend .borderbox
+          height: 48px
+          line-height: 48px
+          padding: 0 19px
+          width: 300px
+          border: 1px $grayInputBorderColor solid
+        .button
+          width: 300px
+  .materials
+    @extend .inline-block-container-fix
+    .text
+      @extend .inline-block-fix
+      margin: 0 2% 0 0
+      width: 49%
+      h3
+        font-weight: lighter
+        color: $blackLightColor
+        font-size: 24px
+        margin: 0 0 16px 0
+      .links
+        color: $blueLinkColor
+        padding-left: 20px
+        list-style-image: url(../img/links-arrow.png)
+        a
+          color: $blueLinkColor
+        a:hover
+          color: $yellowColor
+        a:active
+          color: $yellowDarkerColor
+      .button
+        width: 190px
+        height: 32px
+        line-height: 32px
+        border-radius: 3px
+    .video
+      @extend .inline-block-fix
+      width: 49%
+
+section.map
+  margin: 0 0 54px 0
+  h2
+    background: url(../img/map-arrow.png) no-repeat center 64px
+    padding: 8px 0 40px 0
+    border: 3px $blackColor solid
+    border-bottom: none
+    height: auto
+    @extend .wrap
+  .map
+    width: 100%
+    height: 525px
+    .map-content
+      font-family: "OpenSans" !important
+      width: 220px !important
+      h3
+        font-weight: lighter
+        font-size: 24px
+        color: $blackLightColor
+        margin: 0
+      address
+        color: $grayAddressColor
+        font-weight: lighter
+        margin: 0 0 5px 0
+        font-style: normal
+      .text
+        font-weight: lighter
+        font-size: 13px
+
+section.quotes
+  margin: 0 0 55px 0
+  h2
+    background-image: url(../img/quotes-arrows.png)
+  .quotes
+    position: relative
+    @extend .list-reset
+    @extend .inline-block-container-fix
+    margin: 0 0 18px 0
+    >li
+      @extend .inline-block-fix
+      width: 32%
+      padding: 66px 0 0 0
+      min-height: 256px
+      @extend .borderbox
+      margin: 0 0.66%
+      background: url(../img/quotes-arrow.png) no-repeat center top
+      blockquote
+        text-align: center
+        margin: 0
+        .text:before, .text:after
+          position: absolute
+          content: ''
+          display: block
+          width: 15px
+          height: 12px
+          background: url(../img/quotes-small.png)
+        .text:before
+          top: 0
+          left: 0
+        .text:after
+          background-position: -15px 0
+          bottom: 0
+          right: 0
+        .text
+          position: relative
+          padding: 12px 20px
+          font-style: italic
+          font-weight: lighter
+          margin: 0 0 10px 0
+        .author:before, .author:after
+          content: ''
+          display: block
+          width: 5px
+          height: 5px
+          background: $grayTextLightColor
+          top: 7px
+          position: absolute
+        .author:before
+          left: -15px
+        .author:after
+          right: -15px
+        .author
+          margin: 0 0 10px 0
+          position: relative
+          font-weight: bold
+          font-style: italic
+          color: $blackLightColor
+          display: inline-block
+      .social
+        @extend .list-reset
+        @extend .inline-block-container-fix
+        text-align: center
+        li:last-child
+          margin: 0
+        li 
+          @extend .inline-block-fix
+          margin: 0 8px 0 0
+          a
+            display: block
+            width: 26px
+            height: 26px
+            background: url(../img/social.png) no-repeat
+          a:hover
+            background-position: 0 -26px
+          a.fb
+            background-position: -26px 0
+          a.fb:hover
+            background-position: -26px -26px
+          a.vk
+            background-position: -52px 0
+          a.vk:hover
+            background-position: -52px -26px
+  .next
+    text-align: center
+    a:before 
+      content: ''
+      position: absolute
+      width: 9px
+      height: 9px
+      background: url(../img/more-quotes.png)
+      top: 5px
+      left: -16px
+    a:hover:before 
+      background-position: -9px 0
+    a:hover
+      color: $yellowColor
+      span
+        border-bottom: 1px $yellowColor dashed
+    a
+      color: $blueLinkColor
+      font-weight: bold
+      font-style: italic
+      text-decoration: none
+      position: relative
+      span
+        border-bottom: 1px $blueLinkColor dashed
+section.share:after
+  right: auto
+  bottom: auto
+  left: 0
+  top: -73px
+  background-position: -790px 0 !important
+section.share
+  padding: 62px 0
+  @extend .gray-section
+  h2
+    height: 150px
+    background-image: url(../img/share-arrows.png)
+  .social
+    @extend .list-reset
+    @extend .inline-block-container-fix
+    position: relative
+    top: -80px
+    text-align: center
+    li:last-child
+      margin: 0
+    li
+      @extend .inline-block-fix
+      margin: 0 50px 0 0
+      padding: 35px 0 0 0
+      background: url(../img/additional-arrow.png) no-repeat center top
+      a
+        display: block
+        width: 80px
+        height: 81px
+        background: url(../img/share-social.png)
+      a.vk
+        background-position: -80px 0
+      a.tw
+        background-position: -160px 0
+  .title
+    color: $blackLightColor
+    font-size: 24px
+    font-weight: lighter
+    text-transform: uppercase
+    margin: -20px 0 43px 0
+    text-align: center
+  .form
+    width: 580px
+    margin: 0 auto 
+    .row
+      margin: 0 0 15px 0
+      input[type="email"], textarea
+        @extend .borderbox
+        padding: 0 19px
+        width: 100%
+        border: 1px $grayInputBorderColor solid
+      input[type="email"]
+        height: 48px
+        line-height: 48px
+      textarea
+        height: 150px
+        padding: 19px
+      .button
+        width: 100%
+
+footer
+  padding: 48px 0 45px 0
+  background: $footerBGColor
+  .top
+    margin: 0 0 50px 0
+    @extend .inline-block-container-fix
+    > *
+      @extend .inline-block-fix
+    .logo
+      width: 19.6%
+      .copyright
+        color: $footerGrayColor
+        font-weight: lighter
+        em
+          font-weight: lighter
+          font-size: 20px
+          display: block
+      .phone
+        font-weight: lighter
+        color: $yellowColor
+        font-size: 18px
+    nav
+      width: 60%
+      ul
+        width: 570px
+        margin: 0 auto
+        @extend .inline-block-container-fix
+        li
+          width: 190px
+          @extend .inline-block-fix
+          a:before
+            content: ''
+            display: block
+            width: 6px
+            height: 5px
+            background: url(../img/footer-arrow.png)
+            left: 0
+            top: 8px
+            position: absolute
+          a:hover:before
+            background-position: 0 -5px
+          a:hover
+            color: $yellowColor
+          a
+            padding-left: 16px
+            display: inline-block
+            position: relative
+            color: $blueLinkColor
+            font-weight: lighter
+            font-size: 13px
+    .actions
+      float: right
+      width: 170px
+      a:hover
+        color: $yellowColor
+        border-color: $yellowColor
+      a
+        display: block
+        width: 168px
+        height: 32px
+        line-height: 32px
+        border-radius: 5px
+        color: $greenColor
+        border: 1px $greenColor dashed 
+        text-align: center
+        margin: 0 0 15px 0
+        text-decoration: none
+
+  .about
+    text-align: center
+    font-weight: lighter
+    color: $footerGrayTextColor
+    font-size: 13px
+
+
+
+.slick-vertical 
+  .slick-prev, .slick-next
+    margin-top: 0px
+    left: 50%
+    margin-left: -15px
+    width: 28px
+    height: 15px
+    background: url(../img/carousel-arrows-v.png)
+  .slick-prev
+    top: -30px
+  .slick-next
+    top: auto
+    bottom: -30px
+  .slick-prev:hover
+    background-position: 0 -15px
+  .slick-next
+    background-position: -28px 0
+  .slick-next:hover
+    background-position: -28px -15px
+.slick-prev, .slick-next
+  width: 15px
+  height: 28px
+  margin-top: -14px
+  background: url(../img/carousel-arrows.png)
+.slick-prev:before, .slick-next:before
+  display: none
+.slick-prev:hover
+  background-position: 0 -28px
+.slick-next
+  background-position: -15px 0
+.slick-next:hover
+  background-position: -15px -28px
+.slick-dots li button
+  width: 18px
+  height: 17px
+  background: url(../img/radio.png) no-repeat
+.slick-dots li button:before
+  display: none
+.slick-dots .slick-active button
+  background-position: -18px 0
+.carousel img
+  display: inline-block !important
+.carousel .item
+  text-align: center !important
+
+.gray-section
+  position: relative
+  background: $grayBGColor
+.gray-section:before, .gray-section:after
+  content: ''
+  display: block
+  position: absolute
+  width: 790px
+  height: 73px
+  background: url(../img/gray-section.png) no-repeat
+  right: 0px
+  z-index: -1
+.gray-section:before
+  top: -73px
+.gray-section:after
+  bottom: -73px
+  background-position: 0 -73px
+
+.gray-section-left
+  @extend .gray-section
+.gray-section-left:before, .gray-section-left:after
+  right: auto
+  left: 0
+.gray-section-left:before
+  background-position: -790px 0
+.gray-section-left:after
+  background-position: -790px -73px
+
+
+.button.blue
+  box-shadow: 0px 3px 0px $blueButtonShadowColor
+  background: $blueButtonColor
+  color: $realWhiteColor
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.32)
+.button.blue:hover
+  background: $blueButtonDarkerColor
+  box-shadow: 0px 3px 0px $blueButtonDarkerColor
+  color: #006b91
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.32)
+
+.button
+  @extend .inline-block-fix
+  height: 45px
+  line-height: 45px
+  padding: 0 28px
+  border-radius: 5px
+  box-shadow: inset 0px -1px 0px $yellowButtonShadowMinorColor, inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 3px 0px $yellowButtonShadowColor
+  background: $yellowButtonColor
+  text-decoration: none
+  color: $blackColor
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7)
+  +transition(all, 0.3s)
+  text-align: center
+  @extend .borderbox
+  white-space: nowrap
+.button:hover
+  box-shadow: inset 0px -1px 0px $yellowButtonDarkerShadowMinorColor, inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 3px 0px $yellowButtonDarkerShadowColor
+  background: $yellowButtonDarkerColor
+.button:active
+  box-shadow: none
+  position: relative
+  top: 4px
+.flip-clock-divider .flip-clock-label
+  color: $yellowColor
+  font-size: 12px
+  font-weight: bold
+  text-shadow: 1px 1px 3px #000000
+.button.disabled
+  box-shadow: inset 0px -1px 0px $yellowButtonDisabledColor, inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 3px 0px $yellowButtonDisabledColor
+  background: $yellowButtonDisabledColor
+  color: $yellowButtonDisabledTextColor
+button.button
+  border: none
+
+.videowrapper 
+  float: none
+  clear: both
+  width: 100%
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 25px
+  height: 0
+
+.videowrapper iframe 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100% 
+.customSelect
+  width: 142px
+  height: 32px
+  line-height: 32px
+  @extend .borderbox
+  background: url(../img/select.png)
+  padding: 0 0 0 10px
+  font-size: 11px
+  color: $graySelectColor
+
+.modal.arrow-bottom:before
+  top: auto
+  bottom: -20px
+  background: url(../img/form-after.png)
+.modal.arrow-left:before
+  right: auto
+  left: 19px
+.modal:before
+  display: block
+  position: absolute
+  content: ''
+  width: 20px
+  height: 20px
+  background: url(../img/form-before.png)
+  top: -20px
+  right: 19px
+.modal.wide
+  width: 450px
+.modal
+  position: absolute
+  padding: 20px 17px 10px 17px
+  background: #fff
+  background: rgba(255,255,255,0.95)
+  display: none
+  width: 220px
+  border: 2px #000 solid
+  z-index: 10000
+  .button
+    border-radius: 3px
+    width: 100%
+    height: 33px
+    line-height: 33px
+  .row.promo
+    label
+      color: #82c17a
+      font-size: 14px
+      margin: 0 0 5px 0
+      display: block
+  .row
+    margin: 0 0 14px 0
+    font-size: 12px
+    input[type="text"], input[type="email"], input[type="password"], input[type="number"]
+      @extend .borderbox
+      border-radius: 3px
+      width: 100%
+      border: 1px #e3e3e3 solid
+      height: 33px
+      line-height: 33px
+      padding: 0 20px
+    textarea
+      @extend .borderbox
+      border-radius: 3px
+      width: 100%
+      border: 1px #e3e3e3 solid
+      height: 100px
+      padding: 10px 20px
+  h2
+    text-align: center
+    font-weight: lighter
+    font-size: 18px
+    margin: 0 0 15px 0
+  .close
+    display: block
+    position: absolute
+    width: 15px
+    height: 15px
+    background: url(../img/close.png)
+    top: 7px
+    right: 7px
+  .columns
+    @extend .inline-block-container-fix
+    .column:last-child
+      margin: 0
+    .column
+      @extend .inline-block-fix
+      font-size: 12px
+      width: 48%
+      margin-right: 2%
+  p
+    margin: 0 0 5px 0
+    >*
+      vertical-align: middle
+    label
+      color: #727272
+    input[type="checkbox"]
+      margin-right: 5px
+  .help
+    text-align: center
+    font-size: 11px
+    margin: 0 0 5px 0
+  .hint
+    font-size: 11px
+    text-align: center
+    color: #727272
+    margin: 0 0 15px 0
+
+
+
+.overlay
+  position: absolute
+  top: 0px
+  left: 0px
+  width: 100%
+  background: rgba(255, 212, 23, 0.3)
+  display: none
+  z-index: 1000
+
+.stuck:before
+  position: absolute
+  height: 100%
+.stuck
+  position: fixed
+  right: 0px
+  top: 50%
+  margin-top: -120px
+  background: $yellowColor
+  border-left: 3px $yellowDarkerColor solid
+  text-align: center
+  width: 90px
+  z-index: 10
+  .social
+    padding: 11px
+    p
+      font-size: 11px
+      font-weight: lighter
+      margin: 0 0 10px 0
+      text-transform: uppercase
+    ul
+      @extend .list-reset
+      li
+        margin: 0 0 5px 0
+        a
+          display: inline-block
+          width: 50px
+          height: 51px
+          background: url(../img/social-small.png)
+      .vk a
+        background-position: -50px 0
+      .tw a
+        background-position: -100px 0
+  .cart
+    border-top: 1px $yellowDarkerColor solid
+    font-size: 13px
+    .total
+      padding: 60px 0 17px 0
+      margin: 0
+      background: url(../img/cart.png) no-repeat center 11px
+    .button:active
+      top: auto
+    .button:after
+      content: ''
+      display: block
+      position: absolute
+      width: 7px
+      height: 13px
+      background: url(../img/stuck-arrow.png)
+      right: -7px
+      top: 50%
+      margin-top: -7px
+    .button
+      position: absolute
+      right: 90px
+      box-shadow: none
+      bottom: 33px
+      border-top-right-radius: 0px 
+      border-bottom-right-radius: 0px 
+      height: 35px
+      line-height: 35px
+      padding: 0 12px
+
+
+
+
+
+
