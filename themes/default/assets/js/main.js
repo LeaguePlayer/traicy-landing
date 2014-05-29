@@ -94,7 +94,7 @@ function Calculator() {
    		},
    		calcTotal: function() {
    			$('.summary').remove();
-   			$('.total .row:last').before(Calculator.i.renderTotal());
+   			$('.total .row:last').after(Calculator.i.renderTotal());
    		},
    		renderChoice: function() {
    			var rendered = Calculator.i.choiceTemplate;
@@ -197,8 +197,8 @@ $(document).ready(function(){
 
 	$('.companies .carousel').slick({
 		infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 6,
+        slidesToShow: 4,
+        slidesToScroll: 4,
     });
 
 	$('section.history .carousel').slick({

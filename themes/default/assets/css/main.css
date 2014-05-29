@@ -1251,11 +1251,8 @@ section.companies {
     margin: 0 0 25px 0; }
   section.companies .carousel {
     margin: 0 40px 40px 40px; }
-    section.companies .carousel .item {
-      height: 60px;
-      line-height: 60px; }
-      section.companies .carousel .item img {
-        max-width: 120px; }
+    section.companies .carousel .item img {
+      max-width: 120px; }
 
 section.reviews {
   padding: 60px 0 55px 0;
@@ -1289,27 +1286,31 @@ section.reviews {
     color: #111111;
     font-weight: lighter;
     background: url(../img/another-arrow.png) no-repeat 326px 24px; }
-  section.reviews .another .reviews .wrapper:last-child {
-    margin: 0; }
-  section.reviews .another .reviews .wrapper {
-    width: 32%;
-    margin: 0 2% 0 0; }
-    section.reviews .another .reviews .wrapper .review {
-      min-height: 155px;
-      padding: 0 0 0 103px; }
-      section.reviews .another .reviews .wrapper .review h3 {
-        font-size: 11px; }
-      section.reviews .another .reviews .wrapper .review .text {
-        margin-left: -100px;
-        padding: 10px 10px 10px 130px;
-        font-size: 12px; }
-      section.reviews .another .reviews .wrapper .review .role {
-        font-size: 11px; }
-      section.reviews .another .reviews .wrapper .review img {
-        left: -6px;
-        top: 27px;
-        border-radius: 64px;
-        width: 128px; }
+  section.reviews .another .reviews {
+    text-align: center; }
+    section.reviews .another .reviews * {
+      text-align: left; }
+    section.reviews .another .reviews .wrapper:last-child {
+      margin: 0; }
+    section.reviews .another .reviews .wrapper {
+      width: 32%;
+      margin: 0 2% 0 0; }
+      section.reviews .another .reviews .wrapper .review {
+        min-height: 155px;
+        padding: 0 0 0 103px; }
+        section.reviews .another .reviews .wrapper .review h3 {
+          font-size: 11px; }
+        section.reviews .another .reviews .wrapper .review .text {
+          margin-left: -100px;
+          padding: 10px 10px 10px 130px;
+          font-size: 12px; }
+        section.reviews .another .reviews .wrapper .review .role {
+          font-size: 11px; }
+        section.reviews .another .reviews .wrapper .review img {
+          left: -6px;
+          top: 27px;
+          border-radius: 64px;
+          width: 128px; }
 
 section.additional {
   margin: 0 0 76px 0;

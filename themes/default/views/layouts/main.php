@@ -640,57 +640,36 @@
                 <h2 id="participants">Приглашенные участники</h2>
                 <div class="carousel">
                     <div class="item">
-                        <img src="<?= $this->getAssetsUrl(); ?>/img/part1.png" alt="" class="image">
+                        <div>
+                            <img src="<?= $this->getAssetsUrl(); ?>/img/part1.png" alt="" class="image">
+                        </div>
                         <div class="name">
-                            Александр Иванов
+                            Марк Кукушкин
                         </div>
                         <div class="role">
-                            ген. директор холдинга "Газпром"
+                            Директор "BEST T&D Group"
                         </div>
                     </div>
                     <div class="item">
-                        <img src="<?= $this->getAssetsUrl(); ?>/img/part2.png" alt="" class="image">
+                        <div>
+                            <img src="<?= $this->getAssetsUrl(); ?>/img/part2.png" alt="" class="image">
+                        </div>
                         <div class="name">
-                            Александр Иванов
+                            Олег Пронин
                         </div>
                         <div class="role">
-                            ген. директор холдинга "Газпром"
+                            Генеральный директор "Пересвет-Инвест"
                         </div>
                     </div>
                     <div class="item">
-                        <img src="<?= $this->getAssetsUrl(); ?>/img/part3.png" alt="" class="image">
+                        <div>
+                            <img src="<?= $this->getAssetsUrl(); ?>/img/part3.png" alt="" class="image">
+                        </div>
                         <div class="name">
-                            Александр Иванов
+                            Павел Вербняк
                         </div>
                         <div class="role">
-                            ген. директор холдинга "Газпром"
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="<?= $this->getAssetsUrl(); ?>/img/part4.png" alt="" class="image">
-                        <div class="name">
-                            Александр Иванов
-                        </div>
-                        <div class="role">
-                            ген. директор холдинга "Газпром"
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="<?= $this->getAssetsUrl(); ?>/img/part2.png" alt="" class="image">
-                        <div class="name">
-                            Александр Иванов
-                        </div>
-                        <div class="role">
-                            ген. директор холдинга "Газпром"
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="<?= $this->getAssetsUrl(); ?>/img/part1.png" alt="" class="image">
-                        <div class="name">
-                            Александр Иванов
-                        </div>
-                        <div class="role">
-                            ген. директор холдинга "Газпром"
+                            Основатель и руководитель проекта "Успешное мышление"
                         </div>
                     </div>
                 </div>
@@ -702,28 +681,16 @@
                 <h2>Приглашенные компании</h2>
                 <div class="carousel">
                     <div class="item">
-                        <a href="#"><img src="<?= $this->getAssetsUrl(); ?>/img/c1.png" alt=""></a>
+                        <a href="http://www.kia.ru/"><img src="<?= $this->getAssetsUrl(); ?>/img/kia.gif" alt="KIA Motors в России"></a>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="<?= $this->getAssetsUrl(); ?>/img/c2.png" alt=""></a>
+                        <a href="http://www.incom.ru/"><img src="<?= $this->getAssetsUrl(); ?>/img/incom.gif" alt="Агентство ИНКОМ-Недвижимость"></a>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="<?= $this->getAssetsUrl(); ?>/img/c3.png" alt=""></a>
+                        <a href="http://ibishotel.ibis.com/ru/russia/index.shtml"><img src="<?= $this->getAssetsUrl(); ?>/img/ibis.gif" alt=""></a>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="<?= $this->getAssetsUrl(); ?>/img/c4.png" alt=""></a>
-                    </div>
-                    <div class="item">
-                        <a href="#"><img src="<?= $this->getAssetsUrl(); ?>/img/c5.png" alt=""></a>
-                    </div>
-                    <div class="item">
-                        <a href="#"><img src="<?= $this->getAssetsUrl(); ?>/img/c6.png" alt=""></a>
-                    </div>
-                    <div class="item">
-                        <a href="#"><img src="<?= $this->getAssetsUrl(); ?>/img/c4.png" alt=""></a>
-                    </div>
-                    <div class="item">
-                        <a href="#"><img src="<?= $this->getAssetsUrl(); ?>/img/c3.png" alt=""></a>
+                        <a href="http://www.sberbank.ru/"><img src="<?= $this->getAssetsUrl(); ?>/img/sber.gif" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -734,9 +701,9 @@
                 <h2 id="reviews">Отзывы</h2>
                 <div class="review">
                     <img src="<?= $this->getAssetsUrl(); ?>/img/review1.png" alt="">
-                    <h3>Семён Семёнович Артаков</h3>
-                    <div class="role">ген. директор холдинга ОАО "Звездочка"</div>
-                    <div class="text">В России две известные беды, когда первая беда дорога не простая, а железная, а вторая путешествует по ней с камерой, вдоль родины создавшей эти горести получается третья — плохое российское кино. В то время когда в интернете можно прославится за любую глупость и когда человек в первую очередь достает телефон для того чтобы сначала включить функцию видеозаписи, а затем лишь позвонить на помощь, создается подобное кино, такое же ужасное как и вся эта тенденция. И как бы создатели не нахваливали свой фильм, лучше он от этого не станет, ведь каждая лягушка хвалит свое болото.</div>
+                    <h3>Радислав Гандапас</h3>
+                    <div class="role">самый титулованный бизнес-тренер России</div>
+                    <div class="text">Брайан Трейси - не просто человек-легенда, или Гуру бизнеса. Он сам иронически относится к подобным определениям. В первую очередь, это человек, создавший, развивший сотни компаний по всему миру. Его опыт бесценен, знания глубоки и манера их передачи - легка и очень эффективна.</div>
                 </div>
                 <div class="another">
                     <h2>Другие отзывы:</h2>
@@ -744,25 +711,34 @@
                         <div class="wrapper">
                              <div class="review">
                                 <img src="<?= $this->getAssetsUrl(); ?>/img/review2.jpg" alt="">
-                                <h3>Семён Семёнович Артаков</h3>
+                                <h3>Стив Пейн</h3>
                                 <div class="role"> ОАО "Звездочка"</div>
                                 <div class="text">В России две известные беды, когда первая беда дорога не простая, а железная, а вторая путешествует по ней с камерой, вдоль родины создавшей эти </div>
                             </div>
                         </div>
                         <div class="wrapper">
                              <div class="review">
-                                <img src="<?= $this->getAssetsUrl(); ?>/img/review2.jpg" alt="">
-                                <h3>Семён Семёнович Артаков</h3>
-                                <div class="role"> ОАО "Звездочка"</div>
-                                <div class="text">В России две известные беды, когда первая беда дорога не простая, а железная, а вторая путешествует по ней с камерой, вдоль родины создавшей эти </div>
+                                <img src="<?= $this->getAssetsUrl(); ?>/img/review3.jpg" alt="">
+                                <h3>Джей Абрахам</h3>
+                                <div class="role">президент и SEO Abraham Group</div>
+                                <div class="text">Одна из самых лучших программ, которую я видел, чтобы преобразовать существующую компанию в стратегическую "электростанцию", которая сможет стабильно генерировать прибыль на рынке.</div>
                             </div>
                         </div>
                         <div class="wrapper">
                              <div class="review">
-                                <img src="<?= $this->getAssetsUrl(); ?>/img/review2.jpg" alt="">
-                                <h3>Семён Семёнович Артаков</h3>
-                                <div class="role"> ОАО "Звездочка"</div>
-                                <div class="text">В России две известные беды, когда первая беда дорога не простая, а железная, а вторая путешествует по ней с камерой, вдоль родины создавшей эти </div>
+                                <img src="<?= $this->getAssetsUrl(); ?>/img/review4.jpg" alt="">
+                                <h3>Издательство «Аудио-Консалт»</h3>
+                                <div class="text">Брайан очень хорошо понимает, что не существует универсальной техники успеха, подходящей каждому участнику. Он не ожидает, что Вы попадете под один из разработанных им шаблонов. Программа очень гибкая и скорее она будет подстраиваться под конкретного человека.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <div class="wrapper">
+                             <div class="review">
+                                <img src="<?= $this->getAssetsUrl(); ?>/img/review5.jpg" alt="">
+                                <h3>Маршал Голдсмит</h3>
+                                <div class="role">один из лучших коучей по версии WALL STREET JOURNAL</div>
+                                <div class="text">Эти идеи действительно работают! Брайан Трейси - один из лучших преподавателей успеха в мире. Никто не даст Вам больше практических советов, чем он.</div>
                             </div>
                         </div>
                     </div>
