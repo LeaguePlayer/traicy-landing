@@ -20,26 +20,26 @@ class PreregController extends FrontController
 	        	$model->save();
 	        	
 	        	$message = '';
-	        	$message .= 'Имя: '.$model->name.'<br />';
-	        	$message .= 'E-mail: '.$model->email.'<br />';
-	        	$message .= 'Телефон: '.$model->phone.'<br />';
+	        	$message .= 'Имя: '.$model->name."\r\n";
+	        	$message .= 'E-mail: '.$model->email."\r\n";
+	        	$message .= 'Телефон: '.$model->phone."\r\n";
 	        	if ($model->company) {
-	        		$message .= 'Компания: '.$model->company.'<br />';
+	        		$message .= 'Компания: '.$model->company."\r\n";
 	        	}
 	        	if ($model->count) {
-	        		$message .= 'Количество участников: '.$model->count.'<br />';
+	        		$message .= 'Количество участников: '.$model->count."\r\n";
 	        	}
 	        	if ($model->isAdvice) {
-	        		$message .= 'Да, мне нужен совет по проезду и гостинице.'.'<br />';
+	        		$message .= 'Да, мне нужен совет по проезду и гостинице.'."\r\n";
 	        	}
 	        	else {
-	        		$message .= 'Нет, мне не нужен совет по проезду и гостинице.'.'<br />';
+	        		$message .= 'Нет, мне не нужен совет по проезду и гостинице.'."\r\n";
 	        	}
 	        	if ($model->isSubscribe) {
-	        		$message .= 'Да, мне интересны новости и акции по этому мероприятию'.'<br />';
+	        		$message .= 'Да, мне интересны новости и акции по этому мероприятию'."\r\n";
 	        	}
 	        	else {
-	        		$message .= 'Нет, мне не интересны новости и акции по этому мероприятию'.'<br />';
+	        		$message .= 'Нет, мне не интересны новости и акции по этому мероприятию'."\r\n";
 	        	}
 	        	mail(Yii::app()->config->get('admin.email'), 'Предварительная регистрация', $message);
 

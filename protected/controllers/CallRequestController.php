@@ -19,8 +19,8 @@ class CallRequestController extends FrontController
 	        {
 	        	$model->save();
 	        	
-	        	$message = 'Имя: '.$model->name.'<br />';
-	        	$message = 'Телефон: '.$model->phone.'<br />';
+	        	$message = 'Имя: '.$model->name."\r\n";
+	        	$message = 'Телефон: '.$model->phone."\r\n";
 	        	mail(Yii::app()->config->get('admin.email'), 'Заказ звонка', $message);
 
 	           	echo 'ok';

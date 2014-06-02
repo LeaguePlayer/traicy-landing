@@ -21,10 +21,10 @@ class QuestionController extends FrontController
 	        	$model->save();
 	        	
 	        	$message = '';
-	        	$message .= 'Имя: '.$model->name.'<br />';
-	        	$message .= 'Телефон: '.$model->phone.'<br />';
-	        	$message .= 'E-mail: '.$model->email.'<br />';
-	        	$message .= 'Текст: '.$model->text.'<br />';
+	        	$message .= 'Имя: '.$model->name."\r\n";
+	        	$message .= 'Телефон: '.$model->phone."\r\n";
+	        	$message .= 'E-mail: '.$model->email."\r\n";
+	        	$message .= 'Текст: '.$model->text."\r\n";
 	        	mail(Yii::app()->config->get('admin.email'), 'Вопрос', $message);
 
 	           	echo 'ok';
