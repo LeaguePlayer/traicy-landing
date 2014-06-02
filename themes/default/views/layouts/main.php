@@ -757,7 +757,7 @@
             <div class="wrap">    
                 <h2>Как будет проходить мероприятие</h2>
                 <div class="email-request">
-                    <? $this->renderPartial('//subscribe/_form', array('model' => $this->forms['subscribe'], 'formId' => 'subscribe_form')); ?>
+                    <? //$this->renderPartial('//subscribe/_form', array('model' => $this->forms['subscribe'], 'formId' => 'subscribe_form')); ?>
                 </div>
                 <div class="materials">
                     <div class="text">

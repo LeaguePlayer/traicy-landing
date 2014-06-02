@@ -28,6 +28,6 @@ class CallRequestController extends FrontController
 	        }
 	    }
 	    Yii::app()->clientScript->scriptMap=array('jquery.yiiactiveform.js'=>false,'jquery.js'=>false,);
-	    $this->renderPartial('_form',array('model'=>$model));
+	    $this->renderPartial('_form',array('model'=>$model, 'formId' => md5(rand())));
 	}
 }

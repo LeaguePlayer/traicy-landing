@@ -21,10 +21,11 @@
 
     <div class="row">
         <? echo CHtml::submitButton('Отправить', array(
-            'ajax'=>array(
-                'type'=>'POST',
-                'url'=>Yii::app()->createUrl('//callRequest/create'),
-                'success'=>'function(data) {
+            'id' => $formId.'b',
+            'name' => $formId.'b',
+        )); ?>
+        <script type="text/javascript">
+            jQuery('body').on('click','#<?= $formId."b";?>',function(){jQuery.ajax({'type':'POST','url':'/callRequest/create','success':function(data) {
                     if (data == "ok") {
                         data = "Спасибо, мы свяжемся с Вами в скором времени.";
                         setTimeout(
@@ -34,10 +35,10 @@
                             $(".modal").fadeOut(500);
                           }, 3000);
                     }
-                    $("#'.$formId.'").html(data);
-                }',
-            )
-        )); ?>
+                    $("#<?= $formId;?>").html(data);
+                },'cache':false,'data':jQuery(this).parents("form").serialize()});return false;});
+
+        </script>
     </div>
  
 <?php $this->endWidget(); ?>
