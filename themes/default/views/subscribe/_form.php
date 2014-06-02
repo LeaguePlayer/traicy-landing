@@ -13,7 +13,7 @@
         <? echo CHtml::submitButton('Отправить', array(
             'ajax'=>array(
                 'type'=>'POST',
-                'url'=>Yii::app()->createUrl('subscribe/create'),
+                'url'=>Yii::app()->createUrl('//subscribe/create'),
                 'success'=>'function(data) {
                     if (data == "ok") {
                         data = "<div class=\'title\'>Вы подписаны на дополнительные материалы.</div>";

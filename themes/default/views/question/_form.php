@@ -31,7 +31,7 @@
         <? echo CHtml::submitButton('Отправить', array(
             'ajax'=>array(
                 'type'=>'POST',
-                'url'=>Yii::app()->createUrl('question/create'),
+                'url'=>Yii::app()->createUrl('//question/create'),
                 'success'=>'function(data) {
                     if (data == "ok") {
                         data = "Спасибо, мы свяжемся с Вами в скором времени.";
