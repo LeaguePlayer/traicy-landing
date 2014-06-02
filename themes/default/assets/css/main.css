@@ -1619,16 +1619,16 @@ footer {
       float: right;
       width: 170px; }
       footer .top .actions a:hover {
-        color: #ffd200;
-        border-color: #ffd200; }
+        color: #3fd073;
+        border-color: #3fd073; }
       footer .top .actions a {
         display: block;
         width: 168px;
         height: 32px;
         line-height: 32px;
         border-radius: 5px;
-        color: #3fd073;
-        border: 1px #3fd073 dashed;
+        color: #ffd200;
+        border: 1px #ffd200 dashed;
         text-align: center;
         margin: 0 0 15px 0;
         text-decoration: none; }

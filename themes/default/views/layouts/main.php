@@ -5,7 +5,7 @@
 	$cs->registerCssFile($this->getAssetsUrl().'/css/flipclock.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/css/jquery-ui.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/js/vendor/slick/slick.css');
-	$cs->registerCssFile($this->getAssetsUrl().'/css/main.css?v=1');
+	$cs->registerCssFile($this->getAssetsUrl().'/css/main.css?v=2');
 
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/modernizr-2.6.2.min.js', CClientScript::POS_HEAD);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/jquery-1.11.0.min.js', CClientScript::POS_END);
@@ -53,9 +53,9 @@
             <div class="wrap">
                 <div class="contacts">
                     <div class="date">
-                        <span class="month">Ноябрь</span>
-                        <span class="day">22</span>
-                        <span class="weekday">Суббота</span>
+                        <span class="month">Июнь</span>
+                        <span class="day">02</span>
+                        <span class="weekday">Понедельник</span>
                     </div>
                     <div class="info">
                         <address>г. Москва</address>
@@ -333,7 +333,7 @@
             </div>
         </section>
 
-        <section class="history">
+      <!--  <section class="history">
             <div class="wrap">
                 <h2>История мероприятия спикера <em>в России и СНГ</em></h2>
                 <ul class="times">
@@ -397,7 +397,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <script type="text/javascript">
             terms = [
@@ -594,7 +594,7 @@
                 </div>
             </div>
         </section>
-
+<!--
         <section class="programm">
             <h2 id="programm">Программа мероприятия</h2>
             <div class="content">
@@ -640,7 +640,7 @@
                 <a href="#" class="button calendar"><span>Добавить в календарь</span></a>
                 <a href="<?= $this->getAssetsUrl(); ?>/brochure.pdf" class="button download" target="_blank"><span>Скачать брошюру</span></a>
             </div>
-        </section>
+        </section>-->
 
         <section class="participants">
             <div class="wrap">
@@ -1013,13 +1013,14 @@
                 <h2>Порекомендуйте нас друзьям</h2>
                 <ul class="social">
                     <li>
-                        <a href="#" class="fb"></a>
+                        <a target="_blank" class="fb" href="http://www.facebook.com/sharer/sharer.php?u=<?= Yii::app()->getBaseUrl(true);?>"></a>
                     </li>
                     <li>
-                        <a href="#" class="vk"></a>
+                        <a href="http://vkontakte.ru/share.php?url=<?= Yii::app()->getBaseUrl(true);?>" target="_blank" class="vk"></a>
                     </li>
                     <li>
-                        <a href="#" class="tw"></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Текст&url=<?= Yii::app()->getBaseUrl(true);?>
+" class="tw"></a>
                     </li>
                 </ul>
                 <div class="title">
