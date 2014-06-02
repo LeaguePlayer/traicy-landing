@@ -73,8 +73,8 @@
                 </div>
 
                 <div class="sponsors">
-                    <a href="#"><img src="<?= $this->getAssetsUrl(); ?>/img/mbe.png" alt=""></a>
-                    <a href="http://www.tracyacademy.com"><img src="<?= $this->getAssetsUrl(); ?>/img/bta.png" alt=""></a>
+                    <a href="http://www.mb-events.ru/" target="_blank"><img src="<?= $this->getAssetsUrl(); ?>/img/mbe.png" alt=""></a>
+                    <a href="http://www.tracyacademy.com" target="_blank"><img src="<?= $this->getAssetsUrl(); ?>/img/bta.png" alt=""></a>
                 </div>
 
                 <div class="info">
@@ -185,7 +185,9 @@
                     </div>
                 </div>
                 <div class="text">
-                    <em>Станьте самым результативным руководителем в Вашей компании или отрасли!  Рост эффективности Вашей компании после семинара будет зависеть от того, сколько и каких сотрудников Вы возьмете вместе с собой на этот семинар</em>
+                    <em>Знаете ли Вы, что в среднем Вы или Ваш сотрудник использует менее 50% своего потенциала?</em>
+                    <p>Станьте самым результативным руководителем в Вашей компании или отрасли! Рост эффективности Вашей компании после семинара будет зависеть от того, сколько и каких сотрудников Вы возьмете вместе с собой на этот семинар.</p>
+                    <em>Стоимость участия <1% от стоимости идей, которые Вы узнаете на семинаре.</em>
                 </div>
                 <blockquote>
                     <img src="<?= $this->getAssetsUrl(); ?>/img/for-whom3.jpg" alt="">
@@ -200,13 +202,18 @@
 
         <section class="youllknow">
             <div class="wrap">
-                <h2 id="youllknow">Вы узнаете</h2>
+                <h2 id="youllknow">Содержание семинара</h2>
                 <div class="content">
-                    <div class="video">
-                        <div class="videowrapper">
+                    <div class="video novideo">
+                        <!--<div class="videowrapper">
                             <iframe src="//player.vimeo.com/video/93371928" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-                        </div>
+                        </div>-->
+                        <img src="<?= $this->getAssetsUrl(); ?>/img/shema.jpg" alt="">
                     </div>
+                    <p>
+                        Семинар Брайана Трейси <em>«Искусство управления: эффективные инструменты достижения результатов»</em> поможет вам развить навыки повышения эффективности управления с целью достижения выдающихся бизнес-результатов. Семинар cодержит 7 практичных инструментов повышения результатов работы менеджера и членов его команды. Эти семь инструментов объединены автором в единую и хорошо отлаженную систему, применение которой позволяет удвоить результаты работы за короткий промежуток времени. 
+                    </p>
+                    <h3>Вы узнаете:</h3>
                     <ul>
                         <li>семь основных навыков мышления успешных руководителей</li>
                         <li>подходы и инструменты управления временем для руководителя</li>
@@ -216,13 +223,10 @@
                         <li>способы повышения эффективности работы команды</li>
                         <li>делегирование и максимальное использование потенциала сотрудников</li>
                     </ul>
-                    <p>
-                        Семинар Брайана Трейси <em>«Искусство управления: эффективные инструменты достижения результатов»</em> поможет вам развить навыки повышения эффективности управления с целью достижения выдающихся бизнес-результатов. Семинар cодержит 7 практичных инструментов повышения результатов работы менеджера и членов его команды. Эти семь инструментов объединены автором в единую и хорошо отлаженную систему, применение которой позволяет удвоить результаты работы за короткий промежуток времени. 
-                    </p>
                 </div>
                 <div class="buttons">
                     <a href="#" class="button calendar"><span>Добавить в календарь</span></a>
-                    <a href="#" class="button download disabled"><span>Скачать программу</span></a>
+                    <a href="<?= $this->getAssetsUrl(); ?>/brochure.pdf" class="button download" target="_blank"><span>Скачать брошюру</span></a>
                 </div>
             </div>
         </section>
@@ -631,7 +635,7 @@
             </div>
             <div class="buttons">
                 <a href="#" class="button calendar"><span>Добавить в календарь</span></a>
-                <a href="#" class="button download"><span>Скачать программу</span></a>
+                <a href="<?= $this->getAssetsUrl(); ?>/brochure.pdf" class="button download" target="_blank"><span>Скачать брошюру</span></a>
             </div>
         </section>
 
@@ -681,16 +685,16 @@
                 <h2>Приглашенные компании</h2>
                 <div class="carousel">
                     <div class="item">
-                        <a href="http://www.kia.ru/"><img src="<?= $this->getAssetsUrl(); ?>/img/kia.gif" alt="KIA Motors в России"></a>
+                        <a href="http://www.kia.ru/" target="_blank"><img src="<?= $this->getAssetsUrl(); ?>/img/kia.gif" alt="KIA Motors в России"></a>
                     </div>
                     <div class="item">
-                        <a href="http://www.incom.ru/"><img src="<?= $this->getAssetsUrl(); ?>/img/incom.gif" alt="Агентство ИНКОМ-Недвижимость"></a>
+                        <a href="http://www.incom.ru/" target="_blank"><img src="<?= $this->getAssetsUrl(); ?>/img/incom.gif" alt="Агентство ИНКОМ-Недвижимость"></a>
                     </div>
                     <div class="item">
-                        <a href="http://ibishotel.ibis.com/ru/russia/index.shtml"><img src="<?= $this->getAssetsUrl(); ?>/img/ibis.gif" alt=""></a>
+                        <a href="http://ibishotel.ibis.com/ru/russia/index.shtml" target="_blank"><img src="<?= $this->getAssetsUrl(); ?>/img/ibis.gif" alt=""></a>
                     </div>
                     <div class="item">
-                        <a href="http://www.sberbank.ru/"><img src="<?= $this->getAssetsUrl(); ?>/img/sber.gif" alt=""></a>
+                        <a href="http://www.sberbank.ru/" target="_blank"><img src="<?= $this->getAssetsUrl(); ?>/img/sber.gif" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -712,8 +716,8 @@
                              <div class="review">
                                 <img src="<?= $this->getAssetsUrl(); ?>/img/review2.jpg" alt="">
                                 <h3>Стив Пейн</h3>
-                                <div class="role"> ОАО "Звездочка"</div>
-                                <div class="text">В России две известные беды, когда первая беда дорога не простая, а железная, а вторая путешествует по ней с камерой, вдоль родины создавшей эти </div>
+                                <div class="role">владелец и медицинский директор клиники OMD</div>
+                                <div class="text">Способность Брайана вселять уверенность в себя и его практические методы достижения личного и бизнес-успеха поражают. Брайан последовательно фокусировал и направлял мою работу во время программы. Брайан глубоко повлиял на мою жизнь, что впоследствии помогло измениться не только мне, но и некоторым пациентам моей клиники.</div>
                             </div>
                         </div>
                         <div class="wrapper">
@@ -782,7 +786,7 @@
         </section>
 
         <section class="map">
-            <h2>Карта места проведения</h2>
+            <h2>Место проведения</h2>
             <div class="map" id="map">
                 
             </div>
@@ -877,9 +881,8 @@
                     </li>
                 </ul>
                 <div class="title">
-                    <em>Введите текст рекомендации и E-mail</em>,<br />
-                    на которые отправятся приглашения<br>
-                    с презентацией мероприятия
+                    У Вас есть <em>друг или коллега</em>, которому может быть интересно данное мероприятие?
+                    <em>Отправьте</em> рекомендацию и <em>презентационные материалы</em> прямо сейчас!
                 </div>
                 <div class="form">
                     <form action="">
@@ -893,6 +896,32 @@
                             <button class="button">Отправить</button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="companies">
+            <div class="wrap">
+                <h2>Партнеры</h2>
+                <div class="carousel">
+                    <div class="item">
+                        <a href="http://www.kia.ru/" target="_blank"><i></i><img src="<?= $this->getAssetsUrl(); ?>/img/kia.gif" alt="KIA Motors в России"></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.incom.ru/" target="_blank"><i></i><img src="<?= $this->getAssetsUrl(); ?>/img/incom.gif" alt="Агентство ИНКОМ-Недвижимость"></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://ibishotel.ibis.com/ru/russia/index.shtml" target="_blank"><i></i><img src="<?= $this->getAssetsUrl(); ?>/img/ibis.gif" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.sberbank.ru/" target="_blank"><i></i><img src="<?= $this->getAssetsUrl(); ?>/img/sber.gif" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.oratorica.ru/" target="_blank"><i></i><img src="<?= $this->getAssetsUrl(); ?>/img/oratorika.gif" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://rucubes.com/" target="_blank"><i></i><img src="<?= $this->getAssetsUrl(); ?>/img/cubes.gif" alt=""></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -928,60 +957,30 @@
                 </div>
             </div>
         </footer>
-<!--
+
         <div class="stuck">
             <div class="social">
                 <p>Следите за нами</p>
                 <ul>
-                    <li class="fb"><a href="#"></a></li>
-                    <li class="vk"><a href="#"></a></li>
-                    <li class="tw"><a href="#"></a></li>
+                    <li class="fb"><a href="https://www.facebook.com/tracyacademy" target="_blank"></a></li>
+                    <li class="vk"><a href="https://vk.com/tracyacademy" target="_blank"></a></li>
+                    <li class="tw"><a href="https://twitter.com/tracyacademy" target="_blank"></a></li>
                 </ul>
             </div>
-            <div class="cart">
+            <!--<div class="cart">
                 <p class="total">
                     от <em>32 000</em> р.
                 </p>
                 <a href="#" class="button blue">Купить</a>
-            </div>
+            </div>-->
         </div>
--->
+
         <div class="modal" id="header_phone_request" data-bottom="-34" data-right="0">
-            <form action="#">
-                <a href="#" class="close"></a>
-                <h2>Перезвоните мне</h2>
-                <div class="row">
-                    <input type="text" placeholder="Имя*">
-                </div>
-                <div class="row">
-                    <input type="text" placeholder="Телефон*">
-                </div>
-                <div class="row">
-                    <button type="submit" class="button">Отправить</button>
-                </div>
-            </form>
+            <? $this->renderPartial('//callRequest/_form', array('model' => $this->forms['callRequest'])); ?>
         </div>
 
         <div class="modal arrow-left" id="header_ask" data-bottom="-30" data-left="0">
-            <form action="#">
-                <a href="#" class="close"></a>
-                <h2>Есть вопрос?</h2>
-                <div class="row">
-                    <input type="text" placeholder="Имя*">
-                </div>
-                <div class="row">
-                    <input type="email" placeholder="E-mail*">
-                </div>
-                <div class="row">
-                    <input type="text" placeholder="Телефон*">
-                </div>
-                <div class="row">
-                    <textarea placeholder="Вопрос*"></textarea> 
-                </div>
-                <div class="row">
-                    <button type="submit" class="button">Отправить</button>
-                </div>
-            </form>
+            <? $this->renderPartial('//question/_form', array('model' => $this->forms['question'])); ?>
         </div>
 
         <div class="modal arrow-bottom" id="footer_phone_request" data-top="-240" data-right="0">

@@ -1,25 +1,27 @@
 <?php
 /**
- * Миграция m140529_093603_callRequest
+ * Миграция m140530_080004_question
  *
  * @property string $prefix
  */
  
-class m140529_093603_callRequest extends CDbMigration
+class m140530_080004_question extends CDbMigration
 {
-    // таблицы к удалению, можно использовать '{{vktable}}'
-	private $dropped = array('{{callRequest}}');
+    // таблицы к удалению, можно использовать '{{table}}'
+	private $dropped = array('{{question}}');
  
     public function safeUp()
     {
         $this->_checkTables();
  
-        $this->createTable('{{callRequest}}', array(
+        $this->createTable('{{question}}', array(
             'id' => 'pk', // auto increment
 
             'name' => "string COMMENT 'Имя'",
-			'phone' => "string COMMENT 'Телефон'",
-			
+            'phone' => "string COMMENT 'Телефон'",
+            'email' => "string COMMENT 'E-mail'",
+            'text' => "string COMMENT 'Вопрос'",
+            
             'node_id' => "integer DEFAULT NULL COMMENT 'Ссылка на раздел'",
 			'status' => "tinyint COMMENT 'Статус'",
 			'sort' => "integer COMMENT 'Вес для сортировки'",

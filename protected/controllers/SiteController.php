@@ -3,6 +3,7 @@
 class SiteController extends FrontController
 {
 	public $layout = '//layouts/main';
+	public $forms = array();
 	
 	/**
 	 * Declares class-based actions.
@@ -30,6 +31,10 @@ class SiteController extends FrontController
 	public function actionIndex()
 	{
         $this->title = Yii::app()->config->get('app.name');
+
+        $this->forms['callRequest'] = new CallRequest;
+        $this->forms['question'] = new Question;
+
 		$this->render('index');
 	}
 

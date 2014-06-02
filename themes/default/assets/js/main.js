@@ -1,4 +1,18 @@
-
+function adjustCarousels () {
+  var width = $('.speakers .gradient').width();
+  var iWidth = 140;
+  var count = Math.floor(width/iWidth);
+  for(var i = 0; i<bCarousels.length;i++) {
+    bCarousels[i].slickSetOption('slidesToShow', count, false);
+    bCarousels[i].slickSetOption('slidesToScroll', count, true);
+    $(bCarousels[i]).css('width', (width-60)+'px');
+  }
+  for(var i = 0; i<cCarousels.length;i++) {
+    cCarousels[i].slickSetOption('slidesToShow', count, false);
+    cCarousels[i].slickSetOption('slidesToScroll', count, true);
+    $(cCarousels[i]).css('width', (width-60)+'px');
+  }
+}
 
 function Calculator() {
     if ( Calculator.i !== undefined )
@@ -176,42 +190,48 @@ $(document).ready(function(){
 		$('nav li:eq('+i+')').find('.dot').show();
 	});
 
-	$('.books .carousel').slick({
-		infinite: true,
+  bCarousels = [];
+	$('.books .carousel').each(function(){
+      bCarousels.push($(this).slick({
+        infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-    });
+      }));
+  });
 
-	$('.clients .carousel').slick({
-		infinite: true,
+  cCarousels = [];
+	$('.clients .carousel').each(function(){
+      cCarousels.push($(this).slick({
+        infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
-    });
+      }));
+  });
 
 	$('.participants .carousel').slick({
-		infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        dots: true,
+		  infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      dots: true,
     });
 
 	$('.companies .carousel').slick({
-		infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+		  infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
     });
 
 	$('section.history .carousel').slick({
-		infinite: true,
-		vertical: true,
+  		infinite: true,
+  		vertical: true,
     });
 
 
     // Create map
 	var map = new GMaps({
 	    div: '#map',
-	    lat: 55.7532200,
-	    lng: 37.6155600,
+	    lat: 55.822033,
+	    lng: 37.646229,
 	    zoom: 16,
 	    mapTypeId: google.maps.MapTypeId.ROADMAP,
 	    scrollwheel: false,
@@ -220,13 +240,13 @@ $(document).ready(function(){
 
 	// Create infoWindow
 	var infoWindow = new google.maps.InfoWindow({
-	    content: '<div class="map-content"><h3>г. Москва</h3><address>ул. Пушкина, д. Колотушкина</address><div class="text">В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил перера</div></div>'
+	    content: '<div class="map-content"><h3>г. Москва</h3><address>Проспект Мира 150, гостиница "Космос"</address><div class="text">В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил перера</div></div>'
 	});
 
 	// Create marker
 	var marker = map.addMarker({
-	    lat: 55.7522200,
-	    lng: 37.6155600,
+	    lat: 55.821033,
+	    lng: 37.646229,
 	    infoWindow: infoWindow
 	});
 
@@ -246,7 +266,7 @@ $(document).ready(function(){
 	});
 	$('.form .slider .ui-slider-handle').text(1);
 
-	$('*[role="modal-trigger"]').on('click', function(){
+	$('body').on('click', '*[role="modal-trigger"]', function(){
 		$.scrollTo($(this).offset().top-50, 500);
 		$('.overlay').height($('body').height()).fadeIn(500);
 
@@ -271,11 +291,15 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$(".modal .close, .overlay").on('click', function(){
+	$("body").on('click', '.modal .close, .overlay', function(){
 		$('.overlay').fadeOut(500);
 		$('.modal').fadeOut(500);
 
 		return false;
+	});
+
+	$("body").on('change', '.error', function(){
+		$(this).removeClass('error');
 	});
 
 	$.localScroll({ offset:{ top: -100 }});
@@ -286,6 +310,8 @@ $(document).ready(function(){
 		window.location.href = "http://tracyacademy22.ticketforevent.com/";
 		return false;
 	});
+
+  adjustCarousels();
 });
 
 $(window).resize(function(){
@@ -307,4 +333,7 @@ $(window).resize(function(){
 			$(modal).css('top', ($(this).offset().top+$(this).outerHeight()-$(modal).data('bottom'))+'px');
 		}
 	});
+
+  adjustCarousels();
+
 });

@@ -9,12 +9,12 @@
   letter-spacing: normal;
   word-spacing: normal; }
 
-.inline-block-fix, header .contacts .date, header .contacts .info, header .actions div, header .actions span, nav.menu ul li, section.forwhom .choices .choice, section.youllknow .buttons .button:before, section.history .times li, section.history .content .left, section.history .content .left .title > *, section.history .content .left .features li, section.history .content .photos, section.prices .container .left, section.prices .container .right, section.prices .container .right .form .option > *, section.prices .container .right .form .action > *, section.programm .content .rule ul li, section.programm .buttons .button:before, section.reviews .another .reviews .wrapper, section.additional .email-request .form .column, section.additional .materials .text, section.additional .materials .video, section.quotes .quotes > li, section.quotes .quotes > li .social li, section.share .social li, footer .top > *, footer .top nav ul li, .button, .modal .columns .column {
+.inline-block-fix, header .contacts .date, header .contacts .info, header .actions div, header .actions span, nav.menu ul li, section.forwhom .choices .choice, section.youllknow .buttons .button:before, section.youllknow .buttons input[type="submit"]:before, section.history .times li, section.history .content .left, section.history .content .left .title > *, section.history .content .left .features li, section.history .content .photos, section.prices .container .left, section.prices .container .right, section.prices .container .right .form .option > *, section.prices .container .right .form .action > *, section.programm .content .rule ul li, section.programm .buttons .button:before, section.programm .buttons input[type="submit"]:before, section.reviews .another .reviews .wrapper, section.additional .email-request .form .column, section.additional .materials .text, section.additional .materials .video, section.quotes .quotes > li, section.quotes .quotes > li .social li, section.share .social li, footer .top > *, footer .top nav ul li, .button, input[type="submit"], .modal .columns .column {
   font-size: 14px;
   display: inline-block;
   vertical-align: top; }
 
-.borderbox, section.speakers .items .content, section.history .times:before, section.history .content, section.prices .container .right .form .fright input, section.prices .container .right .form .action, section.programm .content .rule ul, section.additional .email-request .form .column input[type="email"], section.quotes .quotes > li, section.share .form .row input[type="email"], section.share .form .row textarea, .button, .customSelect, .modal .row input[type="text"], .modal .row input[type="email"], .modal .row input[type="password"], .modal .row input[type="number"], .modal .row textarea {
+.borderbox, section.speakers .items .content, section.history .times:before, section.history .content, section.prices .container .right .form .fright input, section.prices .container .right .form .action, section.programm .content .rule ul, section.additional .email-request .form .column input[type="email"], section.quotes .quotes > li, section.share .form .row input[type="email"], section.share .form .row textarea, .button, input[type="submit"], .customSelect, .modal .row input[type="text"], .modal .row input[type="email"], .modal .row input[type="password"], .modal .row input[type="number"], .modal .row textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -252,7 +252,7 @@ header {
       font-size: 28px;
       color: white;
       margin: 0 30px; }
-    header .actions .button {
+    header .actions .button, header .actions input[type="submit"] {
       font-weight: bold;
       width: 175px; }
 
@@ -363,10 +363,14 @@ section.forwhom .choices {
     text-align: right; }
 section.forwhom .wrap > .text, section.forwhom section.programm h2 > .text, section.programm section.forwhom h2 > .text, section.forwhom section.programm .content .rule ul > .text, section.programm .content .rule section.forwhom ul > .text, section.forwhom section.map h2 > .text, section.map section.forwhom h2 > .text {
   border: 3px #cfcfcf solid;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: lighter;
   padding: 15px 25px;
   margin: 30px; }
+  section.forwhom .wrap > .text em, section.forwhom section.programm h2 > .text em, section.programm section.forwhom h2 > .text em, section.forwhom section.programm .content .rule ul > .text em, section.programm .content .rule section.forwhom ul > .text em, section.forwhom section.map h2 > .text em, section.map section.forwhom h2 > .text em {
+    font-size: 16px;
+    display: block;
+    text-align: center; }
 section.forwhom blockquote {
   min-height: 180px;
   padding: 0 0 0 205px;
@@ -412,25 +416,30 @@ section.youllknow {
   font-weight: lighter;
   margin: 0 0 67px 0; }
   section.youllknow h2 {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    background-image: url(../img/participants-arrows.png); }
   section.youllknow .content {
     overflow: hidden;
     margin: 0 0 20px 0; }
     section.youllknow .content .video {
-      width: 56%;
+      width: 48%;
       float: left;
       margin: 0 30px 10px 0; }
+    section.youllknow .content .novideo {
+      text-align: center; }
     section.youllknow .content ul {
       margin: 0px; }
       section.youllknow .content ul li {
         margin: 0 0 10px 0; }
+    section.youllknow .content p {
+      text-align: justify; }
   section.youllknow .buttons {
     background: url(../img/buttons-arrows.png) no-repeat center top;
     padding: 33px 0 0 0;
     text-align: center; }
-    section.youllknow .buttons .button:first-child {
+    section.youllknow .buttons .button:first-child, section.youllknow .buttons input[type="submit"]:first-child {
       margin: 0 20px 0 0; }
-    section.youllknow .buttons .button:before {
+    section.youllknow .buttons .button:before, section.youllknow .buttons input[type="submit"]:before {
       content: "";
       vertical-align: middle;
       margin: 0 12px 0 14px;
@@ -439,9 +448,9 @@ section.youllknow {
       background: url(../img/buttons-icons.png) no-repeat; }
     section.youllknow .buttons .download:before {
       background-position: -21px 0; }
-    section.youllknow .buttons .button {
+    section.youllknow .buttons .button, section.youllknow .buttons input[type="submit"] {
       padding: 0; }
-      section.youllknow .buttons .button span {
+      section.youllknow .buttons .button span, section.youllknow .buttons input[type="submit"] span {
         width: 172px;
         display: inline-block;
         border-left: 1px #cfa900 solid; }
@@ -487,7 +496,7 @@ section.speakers {
       padding: 0 295px 0 0;
       border-bottom-left-radius: 20px; }
       section.speakers .items .content .gradient {
-        padding: 30px 0 25px 40px;
+        padding: 30px 20px 25px 40px;
         background: #f3f3f3;
         background: -moz-linear-gradient(left, #f3f3f3 0%, white 100%);
         background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f3f3f3), color-stop(100%, white));
@@ -511,7 +520,6 @@ section.speakers {
           padding: 0 0 30px 0;
           background: url(../img/books-arrow.png) no-repeat 83px 17px; }
         section.speakers .items .content .books .carousel {
-          width: 420px;
           text-align: center;
           margin: 0 0 0 30px; }
       section.speakers .items .content .clients h3 {
@@ -519,7 +527,6 @@ section.speakers {
         padding: 0 0 30px 0;
         background: url(../img/books-arrow.png) no-repeat 108px 17px; }
       section.speakers .items .content .clients .carousel {
-        width: 420px;
         text-align: center;
         margin: 0 0 0 30px; }
         section.speakers .items .content .clients .carousel img {
@@ -851,14 +858,14 @@ section.prices {
         width: 27%;
         vertical-align: middle;
         text-align: right; }
-        section.prices .container .left .action .button-holder .button {
+        section.prices .container .left .action .button-holder .button, section.prices .container .left .action .button-holder input[type="submit"] {
           display: table;
           line-height: normal;
           padding: 0;
           float: right;
           table-layout: fixed;
           width: 80%; }
-          section.prices .container .left .action .button-holder .button span {
+          section.prices .container .left .action .button-holder .button span, section.prices .container .left .action .button-holder input[type="submit"] span {
             display: table-cell;
             font-size: 13px;
             vertical-align: middle; }
@@ -949,12 +956,12 @@ section.prices {
       section.prices .container .right .form .calc {
         text-align: center;
         margin-top: -10px; }
-        section.prices .container .right .form .calc .button {
+        section.prices .container .right .form .calc .button, section.prices .container .right .form .calc input[type="submit"] {
           height: 30px;
           line-height: 30px;
           border-top-left-radius: 0px;
           border-top-right-radius: 0px; }
-        section.prices .container .right .form .calc .button:active {
+        section.prices .container .right .form .calc .button:active, section.prices .container .right .form .calc input[type="submit"]:active {
           top: 0;
           position: static; }
       section.prices .container .right .form .choice {
@@ -1038,12 +1045,12 @@ section.prices {
             text-align: center;
             position: relative;
             z-index: 1; }
-            section.prices .container .right .form .action .r p .button {
+            section.prices .container .right .form .action .r p .button, section.prices .container .right .form .action .r p input[type="submit"] {
               width: 70px;
               height: 35px;
               padding: 0;
               line-height: 35px; }
-            section.prices .container .right .form .action .r p .button:active {
+            section.prices .container .right .form .action .r p .button:active, section.prices .container .right .form .action .r p input[type="submit"]:active {
               top: 0;
               position: static; }
       section.prices .container .right .form .discount input {
@@ -1178,9 +1185,9 @@ section.programm {
     background: url(../img/buttons-arrows.png) no-repeat center top;
     padding: 33px 0 0 0;
     text-align: center; }
-    section.programm .buttons .button:first-child {
+    section.programm .buttons .button:first-child, section.programm .buttons input[type="submit"]:first-child {
       margin: 0 20px 0 0; }
-    section.programm .buttons .button:before {
+    section.programm .buttons .button:before, section.programm .buttons input[type="submit"]:before {
       content: "";
       vertical-align: middle;
       margin: 0 12px 0 14px;
@@ -1189,9 +1196,9 @@ section.programm {
       background: url(../img/buttons-icons.png) no-repeat; }
     section.programm .buttons .download:before {
       background-position: -21px 0; }
-    section.programm .buttons .button {
+    section.programm .buttons .button, section.programm .buttons input[type="submit"] {
       padding: 0; }
-      section.programm .buttons .button span {
+      section.programm .buttons .button span, section.programm .buttons input[type="submit"] span {
         width: 172px;
         display: inline-block;
         border-left: 1px #cfa900 solid; }
@@ -1251,8 +1258,11 @@ section.companies {
     margin: 0 0 25px 0; }
   section.companies .carousel {
     margin: 0 40px 40px 40px; }
-    section.companies .carousel .item img {
-      max-width: 120px; }
+    section.companies .carousel .item a {
+      display: block;
+      height: 120px; }
+      section.companies .carousel .item a img {
+        max-width: 120px; }
 
 section.reviews {
   padding: 60px 0 55px 0;
@@ -1337,7 +1347,7 @@ section.additional {
         padding: 0 19px;
         width: 300px;
         border: 1px #e3e3e3 solid; }
-      section.additional .email-request .form .column .button {
+      section.additional .email-request .form .column .button, section.additional .email-request .form .column input[type="submit"] {
         width: 300px; }
   section.additional .materials .text {
     margin: 0 2% 0 0;
@@ -1357,7 +1367,7 @@ section.additional {
         color: #ffd200; }
       section.additional .materials .text .links a:active {
         color: #b29200; }
-    section.additional .materials .text .button {
+    section.additional .materials .text .button, section.additional .materials .text input[type="submit"] {
       width: 190px;
       height: 32px;
       line-height: 32px;
@@ -1502,7 +1512,8 @@ section.share:after {
   background-position: -790px 0 !important; }
 
 section.share {
-  padding: 62px 0; }
+  padding: 62px 0;
+  margin: 0 0 40px 0; }
   section.share h2 {
     height: 150px;
     background-image: url(../img/share-arrows.png); }
@@ -1530,8 +1541,9 @@ section.share {
     font-size: 24px;
     font-weight: lighter;
     text-transform: uppercase;
-    margin: -20px 0 43px 0;
-    text-align: center; }
+    margin: -20px auto 43px auto;
+    text-align: center;
+    width: 80%; }
   section.share .form {
     width: 580px;
     margin: 0 auto; }
@@ -1547,7 +1559,7 @@ section.share {
       section.share .form .row textarea {
         height: 150px;
         padding: 19px; }
-      section.share .form .row .button {
+      section.share .form .row .button, section.share .form .row input[type="submit"] {
         width: 100%; }
 
 footer {
@@ -1667,7 +1679,13 @@ footer {
   background-position: -18px 0; }
 
 .carousel img {
-  display: inline-block !important; }
+  display: inline-block !important;
+  vertical-align: middle; }
+
+.carousel i {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle; }
 
 .carousel .item {
   text-align: center !important; }
@@ -1703,19 +1721,19 @@ footer {
 .gray-section-left:after, section.history:after, section.reviews:after {
   background-position: -790px -73px; }
 
-.button.blue {
+.button.blue, input.blue[type="submit"] {
   box-shadow: 0px 3px 0px #008cbf;
   background: #00aeef;
   color: white;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.32); }
 
-.button.blue:hover {
+.button.blue:hover, input.blue[type="submit"]:hover {
   background: #00aeef;
   box-shadow: 0px 3px 0px #00aeef;
   color: #006b91;
   text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.32); }
 
-.button {
+.button, input[type="submit"] {
   height: 45px;
   line-height: 45px;
   padding: 0 28px;
@@ -1733,11 +1751,11 @@ footer {
   text-align: center;
   white-space: nowrap; }
 
-.button:hover {
+.button:hover, input[type="submit"]:hover {
   box-shadow: inset 0px -1px 0px #dac20e, inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 3px 0px #9e8101;
   background: #dbb81a; }
 
-.button:active {
+.button:active, input[type="submit"]:active {
   box-shadow: none;
   position: relative;
   top: 4px; }
@@ -1748,7 +1766,7 @@ footer {
   font-weight: bold;
   text-shadow: 1px 1px 3px black; }
 
-.button.disabled {
+.button.disabled, input.disabled[type="submit"] {
   box-shadow: inset 0px -1px 0px #ffdc40, inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 3px 0px #ffdc40;
   background: #ffdc40;
   color: #917f2d; }
@@ -1812,7 +1830,7 @@ button.button {
   width: 220px;
   border: 2px black solid;
   z-index: 10000; }
-  .modal .button {
+  .modal .button, .modal input[type="submit"] {
     border-radius: 3px;
     width: 100%;
     height: 33px;
@@ -1923,9 +1941,9 @@ button.button {
       padding: 60px 0 17px 0;
       margin: 0;
       background: url(../img/cart.png) no-repeat center 11px; }
-    .stuck .cart .button:active {
+    .stuck .cart .button:active, .stuck .cart input[type="submit"]:active {
       top: auto; }
-    .stuck .cart .button:after {
+    .stuck .cart .button:after, .stuck .cart input[type="submit"]:after {
       content: "";
       display: block;
       position: absolute;
@@ -1935,7 +1953,7 @@ button.button {
       right: -7px;
       top: 50%;
       margin-top: -7px; }
-    .stuck .cart .button {
+    .stuck .cart .button, .stuck .cart input[type="submit"] {
       position: absolute;
       right: 90px;
       box-shadow: none;
@@ -1945,3 +1963,18 @@ button.button {
       height: 35px;
       line-height: 35px;
       padding: 0 12px; }
+
+input[type="submit"] {
+  border: none; }
+
+.error {
+  border: 1px red solid !important; }
+
+.error:focus {
+  border: 1px #e3e3e3 solid !important; }
+
+.errorSummary {
+  font-size: 12px; }
+  .errorSummary ul {
+    padding-right: 17px;
+    margin-top: 0; }

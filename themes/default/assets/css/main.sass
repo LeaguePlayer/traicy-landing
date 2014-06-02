@@ -436,10 +436,14 @@ section.forwhom
         text-align: right
   .wrap >.text
     border: 3px $grayFillColor solid
-    font-size: 13px
+    font-size: 14px
     font-weight: lighter
     padding: 15px 25px
     margin: 30px
+    em
+      font-size: 16px
+      display: block
+      text-align: center
   blockquote
     min-height: 180px
     padding: 0 0 0 205px
@@ -487,17 +491,22 @@ section.youllknow
   margin: 0 0 67px 0
   h2
     margin-bottom: 30px
+    background-image: url(../img/participants-arrows.png)
   .content
     overflow: hidden
     margin: 0 0 20px 0
     .video
-      width: 56%
+      width: 48%
       float: left
       margin: 0 30px 10px 0
+    .novideo 
+      text-align: center
     ul
       margin: 0px
       li
         margin: 0 0 10px 0
+    p
+      text-align: justify
   .buttons
     @extend .inline-block-container-fix
     background: url(../img/buttons-arrows.png) no-repeat center top
@@ -567,7 +576,7 @@ section.speakers
       padding: 0 295px 0 0
       border-bottom-left-radius: 20px
       .gradient
-        padding: 30px 0 25px 40px
+        padding: 30px 20px 25px 40px
         background: $grayLightColor
         background: -moz-linear-gradient(left,  $grayLightColor 0%, #ffffff 100%)
         background: -webkit-gradient(linear, left top, right top, color-stop(0%,$grayLightColor), color-stop(100%,#ffffff))
@@ -591,7 +600,6 @@ section.speakers
           padding: 0 0 30px 0
           background: url(../img/books-arrow.png) no-repeat 83px 17px
         .carousel
-          width: 420px
           text-align: center
           margin: 0 0 0 30px
       .clients
@@ -600,7 +608,6 @@ section.speakers
           padding: 0 0 30px 0
           background: url(../img/books-arrow.png) no-repeat 108px 17px
         .carousel
-          width: 420px
           text-align: center
           margin: 0 0 0 30px
           img
@@ -1390,8 +1397,11 @@ section.companies
   .carousel
     margin: 0 40px 40px 40px
     .item
-      img
-        max-width: 120px
+      a
+        display: block
+        height: 120px
+        img
+          max-width: 120px
 
 section.reviews
   @extend .gray-section-left
@@ -1660,6 +1670,7 @@ section.share:after
   background-position: -790px 0 !important
 section.share
   padding: 62px 0
+  margin: 0 0 40px 0
   @extend .gray-section
   h2
     height: 150px
@@ -1691,8 +1702,9 @@ section.share
     font-size: 24px
     font-weight: lighter
     text-transform: uppercase
-    margin: -20px 0 43px 0
+    margin: -20px auto 43px auto
     text-align: center
+    width: 80%
   .form
     width: 580px
     margin: 0 auto 
@@ -1830,6 +1842,11 @@ footer
   background-position: -18px 0
 .carousel img
   display: inline-block !important
+  vertical-align: middle
+.carousel i
+  height: 100%
+  display: inline-block
+  vertical-align: middle
 .carousel .item
   text-align: center !important
 
@@ -2102,7 +2119,18 @@ button.button
       line-height: 35px
       padding: 0 12px
 
-
+input[type="submit"]
+  @extend .button
+  border: none
+.error
+  border: 1px red solid !important
+.error:focus
+  border: 1px #e3e3e3 solid !important
+.errorSummary
+  font-size: 12px
+  ul
+    padding-right: 17px
+    margin-top: 0
 
 
 
