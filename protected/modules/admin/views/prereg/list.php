@@ -1,0 +1,51 @@
+<?php
+$this->menu=array(
+	array('label'=>'Добавить','url'=>array('create')),
+);
+?>
+
+<h1>Управление <?php echo $model->translition(); ?></h1>
+
+<?php $this->widget('bootstrap.widgets.TbGridView',array(
+	'id'=>'prereg-grid',
+	'dataProvider'=>$model->search(),
+	'filter'=>$model,
+	'type'=>TbHtml::GRID_TYPE_HOVER,
+    'afterAjaxUpdate'=>"function() {sortGrid('prereg')}",
+    'rowHtmlOptionsExpression'=>'array(
+        "id"=>"items[]_".$data->id,
+        "class"=>"status_".(isset($data->status) ? $data->status : ""),
+    )',
+	'columns'=>array(
+		'name',
+		'email',
+		'phone',
+		'company',
+		'count',
+		'isAdvice',
+		'isSubscribe',
+		'node_id',
+		array(
+			'name'=>'status',
+			'type'=>'raw',
+			'value'=>'Prereg::getStatusAliases($data->status)',
+			'filter'=>Prereg::getStatusAliases()
+		),
+		'sort',
+		array(
+			'name'=>'create_time',
+			'type'=>'raw',
+			'value'=>'$data->create_time ? SiteHelper::russianDate($data->create_time).\' в \'.date(\'H:i\', strtotime($data->create_time)) : ""'
+		),
+		array(
+			'name'=>'update_time',
+			'type'=>'raw',
+			'value'=>'$data->update_time ? SiteHelper::russianDate($data->update_time).\' в \'.date(\'H:i\', strtotime($data->update_time)) : ""'
+		),
+		array(
+			'class'=>'bootstrap.widgets.TbButtonColumn',
+		),
+	),
+)); ?>
+
+<?php if($model->hasAttribute('sort')) Yii::app()->clientScript->registerScript('sortGrid', 'sortGrid("prereg");', CClientScript::POS_END) ;?>

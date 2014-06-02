@@ -1,6 +1,6 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
-'id'=>'callRequest-form',
-'action'=>Yii::app()->createUrl('//calLRequest/create'),
+'id'=>$formId,
+'action'=>Yii::app()->createUrl('//callRequest/create'),
 
 'enableAjaxValidation'=>false,)); ?>
  
@@ -25,13 +25,16 @@
                 'type'=>'POST',
                 'url'=>Yii::app()->createUrl('callRequest/create'),
                 'success'=>'function(data) {
-                    $("#callRequest-form").html(data);
-                    setTimeout(
-                      function() 
-                      {
-                        $(".overlay").fadeOut(500);
-                        $(".modal").fadeOut(500);
-                      }, 3000);
+                    if (data == "ok") {
+                        data = "Спасибо, мы свяжемся с Вами в скором времени.";
+                        setTimeout(
+                          function() 
+                          {
+                            $(".overlay").fadeOut(500);
+                            $(".modal").fadeOut(500);
+                          }, 3000);
+                    }
+                    $("#'.$formId.'").html(data);
                 }',
             )
         )); ?>

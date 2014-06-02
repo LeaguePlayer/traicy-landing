@@ -14,6 +14,10 @@ function adjustCarousels () {
   }
 }
 
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function Calculator() {
     if ( Calculator.i !== undefined )
         return Calculator.i;
@@ -172,6 +176,7 @@ $(document).ready(function(){
 	calculator = new Calculator();
 
 	clock = $('.clock').FlipClock({
+    clockFace: 'DailyCounter',
 		countdown: true,
 		language: 'russian',
 	});
@@ -312,6 +317,34 @@ $(document).ready(function(){
 	});
 
   adjustCarousels();
+
+  $('.moreQuotes').on('click', function(){
+    $('section.quotes .quotes li').fadeOut(200);
+    var count = $('section.quotes .quotes>li').length;
+    var randoms = [-1, -1, -1];
+    for (var i = 0; i<randoms.length; i++) {
+      var double = true;
+      while (double == true) {
+        randoms[i] = getRandomInt(0, count-1);
+        var _double = false;
+        for (var j = 0; j<randoms.length; j++) {
+          if ((i != j) && (randoms[i] == randoms[j])) {
+            _double = true;
+            break;
+          }
+        }
+        double = _double;
+      }
+    };;
+    setTimeout(
+      function() 
+      {
+      for (var i = 0; i<randoms.length; i++) {
+        $('section.quotes .quotes>li:eq('+randoms[i]+')').removeClass('hidden').fadeIn(200);
+      };
+    }, 200);
+    return false;
+  });
 });
 
 $(window).resize(function(){

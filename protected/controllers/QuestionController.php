@@ -20,13 +20,14 @@ class QuestionController extends FrontController
 	        {
 	        	$model->save();
 	        	
-	        	$message = 'Имя: '.$model->name.'<br />';
-	        	$message = 'Телефон: '.$model->phone.'<br />';
-	        	$message = 'E-mail: '.$model->email.'<br />';
-	        	$message = 'Текст: '.$model->text.'<br />';
+	        	$message = '';
+	        	$message .= 'Имя: '.$model->name.'<br />';
+	        	$message .= 'Телефон: '.$model->phone.'<br />';
+	        	$message .= 'E-mail: '.$model->email.'<br />';
+	        	$message .= 'Текст: '.$model->text.'<br />';
 	        	mail(Yii::app()->config->get('admin.email'), 'Вопрос', $message);
 
-	           	echo 'Спасибо, мы свяжемся с Вами в скором времени.';
+	           	echo 'ok';
 	           	Yii::app()->end();
 	        }
 	    }

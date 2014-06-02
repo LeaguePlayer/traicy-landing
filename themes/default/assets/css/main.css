@@ -810,6 +810,9 @@ section.prices {
       font-size: 13px;
       margin: 0 0 18px 0;
       width: 100%; }
+      section.prices .container .left table del {
+        display: block;
+        font-size: 12px; }
       section.prices .container .left table tr {
         border: 1px #bdbdbd solid; }
         section.prices .container .left table tr td, section.prices .container .left table tr th {
@@ -1330,13 +1333,15 @@ section.additional {
     background: url(../img/additional-arrow.png) no-repeat center 60px; }
   section.additional .email-request {
     text-align: center;
-    margin: 0 0 87px 0; }
+    margin: 0 0 87px 0;
+    min-height: 170px; }
     section.additional .email-request .title {
       color: #111111;
       font-size: 24px;
       font-weight: lighter;
       text-transform: uppercase;
-      margin: 0 0 23px 0; }
+      margin: 0 auto 23px auto;
+      width: 830px; }
     section.additional .email-request .form .column:last-child {
       margin: 0; }
     section.additional .email-request .form .column {
@@ -1409,7 +1414,10 @@ section.quotes {
     background-image: url(../img/quotes-arrows.png); }
   section.quotes .quotes {
     position: relative;
-    margin: 0 0 18px 0; }
+    margin: 0 0 18px 0;
+    min-height: 256px; }
+    section.quotes .quotes .hidden {
+      display: none; }
     section.quotes .quotes > li {
       width: 32%;
       padding: 66px 0 0 0;

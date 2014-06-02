@@ -1,6 +1,6 @@
 <?php
 
-class CallRequestController extends FrontController
+class SubscribeController extends FrontController
 {
     public function filters() {
         return array(
@@ -9,19 +9,18 @@ class CallRequestController extends FrontController
     }
 
 	public function actionCreate() {
-		$model = new CallRequest;
+		$model = new Subscribe;
 
-        if(isset($_POST['CallRequest'])) {
+        if(isset($_POST['Subscribe'])) {
         	if (isset($_POST['email']) && ! empty($_POST['email'] ))
         		die(); 
-	        $model->attributes=$_POST['CallRequest'];
+	        $model->attributes=$_POST['Subscribe'];
 	        if($model->validate())
 	        {
 	        	$model->save();
 	        	
-	        	$message = 'Имя: '.$model->name.'<br />';
-	        	$message = 'Телефон: '.$model->phone.'<br />';
-	        	mail(Yii::app()->config->get('admin.email'), 'Заказ звонка', $message);
+	        	$message = 'E-mail: '.$model->email.'<br />';
+	        	mail(Yii::app()->config->get('admin.email'), 'Подписка на дополнительные материалы', $message);
 
 	           	echo 'ok';
 	           	Yii::app()->end();

@@ -34,6 +34,8 @@ class SiteController extends FrontController
 
         $this->forms['callRequest'] = new CallRequest;
         $this->forms['question'] = new Question;
+        $this->forms['prereg'] = new Prereg;
+        $this->forms['subscribe'] = new Subscribe;
 
 		$this->render('index');
 	}

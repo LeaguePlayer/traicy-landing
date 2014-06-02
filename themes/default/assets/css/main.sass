@@ -166,6 +166,7 @@ em
 
 
 
+
 header
   height: 875px
   background: url(../img/bg.jpg) center 0 no-repeat
@@ -907,6 +908,9 @@ section.prices
         font-size: 13px
         margin: 0 0 18px 0
         width: 100%
+        del
+          display: block
+          font-size: 12px
         tr
           border: 1px $grayTableBorderColor solid
           td, th
@@ -1474,12 +1478,14 @@ section.additional
   .email-request
     text-align: center
     margin: 0 0 87px 0
+    min-height: 170px
     .title
       color: $blackLightColor
       font-size: 24px
       font-weight: lighter
       text-transform: uppercase
-      margin: 0 0 23px 0
+      margin: 0 auto 23px auto
+      width: 830px
     .form
       @extend .inline-block-container-fix
       .column:last-child
@@ -1564,6 +1570,9 @@ section.quotes
     @extend .list-reset
     @extend .inline-block-container-fix
     margin: 0 0 18px 0
+    min-height: 256px
+    .hidden
+      display: none
     >li
       @extend .inline-block-fix
       width: 32%

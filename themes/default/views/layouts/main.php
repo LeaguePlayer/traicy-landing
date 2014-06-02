@@ -22,7 +22,7 @@
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/main.js', CClientScript::POS_END);
 	$cs->registerScript('clock',
 		'$(document).ready(function(){
-	        clock.setTime(15786);
+	        clock.setTime('.((strtotime('1.07.2014')-time())).');
 	        clock.start();
 	    });'
 	, CClientScript::POS_END);
@@ -93,7 +93,7 @@
                 <div class="promo">
                     <em>Ранняя регистрация!</em>
                     Скидки на все категории билетов до 20% <br>    
-                    Действительны до 31 мая 2014"
+                    Действительны до 30 июня 2014
                 </div>
 
                 <div class="timer">
@@ -134,10 +134,13 @@
                     <a href="#programm">Программа<span class="dot"></span></a>
                 </li>
                 <li>
-                    <a href="#reviews">Отзывы и рекомендации<span class="dot"></span></a>
+                    <a href="#reviews">Отзывы<span class="dot"></span></a>
                 </li>
                 <li>
-                    <a href="#participants">Участники мероприятия<span class="dot"></span></a>
+                    <a href="#participants">Участники<span class="dot"></span></a>
+                </li>
+                <li>
+                    <a href="#">Стать партнёром<span class="dot"></span></a>
                 </li>
             </ul>
         </nav>
@@ -208,7 +211,7 @@
                         <!--<div class="videowrapper">
                             <iframe src="//player.vimeo.com/video/93371928" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
                         </div>-->
-                        <img src="<?= $this->getAssetsUrl(); ?>/img/shema.jpg" alt="">
+                        <img src="<?= $this->getAssetsUrl(); ?>/img/shema.png" alt="">
                     </div>
                     <p>
                         Семинар Брайана Трейси <em>«Искусство управления: эффективные инструменты достижения результатов»</em> поможет вам развить навыки повышения эффективности управления с целью достижения выдающихся бизнес-результатов. Семинар cодержит 7 практичных инструментов повышения результатов работы менеджера и членов его команды. Эти семь инструментов объединены автором в единую и хорошо отлаженную систему, применение которой позволяет удвоить результаты работы за короткий промежуток времени. 
@@ -401,22 +404,22 @@
                 {
                     title: 'VIP',
                     count: 0,
-                    price: 36000,
+                    price: 31500,
                 },
                 {
                     title: 'Престиж',
                     count: 0,
-                    price: 18000,
+                    price: 15300,
                 },
                 {
                     title: 'Бизнес',
                     count: 0,
-                    price: 14000,
+                    price: 11000,
                 },
                 {
                     title: 'Стандарт',
                     count: 0,
-                    price: 10000,
+                    price: 8700,
                 },
             ];
             discounts = [
@@ -509,10 +512,10 @@
                             </tr>
                             <tr>
                                 <td>Цена:</td>
-                                <td><em>30 000</em> руб</td>
-                                <td><em>14 700</em> руб</td>
-                                <td><em>10 500</em> руб</td>
-                                <td><em>8 300</em> руб</td>
+                                <td><del><em>36 000</em> руб</del><em>31 500</em> руб</td>
+                                <td><del><em>18 000</em> руб</del><em>15 300</em> руб</td>
+                                <td><del><em>14 000</em> руб</del><em>11 000</em> руб</td>
+                                <td><del><em>10 000</em> руб</del><em>8 700</em> руб</td>
                             </tr>
                         </table>
                         <div class="action">
@@ -581,7 +584,7 @@
                                     </div>
                                     <div class="r">
                                         <p>
-                                            <a href="#" class="blue button" role="modal-trigger" data-modal="#prices-buy">Купить</a>
+                                            <a href="http://tracyacademy22.ticketforevent.com/" class="blue button">Купить</a>
                                         </p>
                                     </div>
                                 </div>
@@ -750,19 +753,11 @@
             </div>
         </section>
 
-        <section class="additional">
+      <!--  <section class="additional">
             <div class="wrap">    
                 <h2>Как будет проходить мероприятие</h2>
                 <div class="email-request">
-                    <div class="title">
-                        Хотите получить дополнительные <br/ >материалы с мероприятия? <br/><em>Оставьте ваш e-mail</em>
-                    </div>
-                    <div class="form">
-                        <form action="#">
-                            <div class="column"><input type="email" placeholder="Введите Ваш E-mail"></div>
-                            <div class="column"><button class="button">Отправить</button></div>
-                        </form> 
-                    </div>
+                    <? $this->renderPartial('//subscribe/_form', array('model' => $this->forms['subscribe'], 'formId' => 'subscribe_form')); ?>
                 </div>
                 <div class="materials">
                     <div class="text">
@@ -783,7 +778,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <section class="map">
             <h2>Место проведения</h2>
@@ -799,10 +794,10 @@
                     <li>
                         <blockquote>
                             <div class="text">
-                                В России две известные беды, когда первая беда дорога не простая, а железная, а вторая путешествует по ней с камерой, вдоль родины создавшей эти 
+                                Измени мышление, и ты изменишь свою жизнь.   
                             </div>
                             <div class="author">
-                                Радислав Гандапас
+                                Брайан Трейси
                             </div>
                         </blockquote>
                         <ul class="social">
@@ -820,10 +815,10 @@
                     <li>
                         <blockquote>
                             <div class="text">
-                                В России две известные беды, когда первая беда дорога не простая, а железная, а вторая путешествует по ней с камерой, вдоль родины создавшей эти 
+                                Умение слушать приносит много пользы, которой никогда не принесет умение говорить. Нет лучшего метода, чтобы возбудить доверие людей, чем внимательно выслушать то, что хочет высказать собеседник.
                             </div>
                             <div class="author">
-                                Радислав Гандапас
+                                Брайан Трейси
                             </div>
                         </blockquote>
                         <ul class="social">
@@ -841,10 +836,157 @@
                     <li>
                         <blockquote>
                             <div class="text">
-                                В России две известные беды, когда первая беда дорога не простая, а железная, а вторая путешествует по ней с камерой, вдоль родины создавшей эти 
+                               Никто не лучше вас. Никто не умнее вас. Просто они раньше начали.
                             </div>
                             <div class="author">
-                                Радислав Гандапас
+                                Брайан Трейси
+                            </div>
+                        </blockquote>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="tw"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fb"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="vk"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden">
+                        <blockquote>
+                            <div class="text">
+                                Если хочешь получить то, что никогда не имел, стань тем, кем никогда не был.
+                            </div>
+                            <div class="author">
+                                Брайан Трейси
+                            </div>
+                        </blockquote>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="tw"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fb"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="vk"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden">
+                        <blockquote>
+                            <div class="text">
+                               Когда Бог хочет сделать вам подарок, он заворачивает его в проблему. И чем больше подарок, тем в большую проблему он его заворачивает.
+                            </div>
+                            <div class="author">
+                                Брайан Трейси
+                            </div>
+                        </blockquote>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="tw"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fb"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="vk"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden">
+                        <blockquote>
+                            <div class="text">
+                               Единственное, чем вы можете полностью управлять, — это ваши мысли. Пользуйтесь ими правильно.
+                            </div>
+                            <div class="author">
+                                Брайан Трейси
+                            </div>
+                        </blockquote>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="tw"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fb"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="vk"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden">
+                        <blockquote>
+                            <div class="text">
+                               Вы не можете подарить то, чего у вас нет; вы не можете сделать счастливыми других, если сами несчастливы.
+                            </div>
+                            <div class="author">
+                                Брайан Трейси
+                            </div>
+                        </blockquote>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="tw"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fb"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="vk"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden">
+                        <blockquote>
+                            <div class="text">
+                               Если делать то, что делают другие преуспевающие люди, то в конечном счете вы придете к тем же результатам, которых достигли эти преуспевающие люди.
+                            </div>
+                            <div class="author">
+                                Брайан Трейси
+                            </div>
+                        </blockquote>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="tw"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fb"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="vk"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden">
+                        <blockquote>
+                            <div class="text">
+                              У каждого человека есть способности, благодаря которым он может достичь фантастических результатов в определенной сфере деятельности.
+                            </div>
+                            <div class="author">
+                                Брайан Трейси
+                            </div>
+                        </blockquote>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="tw"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fb"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="vk"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden">
+                        <blockquote>
+                            <div class="text">
+                                Непрерывное обучение — ключ к успеху в XXI столетии. Пожизненная учеба — это минимальное требование для успеха в вашей (а также в любой другой) сфере деятельности.
+                            </div>
+                            <div class="author">
+                                Брайан Трейси
                             </div>
                         </blockquote>
                         <ul class="social">
@@ -861,7 +1003,7 @@
                     </li>
                 </ul>
                 <div class="next">
-                    <a href="#"><span>Посмотреть ещё цитаты</span></a>
+                    <a href="#" class="moreQuotes"><span>Посмотреть ещё цитаты</span></a>
                 </div>
             </div>
         </section>
@@ -976,111 +1118,27 @@
         </div>
 
         <div class="modal" id="header_phone_request" data-bottom="-34" data-right="0">
-            <? $this->renderPartial('//callRequest/_form', array('model' => $this->forms['callRequest'])); ?>
+            <? $this->renderPartial('//callRequest/_form', array('model' => $this->forms['callRequest'], 'formId' => 'header_phone_request_form')); ?>
         </div>
 
         <div class="modal arrow-left" id="header_ask" data-bottom="-30" data-left="0">
-            <? $this->renderPartial('//question/_form', array('model' => $this->forms['question'])); ?>
+            <? $this->renderPartial('//question/_form', array('model' => $this->forms['question'], 'formId' => 'header_ask_form')); ?>
         </div>
 
         <div class="modal arrow-bottom" id="footer_phone_request" data-top="-240" data-right="0">
-            <form action="#">
-                <a href="#" class="close"></a>
-                <h2>Перезвоните мне</h2>
-                <div class="row">
-                    <input type="text" placeholder="Имя*">
-                </div>
-                <div class="row">
-                    <input type="text" placeholder="Телефон*">
-                </div>
-                <div class="row">
-                    <button type="submit" class="button">Отправить</button>
-                </div>
-            </form>
+            <? $this->renderPartial('//callRequest/_form', array('model' => $this->forms['callRequest'], 'formId' => 'footer_phone_request_form')); ?>
         </div>
 
         <div class="modal arrow-bottom" id="footer_ask" data-top="-405" data-right="0">
-            <form action="#">
-                <a href="#" class="close"></a>
-                <h2>Есть вопрос?</h2>
-                <div class="row">
-                    <input type="text" placeholder="Имя*">
-                </div>
-                <div class="row">
-                    <input type="email" placeholder="E-mail*">
-                </div>
-                <div class="row">
-                    <input type="text" placeholder="Телефон*">
-                </div>
-                <div class="row">
-                    <textarea placeholder="Вопрос*"></textarea> 
-                </div>
-                <div class="row">
-                    <button type="submit" class="button">Отправить</button>
-                </div>
-            </form>
+            <? $this->renderPartial('//question/_form', array('model' => $this->forms['question'], 'formId' => 'footer_ask_form')); ?>
         </div>
 
         <div class="modal arrow-left wide" id="header_prebuy" data-bottom="-30" data-left="66">
-            <form action="#">
-                <a href="#" class="close"></a>
-                <h2>Предварительная регистрация</h2>
-                <div class="row">
-                    <input type="text" placeholder="Имя*">
-                </div>
-                <div class="row columns">
-                    <div class="column"><input type="email" placeholder="E-mail*"></div>
-                    <div class="column"><input type="text" placeholder="Телефон*"></div>
-                </div>
-                <div class="row">
-                    <input type="text" placeholder="Компания">
-                </div>
-                <div class="row">
-                    <input type="number" placeholder="Количество участников">
-                </div>
-                <div class="row">
-                    <p>
-                        <input type="checkbox" name="advise" id="advise"><label for="advise">Нужен совет по проезду и гостинице?</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="notifications" id="notifications" checked><label for="notifications">Мне интересны новости и акции по этому мероприятию</label>
-                    </p>
-                </div>
-                <div class="row">
-                    <button type="submit" class="button">Отправить</button>
-                </div>
-            </form>
+            <? $this->renderPartial('//prereg/_form', array('model' => $this->forms['prereg'], 'formId' => 'header_prebuy_form')); ?>
         </div>
 
         <div class="modal wide" id="prices_prebuy" data-bottom="-30" data-right="0">
-            <form action="#">
-                <a href="#" class="close"></a>
-                <h2>Предварительная регистрация</h2>
-                <div class="row">
-                    <input type="text" placeholder="Имя*">
-                </div>
-                <div class="row columns">
-                    <div class="column"><input type="email" placeholder="E-mail*"></div>
-                    <div class="column"><input type="text" placeholder="Телефон*"></div>
-                </div>
-                <div class="row">
-                    <input type="text" placeholder="Компания">
-                </div>
-                <div class="row">
-                    <input type="number" placeholder="Количество участников">
-                </div>
-                <div class="row">
-                    <p>
-                        <input type="checkbox" name="advise" id="advise"><label for="advise">Нужен совет по проезду и гостинице?</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="notifications" id="notifications" checked><label for="notifications">Мне интересны новости и акции по этому мероприятию</label>
-                    </p>
-                </div>
-                <div class="row">
-                    <button type="submit" class="button">Отправить</button>
-                </div>
-            </form>
+            <? $this->renderPartial('//prereg/_form', array('model' => $this->forms['prereg'], 'formId' => 'prices_prebuy_form')); ?>
         </div>
 
         <div class="modal" id="prices-buy" data-bottom="-30" data-right="0">
