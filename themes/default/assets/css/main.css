@@ -343,7 +343,7 @@ section.forwhom .choices {
       border: 3px black solid;
       padding: 20px 15px 20px 200px;
       color: gray;
-      font-size: 13px;
+      font-size: 14px;
       margin-left: 20px; }
     section.forwhom .choices .choice img {
       display: block;
@@ -363,7 +363,7 @@ section.forwhom .choices {
     text-align: right; }
 section.forwhom .wrap > .text, section.forwhom section.programm h2 > .text, section.programm section.forwhom h2 > .text, section.forwhom section.programm .content .rule ul > .text, section.programm .content .rule section.forwhom ul > .text, section.forwhom section.map h2 > .text, section.map section.forwhom h2 > .text {
   border: 3px #cfcfcf solid;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: lighter;
   padding: 15px 25px;
   margin: 30px; }
@@ -392,7 +392,7 @@ section.forwhom blockquote {
   section.forwhom blockquote .role {
     margin: 0 0 11px 0; }
   section.forwhom blockquote .text {
-    font-size: 13px;
+    font-size: 14px;
     padding: 22px 33px;
     position: relative; }
   section.forwhom blockquote .text:before, section.forwhom blockquote .text:after {
@@ -412,7 +412,7 @@ section.forwhom blockquote {
 
 section.youllknow {
   padding: 64px 0 68px 0;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: lighter;
   margin: 0 0 67px 0; }
   section.youllknow h2 {
@@ -478,7 +478,7 @@ section.speakers {
       padding: 15px 2% 12px 3%;
       width: 10%;
       text-align: center;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: lighter;
       text-decoration: none;
       color: black; }
@@ -512,7 +512,7 @@ section.speakers {
         color: #111111;
         margin: 0 0 24px 0; }
       section.speakers .items .content p {
-        font-style: 13px; }
+        font-size: 15px; }
       section.speakers .items .content .books {
         margin: 0 0 20px 0; }
         section.speakers .items .content .books h3 {
@@ -707,7 +707,7 @@ section.history {
           font-weight: lighter;
           color: #111111; }
         section.history .content .left .title .date {
-          font-size: 13px;
+          font-size: 14px;
           font-weight: lighter;
           color: #b2b2b2;
           position: relative;
@@ -807,12 +807,12 @@ section.prices {
     section.prices .container .left table {
       border-collapse: collapse;
       text-align: center;
-      font-size: 13px;
+      font-size: 14px;
       margin: 0 0 18px 0;
       width: 100%; }
       section.prices .container .left table del {
         display: block;
-        font-size: 12px; }
+        font-size: 13px; }
       section.prices .container .left table tr {
         border: 1px #bdbdbd solid; }
         section.prices .container .left table tr td, section.prices .container .left table tr th {
@@ -821,7 +821,7 @@ section.prices {
           padding: 0 20px; }
         section.prices .container .left table tr th {
           text-transform: uppercase;
-          font-size: 14px;
+          font-size: 15px;
           border: 1px #cca808 solid;
           background: #ffd40b;
           text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75); }
@@ -831,7 +831,7 @@ section.prices {
       section.prices .container .left table tr:last-child {
         background: #e0e0e0;
         text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
-        font-size: 14px; }
+        font-size: 15px; }
         section.prices .container .left table tr:last-child td:first-child {
           text-transform: uppercase;
           font-weight: bold;
@@ -870,7 +870,7 @@ section.prices {
           width: 80%; }
           section.prices .container .left .action .button-holder .button span, section.prices .container .left .action .button-holder input[type="submit"] span {
             display: table-cell;
-            font-size: 13px;
+            font-size: 14px;
             vertical-align: middle; }
   section.prices .container .right {
     width: 29.7%; }
@@ -878,7 +878,7 @@ section.prices {
       border: 3px black solid;
       padding: 15px 12px;
       font-weight: lighter;
-      font-size: 13px; }
+      font-size: 14px; }
       section.prices .container .right .form .inputs {
         display: none; }
       section.prices .container .right .form .total {
@@ -900,7 +900,7 @@ section.prices {
             outline: none;
             background: url(../img/slider.png);
             text-decoration: none;
-            font-size: 11px;
+            font-size: 12px;
             text-align: center;
             line-height: 19px;
             text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.75); }
@@ -992,7 +992,7 @@ section.prices {
         position: relative;
         margin-bottom: 15px; }
         section.prices .container .right .form .option > * {
-          font-size: 13px;
+          font-size: 14px;
           width: 50%; }
         section.prices .container .right .form .option .l dl {
           padding: 3px 0;
@@ -1037,7 +1037,7 @@ section.prices {
         margin-bottom: 0; }
         section.prices .container .right .form .action .l {
           width: 63%;
-          font-size: 11px; }
+          font-size: 12px; }
         section.prices .container .right .form .action .r {
           width: 37%; }
           section.prices .container .right .form .action .r p {
@@ -1112,7 +1112,7 @@ section.programm {
     height: 46px; }
     section.programm .content .events .item span {
       display: table-cell;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: lighter;
       vertical-align: middle; }
   section.programm .content .events .item.up {
@@ -1286,7 +1286,7 @@ section.reviews {
       margin: 0 0 8px 0; }
     section.reviews .review .text {
       font-weight: lighter;
-      font-size: 13px;
+      font-size: 14px;
       padding: 20px 30px 17px 332px;
       border: 3px #cfcfcf solid;
       margin-left: -335px; }
@@ -1312,13 +1312,13 @@ section.reviews {
         min-height: 155px;
         padding: 0 0 0 103px; }
         section.reviews .another .reviews .wrapper .review h3 {
-          font-size: 11px; }
+          font-size: 12px; }
         section.reviews .another .reviews .wrapper .review .text {
           margin-left: -100px;
           padding: 10px 10px 10px 130px;
-          font-size: 12px; }
+          font-size: 13px; }
         section.reviews .another .reviews .wrapper .review .role {
-          font-size: 11px; }
+          font-size: 12px; }
         section.reviews .another .reviews .wrapper .review img {
           left: -6px;
           top: 27px;
@@ -1406,7 +1406,7 @@ section.map {
         font-style: normal; }
       section.map .map .map-content .text {
         font-weight: lighter;
-        font-size: 13px; }
+        font-size: 14px; }
 
 section.quotes {
   margin: 0 0 55px 0; }
@@ -1614,7 +1614,7 @@ footer {
             position: relative;
             color: #00aeef;
             font-weight: lighter;
-            font-size: 13px; }
+            font-size: 14px; }
     footer .top .actions {
       float: right;
       width: 170px; }
@@ -1636,7 +1636,7 @@ footer {
     text-align: center;
     font-weight: lighter;
     color: #8a8a8a;
-    font-size: 13px; }
+    font-size: 14px; }
 
 .slick-vertical .slick-prev, .slick-vertical .slick-next {
   margin-top: 0px;
@@ -1770,7 +1770,7 @@ footer {
 
 .flip-clock-divider .flip-clock-label {
   color: #ffd200;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   text-shadow: 1px 1px 3px black; }
 
@@ -1804,8 +1804,19 @@ button.button {
   line-height: 32px;
   background: url(../img/select.png);
   padding: 0 0 0 10px;
-  font-size: 11px;
+  font-size: 12px;
   color: #757575; }
+
+strong {
+  font-weight: lighter;
+  display: block;
+  text-decoration: underline; }
+
+.italic {
+  font-style: italic; }
+
+.modal.noarrow:before {
+  display: none; }
 
 .modal.arrow-bottom:before {
   top: auto;
@@ -1829,6 +1840,11 @@ button.button {
 .modal.wide {
   width: 450px; }
 
+.modal.superwide {
+  width: 700px;
+  left: 50%;
+  margin-left: -350px; }
+
 .modal {
   position: absolute;
   padding: 20px 17px 10px 17px;
@@ -1845,12 +1861,12 @@ button.button {
     line-height: 33px; }
   .modal .row.promo label {
     color: #82c17a;
-    font-size: 14px;
+    font-size: 15px;
     margin: 0 0 5px 0;
     display: block; }
   .modal .row {
     margin: 0 0 14px 0;
-    font-size: 12px; }
+    font-size: 13px; }
     .modal .row input[type="text"], .modal .row input[type="email"], .modal .row input[type="password"], .modal .row input[type="number"] {
       border-radius: 3px;
       width: 100%;
@@ -1880,7 +1896,7 @@ button.button {
   .modal .columns .column:last-child {
     margin: 0; }
   .modal .columns .column {
-    font-size: 12px;
+    font-size: 13px;
     width: 48%;
     margin-right: 2%; }
   .modal p {
@@ -1893,13 +1909,16 @@ button.button {
       margin-right: 5px; }
   .modal .help {
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     margin: 0 0 5px 0; }
   .modal .hint {
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
     color: #727272;
     margin: 0 0 15px 0; }
+
+.modal.superwide p > * {
+  vertical-align: top; }
 
 .overlay {
   position: absolute;
@@ -1927,7 +1946,7 @@ button.button {
   .stuck .social {
     padding: 11px; }
     .stuck .social p {
-      font-size: 11px;
+      font-size: 12px;
       font-weight: lighter;
       margin: 0 0 10px 0;
       text-transform: uppercase; }
@@ -1944,7 +1963,7 @@ button.button {
       background-position: -100px 0; }
   .stuck .cart {
     border-top: 1px #b29200 solid;
-    font-size: 13px; }
+    font-size: 14px; }
     .stuck .cart .total {
       padding: 60px 0 17px 0;
       margin: 0;
@@ -1982,7 +2001,10 @@ input[type="submit"] {
   border: 1px #e3e3e3 solid !important; }
 
 .errorSummary {
-  font-size: 12px; }
+  font-size: 13px; }
   .errorSummary ul {
     padding-right: 17px;
     margin-top: 0; }
+
+.is-sticky nav {
+  z-index: 1000000; }

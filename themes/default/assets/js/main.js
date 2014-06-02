@@ -272,6 +272,7 @@ $(document).ready(function(){
 	$('.form .slider .ui-slider-handle').text(1);
 
 	$('body').on('click', '*[role="modal-trigger"]', function(){
+    $('.modal').fadeOut(500);
 		$.scrollTo($(this).offset().top-50, 500);
 		$('.overlay').height($('body').height()).fadeIn(500);
 
