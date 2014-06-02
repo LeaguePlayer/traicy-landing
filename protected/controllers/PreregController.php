@@ -48,6 +48,6 @@ class PreregController extends FrontController
 	        }
 	    }
 	    Yii::app()->clientScript->scriptMap=array('jquery.yiiactiveform.js'=>false,'jquery.js'=>false,);
-	    $this->render('_form',array('model'=>$model));
+	    $this->renderPartial('_form',array('model'=>$model));
 	}
 }
