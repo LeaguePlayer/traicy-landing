@@ -5,7 +5,7 @@
 	$cs->registerCssFile($this->getAssetsUrl().'/css/flipclock.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/css/jquery-ui.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/js/vendor/slick/slick.css');
-	$cs->registerCssFile($this->getAssetsUrl().'/css/main.css');
+	$cs->registerCssFile($this->getAssetsUrl().'/css/main.css?v=1');
 
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/modernizr-2.6.2.min.js', CClientScript::POS_HEAD);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/jquery-1.11.0.min.js', CClientScript::POS_END);
