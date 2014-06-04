@@ -34,6 +34,7 @@ function handleAuthResult(authResult) {
 
 function handleAuthClick(event) {
   gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
+  handleInsertClick();
   return false;
 }
 
@@ -244,6 +245,11 @@ function Calculator() {
 
 
 $(document).ready(function(){
+  $('[role="calendar-trigger"').on('click', function(){
+    handleAuthClick();
+    return false;
+  });
+
 	calculator = new Calculator();
 
 	clock = $('.clock').FlipClock({

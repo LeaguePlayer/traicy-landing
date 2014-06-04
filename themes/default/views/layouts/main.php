@@ -228,7 +228,7 @@
                     </ul>
                 </div>
                 <div class="buttons">
-                    <a href="#" class="button calendar"><span>Добавить в календарь</span></a>
+                    <a href="#" class="button calendar" role="calendar-trigger"><span>Добавить в календарь</span></a>
                     <a href="<?= $this->getAssetsUrl(); ?>/brochure.pdf" class="button download" target="_blank"><span>Скачать брошюру</span></a>
                 </div>
             </div>
@@ -637,7 +637,7 @@
                 </div>
             </div>
             <div class="buttons">
-                <a href="#" class="button calendar"><span>Добавить в календарь</span></a>
+                <a href="#" class="button calendar" role="calendar-trigger"><span>Добавить в календарь</span></a>
                 <a href="<?= $this->getAssetsUrl(); ?>/brochure.pdf" class="button download" target="_blank"><span>Скачать брошюру</span></a>
             </div>
         </section>-->
