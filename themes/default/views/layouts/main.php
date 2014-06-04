@@ -36,7 +36,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Семинар Брайана Трейси "Искусство управления" - 22 ноября 2014</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -53,9 +53,9 @@
             <div class="wrap">
                 <div class="contacts">
                     <div class="date">
-                        <span class="month">Июнь</span>
-                        <span class="day">02</span>
-                        <span class="weekday">Понедельник</span>
+                        <span class="month">Ноябрь</span>
+                        <span class="day">22</span>
+                        <span class="weekday">Суббота</span>
                     </div>
                     <div class="info">
                         <address>г. Москва</address>
@@ -110,7 +110,7 @@
                     <span>или</span>
 
                     <div class="buy">
-                        <a href="#" class="button disabled" role="modal-trigger" data-modal="#header_prebuy">Купить</a>
+                        <a href="http://tracyacademy22.ticketforevent.com/" class="button">Купить</a>
                     </div>
                 </div>
                 <div class="light"></div>
@@ -333,16 +333,16 @@
             </div>
         </section>
 
-      <!--  <section class="history">
+        <section class="history">
             <div class="wrap">
                 <h2>История мероприятия спикера <em>в России и СНГ</em></h2>
                 <ul class="times">
-                    <li><a href="#">2012<i></i></a></li>
-                    <li class="active"><a href="#">Апрель 2013<i></i></a></li>
-                    <li><a href="#">Октябрь 2013<i></i></a></li>
-                    <li><a href="#">Март 2014<i></i></a></li>
-                    <li><a href="#">Сегодня<i></i></a></li>
-                    <li><a href="#">Ноябрь 2014<i></i></a></li>
+                    <li><a href="#">7-8 апреля 2012<i></i></a></li>
+                    <li><a href="#">29-30 октября 2012<i></i></a></li>
+                    <li><a href="#">Осень 2012<i></i></a></li>
+                    <li><a href="#">25-26 октября 2013<i></i></a></li>
+                    <li><a href="#">29-30 марта 2014<i></i></a></li>
+                    <li class="active"><a href="#">22 ноября 2014<i></i></a></li>
                     <li><a href="#">2015<i></i></a></li>
                 </ul>
                 <div class="content">
@@ -397,7 +397,7 @@
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
 
         <script type="text/javascript">
             terms = [
@@ -734,7 +734,8 @@
                         <div class="wrapper">
                              <div class="review">
                                 <img src="<?= $this->getAssetsUrl(); ?>/img/review4.jpg" alt="">
-                                <h3>Издательство «Аудио-Консалт»</h3>
+                                <h3>«Аудио-Консалт»</h3>
+                                <div class="role">издательство</div>
                                 <div class="text">Брайан очень хорошо понимает, что не существует универсальной техники успеха, подходящей каждому участнику. Он не ожидает, что Вы попадете под один из разработанных им шаблонов. Программа очень гибкая и скорее она будет подстраиваться под конкретного человека.</div>
                             </div>
                         </div>
@@ -1202,5 +1203,6 @@
             <p class="italic"><a href="mailto:mb@mb-events.ru">mb@mb-events.ru</a></p>
         </div>
 
+        <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
     </body>
 </html>

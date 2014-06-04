@@ -427,6 +427,8 @@ section.youllknow {
       margin: 0 30px 10px 0; }
     section.youllknow .content .novideo {
       text-align: center; }
+      section.youllknow .content .novideo img {
+        max-width: 450px; }
     section.youllknow .content ul {
       margin: 0px; }
       section.youllknow .content ul li {
@@ -637,7 +639,8 @@ section.history {
         color: #111111;
         height: 82px;
         line-height: 31px;
-        padding: 0 30px;
+        padding: 0 23px;
+        font-size: 12px;
         z-index: 1; }
         section.history .times li a i {
           display: block;

@@ -1,3 +1,74 @@
+// Enter a client ID for a web application from the Google Developer Console.
+// The provided clientId will only work if the sample is run directly from
+// https://google-api-javascript-client.googlecode.com/hg/samples/authSample.html
+// In your Developer Console project, add a JavaScript origin that corresponds to the domain
+// where you will be running the script.
+var clientId = '816305017196-mv1194bfopkoi4v0s3tea65e1pvd2p02.apps.googleusercontent.com';
+
+// Enter the API key from the Google Developer Console - to handle any unauthenticated
+// requests in the code.
+// The provided key works for this sample only when run from
+// https://google-api-javascript-client.googlecode.com/hg/samples/authSample.html
+// To use in your own application, replace this API key with your own.
+var apiKey = 'AIzaSyCUcpd7ZGBXN18a1fQpKj2kP4cX04JRBHg';
+
+// To enter one or more authentication scopes, refer to the documentation for the API.
+var scopes = 'https://www.googleapis.com/auth/calendar';
+
+// Use a button to handle authentication the first time.
+function handleClientLoad() {
+  gapi.client.setApiKey(apiKey);
+  window.setTimeout(checkAuth,1);
+}
+
+function checkAuth() {
+  gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
+}
+
+
+function handleAuthResult(authResult) {
+  if (authResult && !authResult.error) {
+    makeApiCall();
+  } 
+}
+
+function handleAuthClick(event) {
+  gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
+  return false;
+}
+
+function handleInsertClick(event) {
+ makeInsertApiCall();
+}
+
+function makeApiCall() {
+  makeInsertApiCall();
+}
+
+function makeInsertApiCall() {
+ gapi.client.load('calendar', 'v3', function() {
+   var request = gapi.client.calendar.events.insert({
+     "calendarId": "primary",
+     resource:{
+         "summary": "Appointment",
+         "location": "Somewhere",
+         "start": {
+           "dateTime": "2011-12-16T10:00:00.000-07:00"
+         },
+         "end": {
+           "dateTime": "2011-12-16T10:25:00.000-07:00"
+         }
+       }
+   });
+        
+   request.execute(function(resp) {
+     for (var i = 0; i < resp.items.length; i++) {
+       console.dir(resp);
+     }
+   });
+ });
+}
+
 function adjustCarousels () {
   var width = $('.speakers .gradient').width();
   var iWidth = 140;
@@ -245,7 +316,7 @@ $(document).ready(function(){
 
 	// Create infoWindow
 	var infoWindow = new google.maps.InfoWindow({
-	    content: '<div class="map-content"><h3>г. Москва</h3><address>Проспект Мира 150, гостиница "Космос"</address><div class="text">В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил перера</div></div>'
+	    content: '<div class="map-content"><h3>г. Москва</h3><address>Проспект Мира 150, гостиница "Космос"</address><address>Начало процедуры регистрации — 8:30</address></div>'
 	});
 
 	// Create marker
@@ -320,7 +391,7 @@ $(document).ready(function(){
   adjustCarousels();
 
   $('.moreQuotes').on('click', function(){
-    $('section.quotes .quotes li').fadeOut(200);
+    $('section.quotes .quotes>li').fadeOut(200);
     var count = $('section.quotes .quotes>li').length;
     var randoms = [-1, -1, -1];
     for (var i = 0; i<randoms.length; i++) {
