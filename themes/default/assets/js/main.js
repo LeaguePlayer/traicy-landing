@@ -51,9 +51,7 @@ function makeInsertApiCall() {
      "calendarId": "primary",
      resource:{
          "summary": "Авторский семинар Брайана Трейси «Искусство управления»",
-         "description": "http://seminar2014.tracyacademy.com/ г. Москва
-Проспект Мира 150, гостиница «Космос», 8 800 100 46 35, 
-mb@mb-events.ru",
+         "description": "http://seminar2014.tracyacademy.com/ г. Москва, Проспект Мира 150, гостиница «Космос», 8 800 100 46 35, mb@mb-events.ru",
          "location": "г. Москва Проспект Мира 150",
          "start": {
            "dateTime": "2014-06-05T08:30:00.000+04:00"
