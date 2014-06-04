@@ -347,51 +347,353 @@
                 </ul>
                 <div class="content">
                     <i class="pointer"></i>
-                    <div class="left">
-                        <div class="title">
-                            <h3>Кто такой Брайан Трейси?</h3>
-                            <div class="date">22.12.2013</div>
-                            <div class="city">г. Москва</div>
+                    <div class="part">
+                        <div class="left">
+                            <div class="title">
+                                <h3>Кто такой Брайан Трейси?</h3>
+                                <div class="date">22.12.2013</div>
+                                <div class="city">г. Москва</div>
+                            </div>
+                            <div class="text">
+                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
+                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
+                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                            </div>
+                            <ul class="features">
+                                <li>
+                                    200 человек
+                                    <i class="icon peoples"></i>
+                                </li>
+                                <li>
+                                    10 городов
+                                    <i class="icon city"></i>
+                                </li>
+                                <li>
+                                    3 спикера
+                                    <i class="icon speaker"></i>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Посмотреть
+                                        <i class="icon video"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="text">
-                            <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
-                            <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
-                            <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                        <div class="photos">
+                            <div class="carousel">
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <ul class="features">
-                            <li>
-                                200 человек
-                                <i class="icon peoples"></i>
-                            </li>
-                            <li>
-                                10 городов
-                                <i class="icon city"></i>
-                            </li>
-                            <li>
-                                3 спикера
-                                <i class="icon speaker"></i>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Посмотреть
-                                    <i class="icon video"></i>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
-                    <div class="photos">
-                        <div class="carousel">
-                            <div class="item">
-                                <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                    <div class="part">
+                        <div class="left">
+                            <div class="title">
+                                <h3>Кто такой Брайан Трейси?</h3>
+                                <div class="date">22.12.2013</div>
+                                <div class="city">г. Москва</div>
                             </div>
-                            <div class="item">
-                                <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                            <div class="text">
+                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
+                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
+                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
                             </div>
-                            <div class="item">
-                                <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                            <ul class="features">
+                                <li>
+                                    200 человек
+                                    <i class="icon peoples"></i>
+                                </li>
+                                <li>
+                                    10 городов
+                                    <i class="icon city"></i>
+                                </li>
+                                <li>
+                                    3 спикера
+                                    <i class="icon speaker"></i>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Посмотреть
+                                        <i class="icon video"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="photos">
+                            <div class="carousel">
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="item">
-                                <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div class="left">
+                            <div class="title">
+                                <h3>Кто такой Брайан Трейси?</h3>
+                                <div class="date">22.12.2013</div>
+                                <div class="city">г. Москва</div>
+                            </div>
+                            <div class="text">
+                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
+                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
+                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                            </div>
+                            <ul class="features">
+                                <li>
+                                    200 человек
+                                    <i class="icon peoples"></i>
+                                </li>
+                                <li>
+                                    10 городов
+                                    <i class="icon city"></i>
+                                </li>
+                                <li>
+                                    3 спикера
+                                    <i class="icon speaker"></i>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Посмотреть
+                                        <i class="icon video"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="photos">
+                            <div class="carousel">
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div class="left">
+                            <div class="title">
+                                <h3>Кто такой Брайан Трейси?</h3>
+                                <div class="date">22.12.2013</div>
+                                <div class="city">г. Москва</div>
+                            </div>
+                            <div class="text">
+                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
+                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
+                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                            </div>
+                            <ul class="features">
+                                <li>
+                                    200 человек
+                                    <i class="icon peoples"></i>
+                                </li>
+                                <li>
+                                    10 городов
+                                    <i class="icon city"></i>
+                                </li>
+                                <li>
+                                    3 спикера
+                                    <i class="icon speaker"></i>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Посмотреть
+                                        <i class="icon video"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="photos">
+                            <div class="carousel">
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div class="left">
+                            <div class="title">
+                                <h3>Кто такой Брайан Трейси?</h3>
+                                <div class="date">22.12.2013</div>
+                                <div class="city">г. Москва</div>
+                            </div>
+                            <div class="text">
+                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
+                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
+                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                            </div>
+                            <ul class="features">
+                                <li>
+                                    200 человек
+                                    <i class="icon peoples"></i>
+                                </li>
+                                <li>
+                                    10 городов
+                                    <i class="icon city"></i>
+                                </li>
+                                <li>
+                                    3 спикера
+                                    <i class="icon speaker"></i>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Посмотреть
+                                        <i class="icon video"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="photos">
+                            <div class="carousel">
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div class="left">
+                            <div class="title">
+                                <h3>Кто такой Брайан Трейси?</h3>
+                                <div class="date">22.12.2013</div>
+                                <div class="city">г. Москва</div>
+                            </div>
+                            <div class="text">
+                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
+                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
+                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                            </div>
+                            <ul class="features">
+                                <li>
+                                    200 человек
+                                    <i class="icon peoples"></i>
+                                </li>
+                                <li>
+                                    10 городов
+                                    <i class="icon city"></i>
+                                </li>
+                                <li>
+                                    3 спикера
+                                    <i class="icon speaker"></i>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Посмотреть
+                                        <i class="icon video"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="photos">
+                            <div class="carousel">
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part active">
+                        <div class="left">
+                            <div class="title">
+                                <h3>Кто такой Брайан Трейси?</h3>
+                                <div class="date">22.12.2013</div>
+                                <div class="city">г. Москва</div>
+                            </div>
+                            <div class="text">
+                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
+                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
+                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                            </div>
+                            <ul class="features">
+                                <li>
+                                    200 человек
+                                    <i class="icon peoples"></i>
+                                </li>
+                                <li>
+                                    10 городов
+                                    <i class="icon city"></i>
+                                </li>
+                                <li>
+                                    3 спикера
+                                    <i class="icon speaker"></i>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Посмотреть
+                                        <i class="icon video"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="photos">
+                            <div class="carousel">
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>

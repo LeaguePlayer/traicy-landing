@@ -54,15 +54,16 @@ function makeInsertApiCall() {
          "description": "http://seminar2014.tracyacademy.com/ г. Москва, Проспект Мира 150, гостиница «Космос», 8 800 100 46 35, mb@mb-events.ru",
          "location": "г. Москва Проспект Мира 150",
          "start": {
-           "dateTime": "2014-06-05T08:30:00.000+04:00"
+           "dateTime": "2014-11-22T08:30:00.000+04:00"
          },
          "end": {
-           "dateTime": "2014-06-05T18:00:00.000+04:00"
+           "dateTime": "2014-11-22T18:00:00.000+04:00"
          }
        }
    });
         
    request.execute();
+   alert("Событие было успешно добавлено в ваш календарь");
  });
 }
 
@@ -239,6 +240,47 @@ function Calculator() {
 	return Calculator.i;
 }
 
+function History() {
+  if ( History.i !== undefined )
+      return History.i;
+
+  History.i = {
+    locatePointer: function() {
+      var pointer = $('i.pointer');
+      var active = $('.history .times .active');
+      var left = $(active).position().left + $(active).width()/2 - 14;
+
+      $(pointer).css('left', left+'px');
+    },
+    changeActive: function(trigger) {
+      History.i.renderActive($(trigger).closest('li'));
+      History.i.locatePointer();
+      History.i.changePart(trigger);
+    },
+    renderActive: function(active) {
+      $('.history .times li').removeClass('active');
+      $(active).addClass('active');
+    },
+    changePart: function(trigger) {
+      var i = $(trigger).closest('li').index();
+      $('.history .content .active').removeClass('active');
+      $('.history .content .part:eq('+ i +')').addClass('active');
+      History.i.refreshCarousels();
+    },
+    refreshCarousels: function() {
+      for (var i = 0; i < hCarousels.length; i++) {
+        hCarousels[i].slickSetOption('vertical', true, true);
+      }
+    },
+  }
+
+  $('.history .times a').on('click', function(){
+    history.changeActive($(this));
+    return false;
+  });
+
+  return History.i;
+}
 
 $(document).ready(function(){
   $('*[role="calendar-trigger"').on('click', function(){
@@ -246,7 +288,10 @@ $(document).ready(function(){
     return false;
   });
 
-	calculator = new Calculator();
+  calculator = new Calculator();
+
+	history = new History();
+  history.locatePointer();
 
 	clock = $('.clock').FlipClock({
     clockFace: 'DailyCounter',
@@ -299,10 +344,14 @@ $(document).ready(function(){
       slidesToScroll: 4,
     });
 
-	$('section.history .carousel').slick({
-  		infinite: true,
-  		vertical: true,
-    });
+  hCarousels = [];
+  $('section.history .carousel').each(function(){
+      hCarousels.push($(this).slick({
+        infinite: true,
+        vertical: true,
+      }));
+  });
+
 
 
     // Create map

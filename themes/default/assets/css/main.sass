@@ -764,12 +764,15 @@ section.history
     @extend .borderbox
     display: table
     table-layout: fixed
+    .part
+      display: none
+    .part.active
+      display: block
     .pointer
       position: absolute
       display: block
       width: 14px
       height: 26px
-      left: 100px
       top: -26px
       background: url(../img/pointer.png)
     .left

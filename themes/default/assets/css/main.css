@@ -678,12 +678,15 @@ section.history {
     padding: 20px 38px;
     display: table;
     table-layout: fixed; }
+    section.history .content .part {
+      display: none; }
+    section.history .content .part.active {
+      display: block; }
     section.history .content .pointer {
       position: absolute;
       display: block;
       width: 14px;
       height: 26px;
-      left: 100px;
       top: -26px;
       background: url(../img/pointer.png); }
     section.history .content .left {
