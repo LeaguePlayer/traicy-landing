@@ -54,19 +54,15 @@ function makeInsertApiCall() {
          "summary": "Appointment",
          "location": "Somewhere",
          "start": {
-           "dateTime": "2011-12-16T10:00:00.000-07:00"
+           "dateTime": "2014-06-05T10:00:00.000-07:00"
          },
          "end": {
-           "dateTime": "2011-12-16T10:25:00.000-07:00"
+           "dateTime": "2014-06-05T10:25:00.000-07:00"
          }
        }
    });
         
-   request.execute(function(resp) {
-     for (var i = 0; i < resp.items.length; i++) {
-       console.dir(resp);
-     }
-   });
+   request.execute();
  });
 }
 
