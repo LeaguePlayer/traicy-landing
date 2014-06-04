@@ -23,7 +23,7 @@ class RecommendationController extends FrontController
 	        	$message = 'Текс: '.$model->text."\r\n";
 	        	mail(Yii::app()->config->get('admin.email'), 'Была отправлена рекомендация', $message);
 
-	        	mail($model->email, 'Вам рекомендуют посетить мероприятие Брайана Трейси', $model->text);
+	        	mail($model->email, 'Вам рекомендуют посетить мероприятие Брайана Трейси', $model->text."\r\n".$this->createAbsoluteUrl('/'));
 
 	           	echo 'ok';
 	           	Yii::app()->end();
