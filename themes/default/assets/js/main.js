@@ -282,6 +282,34 @@ function History() {
   return History.i;
 }
 
+function Programm() {
+  if ( Programm.i !== undefined )
+      return Programm.i;
+
+  Programm.i = {
+    render: function() {
+      var iWidth = Programm.i.getIWidth();
+      $('.programm ul .events .item').each(function(i){
+        $(this).css('width', Programm.i.getItemWidth($(this), iWidth)+'px');
+        Programm.i.locateItem($(this), iWidth);
+      });
+    },
+    getIWidth: function() {
+      return $('.programm ul').width()/($('.programm ul li').length-1);
+    },
+    getItemWidth: function(el, iWidth) {
+      var length = $(el).data('to') - $(el).data('from');
+      return length*iWidth-2*11;
+    },
+    locateItem: function(el, iWidth) {
+      var left = ($(el).data('from') + 1)*iWidth+11;
+      $(el).css('left', left+'px');
+    },
+  }
+
+  return Programm.i;
+}
+
 $(document).ready(function(){
   $('*[role="calendar-trigger"').on('click', function(){
     handleAuthClick();
@@ -292,6 +320,9 @@ $(document).ready(function(){
 
 	history = new History();
   history.locatePointer();
+
+  programm = new Programm();
+  programm.render();
 
 	clock = $('.clock').FlipClock({
     clockFace: 'DailyCounter',
@@ -468,9 +499,11 @@ $(document).ready(function(){
     }, 200);
     return false;
   });
+
 });
 
 $(window).resize(function(){
+  history.locatePointer();
 	$('*[role="modal-trigger"]').each(function(){
 		var modal = $($(this).data('modal'));
 		if (typeof $(modal).data('left') !== 'undefined') {

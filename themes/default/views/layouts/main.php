@@ -896,8 +896,8 @@
                 </div>
             </div>
         </section>
-<!--
-        <section class="programm">
+
+        <!--<section class="programm">
             <h2 id="programm">Программа мероприятия</h2>
             <div class="content">
                 <div class="rule">
@@ -927,13 +927,13 @@
                         <li><img src="<?= $this->getAssetsUrl(); ?>/img/rule.png"><span>22:00</span></li>
                         <li class="last"><img src="<?= $this->getAssetsUrl(); ?>/img/rule2.png"><span>23:00</span></li>
                         <div class="events">
-                            <div class="item up gray" style="width: 250px; left: 61px;"><span>Сон</span></div>
-                            <div class="item up yellow" style="width: 200px; left: 350px;"><span>Регистрация <br>Нетворкинг</span></div>
-                            <div class="item up green" style="width: 50px; left: 561px;"><span>Обед</span></div>
-                            <div class="item up gray" style="width: 250px; right: 66px;"><span>Сон</span></div>
+                            <div class="item up gray" data-from="0" data-to="5"><span>Сон</span></div>
+                            <div class="item up yellow" data-from="6" data-to="9"><span>Регистрация <br>Нетворкинг</span></div>
+                            <div class="item up green" data-from="9" data-to="11"><span>Обед</span></div>
+                            <div class="item up gray" data-from="18" data-to="23"><span>Сон</span></div>
 
-                            <div class="item down green" style="width: 150px; left: 400px;"><span>Кофе-брейк</span></div>
-                            <div class="item down red" style="width: 100px; left: 561px;"><span>Регистрация <br>Нетворкинг</span></div>
+                            <div class="item down green" data-from="7" data-to="10"><span>Кофе-брейк</span></div>
+                            <div class="item down red" data-from="10" data-to="13"><span>Регистрация <br>Нетворкинг</span></div>
                         </div>
                     </ul>
                 </div>
