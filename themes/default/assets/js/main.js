@@ -50,13 +50,16 @@ function makeInsertApiCall() {
    var request = gapi.client.calendar.events.insert({
      "calendarId": "primary",
      resource:{
-         "summary": "Appointment",
-         "location": "Somewhere",
+         "summary": "Авторский семинар Брайана Трейси «Искусство управления»",
+         "description": "http://seminar2014.tracyacademy.com/ г. Москва
+Проспект Мира 150, гостиница «Космос», 8 800 100 46 35, 
+mb@mb-events.ru",
+         "location": "г. Москва Проспект Мира 150",
          "start": {
-           "dateTime": "2014-06-05T10:00:00.000-07:00"
+           "dateTime": "2014-06-05T08:30:00.000+04:00"
          },
          "end": {
-           "dateTime": "2014-06-05T10:25:00.000-07:00"
+           "dateTime": "2014-06-05T18:00:00.000+04:00"
          }
        }
    });
