@@ -245,7 +245,7 @@ function Calculator() {
 
 
 $(document).ready(function(){
-  $('[role="calendar-trigger"').on('click', function(){
+  $('*[role="calendar-trigger"').on('click', function(){
     handleAuthClick();
     return false;
   });
