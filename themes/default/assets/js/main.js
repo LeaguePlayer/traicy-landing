@@ -34,7 +34,6 @@ function handleAuthResult(authResult) {
 
 function handleAuthClick(event) {
   gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
-  handleInsertClick();
   return false;
 }
 
