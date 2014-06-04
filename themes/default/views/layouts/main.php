@@ -1331,17 +1331,7 @@
                     <em>Отправьте</em> рекомендацию и <em>презентационные материалы</em> прямо сейчас!
                 </div>
                 <div class="form">
-                    <form action="">
-                        <div class="row">
-                            <input type="email" placeholder="Введите E-mail">
-                        </div>
-                        <div class="row">
-                            <textarea placeholder="Текст рекомендации"></textarea>
-                        </div>
-                        <div class="row">
-                            <button class="button">Отправить</button>
-                        </div>
-                    </form>
+                    <? $this->renderPartial('//recommendation/_form', array('model' => $this->forms['recommendation'], 'formId' => 'recommendation_form')); ?>
                 </div>
             </div>
         </section>
