@@ -113,8 +113,6 @@ header {
   overflow: hidden; }
   header > div {
     z-index: 1; }
-  header > .wrap, section.programm header > h2, section.programm .content .rule header > ul, section.map header > h2 {
-    height: 875px; }
   header .light {
     height: 875px;
     width: 2000px;
@@ -135,7 +133,7 @@ header {
     position: absolute;
     width: 519px;
     height: 863px;
-    bottom: 0px;
+    bottom: -27px;
     right: 0px;
     z-index: 2; }
   header .contacts .date {
@@ -203,7 +201,7 @@ header {
         color: white;
         font-size: 28px;
         font-weight: lighter;
-        padding: 30px 20px 25px 20px;
+        padding: 30px 20px 20px 20px;
         margin: 0; }
         header .wrap > .info > .wrapper h1 em, header section.programm h2 > .info > .wrapper h1 em, section.programm header h2 > .info > .wrapper h1 em, header section.programm .content .rule ul > .info > .wrapper h1 em, section.programm .content .rule header ul > .info > .wrapper h1 em, header section.map h2 > .info > .wrapper h1 em, section.map header h2 > .info > .wrapper h1 em {
           font-weight: 800;
@@ -218,7 +216,9 @@ header {
         header .wrap > .info > .wrapper p > .wrapper, header section.programm h2 > .info > .wrapper p > .wrapper, section.programm header h2 > .info > .wrapper p > .wrapper, header section.programm .content .rule ul > .info > .wrapper p > .wrapper, section.programm .content .rule header ul > .info > .wrapper p > .wrapper, header section.map h2 > .info > .wrapper p > .wrapper, section.map header h2 > .info > .wrapper p > .wrapper {
           padding: 10px 20% 12px 20px;
           display: block;
-          background: url(../img/info.png) right center no-repeat; }
+          background: url(../img/info.png) right center no-repeat;
+          font-weight: bold;
+          color: #dedede; }
   header .promo {
     border-left: 1px rgba(255, 255, 255, 0.3) solid;
     color: #ffd200;
@@ -237,7 +237,7 @@ header {
     header .timer p {
       text-transform: uppercase;
       font-weight: bold;
-      color: black;
+      color: #dedede;
       font-size: 16px;
       position: relative;
       left: -22px;
@@ -343,7 +343,7 @@ section.forwhom .choices {
       border: 3px black solid;
       padding: 20px 15px 20px 200px;
       color: gray;
-      font-size: 14px;
+      font-size: 18px;
       margin-left: 20px; }
     section.forwhom .choices .choice img {
       display: block;
@@ -363,14 +363,12 @@ section.forwhom .choices {
     text-align: right; }
 section.forwhom .wrap > .text, section.forwhom section.programm h2 > .text, section.programm section.forwhom h2 > .text, section.forwhom section.programm .content .rule ul > .text, section.programm .content .rule section.forwhom ul > .text, section.forwhom section.map h2 > .text, section.map section.forwhom h2 > .text {
   border: 3px #cfcfcf solid;
-  font-size: 15px;
+  font-size: 24px;
   font-weight: lighter;
   padding: 15px 25px;
-  margin: 30px; }
-  section.forwhom .wrap > .text em, section.forwhom section.programm h2 > .text em, section.programm section.forwhom h2 > .text em, section.forwhom section.programm .content .rule ul > .text em, section.programm .content .rule section.forwhom ul > .text em, section.forwhom section.map h2 > .text em, section.map section.forwhom h2 > .text em {
-    font-size: 16px;
-    display: block;
-    text-align: center; }
+  margin: 30px;
+  text-align: center;
+  text-transform: uppercase; }
 section.forwhom blockquote {
   min-height: 180px;
   padding: 0 0 0 205px;
@@ -392,7 +390,7 @@ section.forwhom blockquote {
   section.forwhom blockquote .role {
     margin: 0 0 11px 0; }
   section.forwhom blockquote .text {
-    font-size: 14px;
+    font-size: 18px;
     padding: 22px 33px;
     position: relative; }
   section.forwhom blockquote .text:before, section.forwhom blockquote .text:after {
@@ -412,7 +410,7 @@ section.forwhom blockquote {
 
 section.youllknow {
   padding: 64px 0 68px 0;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: lighter;
   margin: 0 0 67px 0; }
   section.youllknow h2 {
@@ -436,11 +434,10 @@ section.youllknow {
     section.youllknow .content p {
       text-align: justify; }
   section.youllknow .buttons {
-    background: url(../img/buttons-arrows.png) no-repeat center top;
     padding: 33px 0 0 0;
     text-align: center; }
-    section.youllknow .buttons .button:first-child, section.youllknow .buttons input[type="submit"]:first-child {
-      margin: 0 20px 0 0; }
+    section.youllknow .buttons .button:last-child, section.youllknow .buttons input[type="submit"]:last-child {
+      margin: 0; }
     section.youllknow .buttons .button:before, section.youllknow .buttons input[type="submit"]:before {
       content: "";
       vertical-align: middle;
@@ -451,11 +448,25 @@ section.youllknow {
     section.youllknow .buttons .download:before {
       background-position: -21px 0; }
     section.youllknow .buttons .button, section.youllknow .buttons input[type="submit"] {
-      padding: 0; }
+      padding: 0;
+      position: relative;
+      margin: 0 20px 0 0; }
       section.youllknow .buttons .button span, section.youllknow .buttons input[type="submit"] span {
         width: 172px;
         display: inline-block;
         border-left: 1px #cfa900 solid; }
+    section.youllknow .buttons .hr span {
+      width: 210px; }
+    section.youllknow .buttons .button:after, section.youllknow .buttons input[type="submit"]:after {
+      content: "";
+      display: block;
+      width: 7px;
+      height: 22px;
+      background: url(../img/additional-arrow.png);
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      margin-left: -3px; }
 
 section.speakers {
   margin: 0 0 60px 0; }
@@ -463,7 +474,7 @@ section.speakers {
     margin-bottom: 40px; }
   section.speakers .items {
     position: relative;
-    min-height: 620px; }
+    min-height: 780px; }
     section.speakers .items .content {
       display: none; }
     section.speakers .items .current .content {
@@ -480,7 +491,7 @@ section.speakers {
       padding: 15px 2% 12px 3%;
       width: 10%;
       text-align: center;
-      font-size: 14px;
+      font-size: 18px;
       font-weight: lighter;
       text-decoration: none;
       color: black; }
@@ -514,7 +525,7 @@ section.speakers {
         color: #111111;
         margin: 0 0 24px 0; }
       section.speakers .items .content p {
-        font-size: 15px; }
+        font-size: 18px; }
       section.speakers .items .content .books {
         margin: 0 0 20px 0; }
         section.speakers .items .content .books h3 {
@@ -677,7 +688,8 @@ section.history {
     border-radius: 10px;
     padding: 20px 38px;
     display: table;
-    table-layout: fixed; }
+    table-layout: fixed;
+    width: 100%; }
     section.history .content .part {
       display: none; }
     section.history .content .part.active {
@@ -713,7 +725,7 @@ section.history {
           font-weight: lighter;
           color: #111111; }
         section.history .content .left .title .date {
-          font-size: 14px;
+          font-size: 18px;
           font-weight: lighter;
           color: #b2b2b2;
           position: relative;
@@ -744,7 +756,8 @@ section.history {
         background: url(../img/history-arrow.png) repeat-y -91px 0; }
       section.history .content .left .text {
         padding: 0 25px 40px 0;
-        position: relative; }
+        position: relative;
+        font-size: 18px; }
       section.history .content .left .features:after {
         content: "";
         display: block;
@@ -770,7 +783,7 @@ section.history {
         section.history .content .left .features li {
           width: 25%;
           position: relative;
-          font-size: 16px;
+          font-size: 18px;
           text-transform: uppercase;
           font-weight: bold;
           text-align: center; }
@@ -1036,11 +1049,14 @@ section.prices {
           line-height: normal;
           background: none; }
       section.prices .container .right .form .action:after {
-        right: -10px; }
+        right: 0px; }
+      section.prices .container .right .form .action:before {
+        left: 1px; }
       section.prices .container .right .form .action {
-        padding-top: 7px;
-        margin-right: -12px;
-        margin-bottom: 0; }
+        padding: 7px 22px 7px 22px;
+        height: auto;
+        min-height: 50px;
+        margin: 0 -22px; }
         section.prices .container .right .form .action .l {
           width: 63%;
           font-size: 12px; }
@@ -1213,7 +1229,8 @@ section.programm {
         border-left: 1px #cfa900 solid; }
 
 section.participants {
-  margin: 0 0 60px 0; }
+  margin: 0 0 60px 0;
+  font-size: 18px; }
   section.participants h2 {
     background-image: url(../img/participants-arrows.png);
     margin: 0 0 30px 0; }
@@ -1284,15 +1301,16 @@ section.reviews {
       text-transform: uppercase;
       font-weight: bold;
       color: #111111;
-      font-size: 18px;
+      font-size: 24px;
       margin: 0; }
     section.reviews .review .role {
       font-weight: lighter;
       color: #a6a6a6;
-      margin: 0 0 8px 0; }
+      margin: 0 0 8px 0;
+      font-size: 18px; }
     section.reviews .review .text {
       font-weight: lighter;
-      font-size: 14px;
+      font-size: 18px;
       padding: 20px 30px 17px 332px;
       border: 3px #cfcfcf solid;
       margin-left: -335px; }
@@ -1318,11 +1336,11 @@ section.reviews {
         min-height: 155px;
         padding: 0 0 0 103px; }
         section.reviews .another .reviews .wrapper .review h3 {
-          font-size: 12px; }
+          font-size: 18px; }
         section.reviews .another .reviews .wrapper .review .text {
           margin-left: -100px;
           padding: 10px 10px 10px 130px;
-          font-size: 13px; }
+          font-size: 14px; }
         section.reviews .another .reviews .wrapper .review .role {
           font-size: 12px; }
         section.reviews .another .reviews .wrapper .review img {
@@ -1432,7 +1450,8 @@ section.quotes {
       background: url(../img/quotes-arrow.png) no-repeat center top; }
       section.quotes .quotes > li blockquote {
         text-align: center;
-        margin: 0; }
+        margin: 0;
+        font-size: 18px; }
         section.quotes .quotes > li blockquote .text:before, section.quotes .quotes > li blockquote .text:after {
           position: absolute;
           content: "";
@@ -1459,7 +1478,7 @@ section.quotes {
           width: 5px;
           height: 5px;
           background: #a6a6a6;
-          top: 7px;
+          top: 13px;
           position: absolute; }
         section.quotes .quotes > li blockquote .author:before {
           left: -15px; }
@@ -1471,7 +1490,8 @@ section.quotes {
           font-weight: bold;
           font-style: italic;
           color: #111111;
-          display: inline-block; }
+          display: inline-block;
+          font-size: 22px; }
       section.quotes .quotes > li .social {
         text-align: center; }
         section.quotes .quotes > li .social li:last-child {

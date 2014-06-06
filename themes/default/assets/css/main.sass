@@ -174,8 +174,6 @@ header
   overflow: hidden
   >div
     z-index: 1
-  >.wrap
-    height: 875px
 
   .light
     height: 875px
@@ -197,7 +195,7 @@ header
     position: absolute
     width: 519px
     height: 863px
-    bottom: 0px
+    bottom: -27px
     right: 0px
     z-index: 2
 
@@ -271,7 +269,7 @@ header
         color: $realWhiteColor
         font-size: 28px
         font-weight: lighter
-        padding: 30px 20px 25px 20px 
+        padding: 30px 20px 20px 20px 
         margin: 0
         em
           font-weight: 800
@@ -287,6 +285,8 @@ header
           padding: 10px 20% 12px 20px
           display: block
           background: url(../img/info.png) right center no-repeat
+          font-weight: bold
+          color: $whiteColor
   .promo
     border-left: 1px rgba(255, 255, 255, 0.3) solid
     color: $yellowColor
@@ -305,7 +305,7 @@ header
     p
       text-transform: uppercase
       font-weight: bold
-      color: black
+      color: $whiteColor
       font-size: 16px
       position: relative
       left: -22px
@@ -416,7 +416,7 @@ section.forwhom
         border: 3px $blackColor solid
         padding: 20px 15px 20px 200px
         color: $grayColor
-        font-size: 14px
+        font-size: 18px
         margin-left: 20px
       img
         display: block
@@ -437,14 +437,12 @@ section.forwhom
         text-align: right
   .wrap >.text
     border: 3px $grayFillColor solid
-    font-size: 15px
+    font-size: 24px
     font-weight: lighter
     padding: 15px 25px
     margin: 30px
-    em
-      font-size: 16px
-      display: block
-      text-align: center
+    text-align: center
+    text-transform: uppercase
   blockquote
     min-height: 180px
     padding: 0 0 0 205px
@@ -466,7 +464,7 @@ section.forwhom
     .role
       margin: 0 0 11px 0
     .text
-      font-size: 14px
+      font-size: 18px
       padding: 22px 33px
       position: relative
     .text:before, .text:after
@@ -487,7 +485,7 @@ section.forwhom
 section.youllknow
   @extend .gray-section
   padding: 64px 0 68px 0
-  font-size: 15px
+  font-size: 18px
   font-weight: lighter
   margin: 0 0 67px 0
   h2
@@ -512,11 +510,10 @@ section.youllknow
       text-align: justify
   .buttons
     @extend .inline-block-container-fix
-    background: url(../img/buttons-arrows.png) no-repeat center top
     padding: 33px 0 0 0
     text-align: center
-    .button:first-child
-      margin: 0 20px 0 0
+    .button:last-child
+      margin: 0
     .button:before
       content: ''
       @extend .inline-block-fix
@@ -527,13 +524,28 @@ section.youllknow
       background: url(../img/buttons-icons.png) no-repeat
     .download:before
       background-position: -21px 0
-
     .button
       padding: 0
+      position: relative
+      margin: 0 20px 0 0
       span
         width: 172px
         display: inline-block
         border-left: 1px $yellowButtonShadowColor solid
+    .hr
+      span
+        width: 210px
+    .button:after
+      content: ''
+      display: block
+      width: 7px
+      height: 22px
+      background: url(../img/additional-arrow.png)
+      position: absolute
+      top: -30px
+      left: 50%
+      margin-left: -3px
+
 
 section.speakers
   margin: 0 0 60px 0
@@ -541,7 +553,7 @@ section.speakers
     margin-bottom: 40px
   .items
     position: relative
-    min-height: 620px
+    min-height: 780px
     @extend .list-reset
     .content
       display: none
@@ -560,7 +572,7 @@ section.speakers
       padding: 15px 2% 12px 3%
       width: 10%
       text-align: center
-      font-size: 14px
+      font-size: 18px
       font-weight: lighter
       text-decoration: none
       color: $blackColor
@@ -595,7 +607,7 @@ section.speakers
         color: $blackLightColor
         margin: 0 0 24px 0
       p
-        font-size: 15px
+        font-size: 18px
       .books
         margin: 0 0 20px 0
         h3
@@ -764,6 +776,7 @@ section.history
     @extend .borderbox
     display: table
     table-layout: fixed
+    width: 100%
     .part
       display: none
     .part.active
@@ -802,7 +815,7 @@ section.history
           font-weight: lighter
           color: $blackLightColor
         .date
-          font-size: 14px
+          font-size: 18px
           font-weight: lighter
           color: $grayTextColor
           position: relative
@@ -835,6 +848,7 @@ section.history
       .text
         padding: 0 25px 40px 0
         position: relative
+        font-size: 18px
       .features:after
         content: ''
         display: block
@@ -863,7 +877,7 @@ section.history
           @extend .inline-block-fix
           width: 25%
           position: relative
-          font-size: 16px
+          font-size: 18px
           text-transform: uppercase
           font-weight: bold
           text-align: center
@@ -1140,13 +1154,16 @@ section.prices
               line-height: normal
               background: none
         .action:after
-          right: -10px
+          right: 0px
+        .action:before
+          left: 1px
         .action
-          padding-top: 7px
           @extend .borderbox
           @extend .inline-block-container-fix
-          margin-right: -12px
-          margin-bottom: 0
+          padding: 7px 22px 7px 22px
+          height: auto
+          min-height: 50px
+          margin: 0 -22px
           >*
             @extend .inline-block-fix
           .l
@@ -1354,6 +1371,7 @@ section.programm
 
 section.participants
   margin: 0 0 60px 0
+  font-size: 18px
   h2
     background-image: url(../img/participants-arrows.png)
     margin: 0 0 30px 0
@@ -1425,15 +1443,16 @@ section.reviews
       text-transform: uppercase
       font-weight: bold
       color: $blackLightColor
-      font-size: 18px
+      font-size: 24px
       margin: 0
     .role
       font-weight: lighter
       color: $grayTextLightColor
       margin: 0 0 8px 0
+      font-size: 18px
     .text
       font-weight: lighter
-      font-size: 14px
+      font-size: 18px
       padding: 20px 30px 17px 332px
       border: 3px $grayFillColor solid
       margin-left: -335px
@@ -1462,11 +1481,11 @@ section.reviews
           min-height: 155px
           padding: 0 0 0 103px
           h3
-            font-size: 12px
+            font-size: 18px
           .text
             margin-left: -100px
             padding: 10px 10px 10px 130px
-            font-size: 13px
+            font-size: 14px
           .role
             font-size: 12px
           img
@@ -1590,6 +1609,7 @@ section.quotes
       blockquote
         text-align: center
         margin: 0
+        font-size: 18px
         .text:before, .text:after
           position: absolute
           content: ''
@@ -1616,7 +1636,7 @@ section.quotes
           width: 5px
           height: 5px
           background: $grayTextLightColor
-          top: 7px
+          top: 13px
           position: absolute
         .author:before
           left: -15px
@@ -1629,6 +1649,7 @@ section.quotes
           font-style: italic
           color: $blackLightColor
           display: inline-block
+          font-size: 22px
       .social
         @extend .list-reset
         @extend .inline-block-container-fix

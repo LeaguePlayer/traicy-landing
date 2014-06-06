@@ -87,6 +87,10 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function adjustHeader() {
+  $('header').css('height', ($('header > .wrap').height()+27)+'px');
+}
+
 function Calculator() {
     if ( Calculator.i !== undefined )
         return Calculator.i;
@@ -310,11 +314,16 @@ function Programm() {
   return Programm.i;
 }
 
+$(window).load(function(){
+   adjustHeader();
+});
+
 $(document).ready(function(){
   $('*[role="calendar-trigger"').on('click', function(){
     handleAuthClick();
     return false;
   });
+
 
   calculator = new Calculator();
 
@@ -503,6 +512,7 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
+  adjustHeader();
   history.locatePointer();
 	$('*[role="modal-trigger"]').each(function(){
 		var modal = $($(this).data('modal'));

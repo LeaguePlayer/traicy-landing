@@ -187,10 +187,7 @@
                         </div>    
                     </div>
                 </div>
-                <div class="text">
-                    <em>Знаете ли Вы, что в среднем Вы или Ваш сотрудник использует менее 50% своего потенциала?</em>
-                    <p>Станьте самым результативным руководителем в Вашей компании или отрасли! Рост эффективности Вашей компании после семинара будет зависеть от того, сколько и каких сотрудников Вы возьмете вместе с собой на этот семинар.</p>
-                    <em>Стоимость участия <1% от стоимости идей, которые Вы узнаете на семинаре.</em>
+                <div class="text">Стоимость участия <em><1% от стоимости идей</em>, которые Вы узнаете на семинаре.
                 </div>
                 <blockquote>
                     <img src="<?= $this->getAssetsUrl(); ?>/img/for-whom3.jpg" alt="">
@@ -230,6 +227,7 @@
                 <div class="buttons">
                     <a href="#" class="button calendar" role="calendar-trigger"><span>Добавить в календарь</span></a>
                     <a href="<?= $this->getAssetsUrl(); ?>/brochure.pdf" class="button download" target="_blank"><span>Скачать брошюру</span></a>
+                    <a href="<?= $this->getAssetsUrl(); ?>/brochure.pdf" class="button download hr" target="_blank"><span>Скачать предложение для HR</span></a>
                 </div>
             </div>
         </section>
@@ -253,27 +251,37 @@
                                     <div class="carousel">
                                         <div class="item">
                                             <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/book1.png" alt="">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/b1.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/book2.png" alt="">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/b2.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/book3.png" alt="">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/b3.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/book2.png" alt="">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/b4.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/book3.png" alt="">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/b5.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/b6.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/b7.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -282,43 +290,53 @@
                                     <h3>Клиенты</h3>
                                     <div class="carousel">
                                         <div class="item">
-                                            <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client1.png" alt="">
+                                            <a href="http://www.7cont.ru/" target="_blank">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client1.gif" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
-                                            <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client2.png" alt="">
+                                            <a href="http://alfabank.ru/" target="_blank">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client2.gif" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
-                                            <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client3.png" alt="">
+                                            <a href="http://dixy.ru/" target="_blank">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client3.gif" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
-                                            <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client4.png" alt="">
+                                            <a href="http://www.enter.ru/" target="_blank">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client4.gif" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
-                                            <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client5.png" alt="">
+                                            <a href="http://www.kia.ru/#" target="_blank">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client5.gif" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
-                                            <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client6.png" alt="">
+                                            <a href="http://www.croc.ru/" target="_blank">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client6.gif" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
-                                            <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client7.png" alt="">
+                                            <a href="http://www.mbrd.ru/" target="_blank">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client7.gif" alt="">
                                             </a>
                                         </div>
                                         <div class="item">
-                                            <a href="#">
-                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client8.png" alt="">
+                                            <a href="http://www.nornik.ru/" target="_blank">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client8.gif" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="http://www.sportmaster.ru/" target="_blank">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client9.gif" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="http://www.raiffeisen.ru/" target="_blank">
+                                                <img src="<?= $this->getAssetsUrl(); ?>/img/client10.gif" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -350,9 +368,7 @@
                     <div class="part">
                         <div class="left">
                             <div class="title">
-                                <h3>Кто такой Брайан Трейси?</h3>
-                                <div class="date">22.12.2013</div>
-                                <div class="city">г. Москва</div>
+                                <h3>7-8 апреля 2012</h3>
                             </div>
                             <div class="text">
                                 <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
@@ -400,9 +416,7 @@
                     <div class="part">
                         <div class="left">
                             <div class="title">
-                                <h3>Кто такой Брайан Трейси?</h3>
-                                <div class="date">22.12.2013</div>
-                                <div class="city">г. Москва</div>
+                                <h3>29-30 октября 2012</h3>
                             </div>
                             <div class="text">
                                 <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
@@ -450,9 +464,7 @@
                     <div class="part">
                         <div class="left">
                             <div class="title">
-                                <h3>Кто такой Брайан Трейси?</h3>
-                                <div class="date">22.12.2013</div>
-                                <div class="city">г. Москва</div>
+                                <h3>Осень 2012</h3>
                             </div>
                             <div class="text">
                                 <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
@@ -500,9 +512,7 @@
                     <div class="part">
                         <div class="left">
                             <div class="title">
-                                <h3>Кто такой Брайан Трейси?</h3>
-                                <div class="date">22.12.2013</div>
-                                <div class="city">г. Москва</div>
+                                <h3>25-26 октября 2013</h3>
                             </div>
                             <div class="text">
                                 <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
@@ -550,59 +560,7 @@
                     <div class="part">
                         <div class="left">
                             <div class="title">
-                                <h3>Кто такой Брайан Трейси?</h3>
-                                <div class="date">22.12.2013</div>
-                                <div class="city">г. Москва</div>
-                            </div>
-                            <div class="text">
-                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
-                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
-                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
-                            </div>
-                            <ul class="features">
-                                <li>
-                                    200 человек
-                                    <i class="icon peoples"></i>
-                                </li>
-                                <li>
-                                    10 городов
-                                    <i class="icon city"></i>
-                                </li>
-                                <li>
-                                    3 спикера
-                                    <i class="icon speaker"></i>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Посмотреть
-                                        <i class="icon video"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="photos">
-                            <div class="carousel">
-                                <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="part">
-                        <div class="left">
-                            <div class="title">
-                                <h3>Кто такой Брайан Трейси?</h3>
-                                <div class="date">22.12.2013</div>
-                                <div class="city">г. Москва</div>
+                                <h3>29-30 марта 2014</h3>
                             </div>
                             <div class="text">
                                 <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
@@ -653,6 +611,54 @@
                                 <h3>Кто такой Брайан Трейси?</h3>
                                 <div class="date">22.12.2013</div>
                                 <div class="city">г. Москва</div>
+                            </div>
+                            <div class="text">
+                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
+                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
+                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                            </div>
+                            <ul class="features">
+                                <li>
+                                    200 человек
+                                    <i class="icon peoples"></i>
+                                </li>
+                                <li>
+                                    10 городов
+                                    <i class="icon city"></i>
+                                </li>
+                                <li>
+                                    3 спикера
+                                    <i class="icon speaker"></i>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Посмотреть
+                                        <i class="icon video"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="photos">
+                            <div class="carousel">
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div class="left">
+                            <div class="title">
+                                <h3>2015</h3>
                             </div>
                             <div class="text">
                                 <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
