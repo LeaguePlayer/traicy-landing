@@ -157,9 +157,12 @@ function Calculator() {
    			}
    			return discount;
    		},
-   		formatCurrency: function(price) {
-   			return accounting.formatNumber(price, 0, " ");
-   		},
+      formatCurrency: function(price) {
+        return accounting.formatNumber(price, 0, " ")+' р.';
+      },
+      formatCurrencyHtml: function(price) {
+        return '<em>'+accounting.formatNumber(price, 0, " ")+'</em> р.';
+      },
    		setCountText: function(count) {
    			countSlider.slider('value', Calculator.i.current.count);
    			$('.ui-slider-handle').text(count);

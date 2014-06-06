@@ -1417,9 +1417,9 @@
             </div>
             <!--<div class="cart">
                 <p class="total">
-                    от <em>32 000</em> р.
+                    <em>32 000</em> р.
                 </p>
-                <a href="#" class="button blue">Купить</a>
+                <a href="http://tracyacademy22.ticketforevent.com/" class="button blue">Купить</a>
             </div>-->
         </div>
 
