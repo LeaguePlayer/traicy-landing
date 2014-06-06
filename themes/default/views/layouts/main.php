@@ -151,7 +151,7 @@
                 <div class="choices">
                     <div class="choice left">
                         <h3>«Для руководителей»</h3>
-                        <img src="<?= $this->getAssetsUrl(); ?>/img/for-whom1.png" alt="">
+                        <img src="<?= $this->getAssetsUrl(); ?>/img/for-whom2.png" alt="">
                         <div class="text">
                             <em>Как может измениться Ваша жизнь:</em>
                             <ul>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="choice right">
                         <h3>«Для сотрудников»</h3>
-                        <img src="<?= $this->getAssetsUrl(); ?>/img/for-whom2.png" alt="">
+                        <img src="<?= $this->getAssetsUrl(); ?>/img/for-whom1.png" alt="">
                         <div class="text">
                             <em>Какие проблемы решает семинар:</em>
                             <ul>
@@ -225,7 +225,14 @@
                     </ul>
                 </div>
                 <div class="buttons">
+                <? 
+                    $user_agent = getenv("HTTP_USER_AGENT");
+                ?>
+                <? if(strpos($user_agent, "Mac") !== FALSE): ?>
+                    <a href="<?= $this->getAssetsUrl(); ?>/seminar_tracy.ics" class="button calendar"><span>Добавить в календарь</span></a>
+                <? else: ?>
                     <a href="#" class="button calendar" role="calendar-trigger"><span>Добавить в календарь</span></a>
+                <? endif; ?>
                     <a href="<?= $this->getAssetsUrl(); ?>/brochure.pdf" class="button download" target="_blank"><span>Скачать брошюру</span></a>
                     <a href="<?= $this->getAssetsUrl(); ?>/brochure.pdf" class="button download hr" target="_blank"><span>Скачать предложение для HR</span></a>
                 </div>

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.marudot.com//iCal Event Maker
+X-WR-TIMEZONE:Europe/Moscow
+BEGIN:VEVENT
+DTSTAMP:20140606T074633Z
+UID:20140606T074633Z-438641110@marudot.com
+DTSTART;TZID=Europe/Moscow:20141122T083000
+DTEND;TZID=Europe/Moscow:20141122T180000
+SUMMARY:Авторский семинар Брайана Трейси «Искусство управления»
+DESCRIPTION:http://seminar2014.tracyacademy.com/ г. Москва\, Проспект Мира 150\, гостиница «Космос»\, 8 800 100 46 35\, mb@mb-events.ru
+LOCATION:г. Москва Проспект Мира 150
+END:VEVENT
+END:VCALENDAR
