@@ -322,10 +322,13 @@ $(window).load(function(){
 });
 
 $(document).ready(function(){
-  $('*[role="calendar-trigger"').on('click', function(){
-    handleAuthClick();
-    return false;
-  });
+
+  if ($('*[role="calendar-trigger"').length) {
+    $('*[role="calendar-trigger"').on('click', function(){
+      handleAuthClick();
+      return false;
+    });
+  }
 
 
   calculator = new Calculator();

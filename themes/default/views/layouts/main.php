@@ -1415,12 +1415,12 @@
                     <li class="tw"><a href="https://twitter.com/tracyacademy" target="_blank"></a></li>
                 </ul>
             </div>
-            <!--<div class="cart">
+            <div class="cart">
                 <p class="total">
                     <em>32 000</em> р.
                 </p>
                 <a href="http://tracyacademy22.ticketforevent.com/" class="button blue">Купить</a>
-            </div>-->
+            </div>
         </div>
 
         <div class="modal" id="header_phone_request" data-bottom="-34" data-right="0">
