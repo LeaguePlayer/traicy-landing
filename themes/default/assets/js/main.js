@@ -323,7 +323,10 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
-  if ($('*[role="calendar-trigger"').length) {
+  if (navigator.appVersion.indexOf("Mac")!=-1) {
+    //Mac, lol
+  }
+  else {
     $('*[role="calendar-trigger"').on('click', function(){
       handleAuthClick();
       return false;
