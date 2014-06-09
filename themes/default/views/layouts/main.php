@@ -6,7 +6,7 @@
 	$cs->registerCssFile($this->getAssetsUrl().'/css/jquery.fancybox.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/css/jquery-ui.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/js/vendor/slick/slick.css');
-	$cs->registerCssFile($this->getAssetsUrl().'/css/main.css?v=2');
+	$cs->registerCssFile($this->getAssetsUrl().'/css/main.css?v=3');
 
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/modernizr-2.6.2.min.js', CClientScript::POS_HEAD);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/jquery-1.11.0.min.js', CClientScript::POS_END);
@@ -22,7 +22,7 @@
     $cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/accounting.min.js', CClientScript::POS_END);
     $cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/jquery.fancybox.pack.js', CClientScript::POS_END);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/accounting.min.js', CClientScript::POS_END);
-	$cs->registerScriptFile($this->getAssetsUrl().'/js/main.js', CClientScript::POS_END);
+	$cs->registerScriptFile($this->getAssetsUrl().'/js/main.js?v=4', CClientScript::POS_END);
 	$cs->registerScript('clock',
 		'$(document).ready(function(){
 	        clock.setTime('.((strtotime('1.07.2014')-time())).');
