@@ -2,7 +2,8 @@
 
 	$cs = Yii::app()->clientScript;
 	$cs->registerCssFile($this->getAssetsUrl().'/css/normalize.css');
-	$cs->registerCssFile($this->getAssetsUrl().'/css/flipclock.css');
+    $cs->registerCssFile($this->getAssetsUrl().'/css/flipclock.css');
+	$cs->registerCssFile($this->getAssetsUrl().'/css/jquery.fancybox.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/css/jquery-ui.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/js/vendor/slick/slick.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/css/main.css?v=2');
@@ -18,6 +19,8 @@
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/jquery.scrollTo.min.js', CClientScript::POS_END);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/jquery.localScroll.min.js', CClientScript::POS_END);
     $cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/jquery.sticky.js', CClientScript::POS_END);
+    $cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/accounting.min.js', CClientScript::POS_END);
+    $cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/jquery.fancybox.pack.js', CClientScript::POS_END);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/vendor/accounting.min.js', CClientScript::POS_END);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/main.js', CClientScript::POS_END);
 	$cs->registerScript('clock',
@@ -362,7 +365,7 @@
             <div class="wrap">
                 <h2>История мероприятия спикера <em>в России и СНГ</em></h2>
                 <ul class="times">
-                    <li><a href="#">7-8 апреля 2012<i></i></a></li>
+                    <li><a href="#">Апрель 2012<i></i></a></li>
                     <li><a href="#">29-30 октября 2012<i></i></a></li>
                     <li><a href="#">Осень 2012<i></i></a></li>
                     <li><a href="#">25-26 октября 2013<i></i></a></li>
@@ -375,29 +378,32 @@
                     <div class="part">
                         <div class="left">
                             <div class="title">
-                                <h3>7-8 апреля 2012</h3>
+                                <h3>Тактика и стратегия лидерства 3-его тысячелетия</h3>
+                                <div class="date">7-8 апреля 2012</div>
+                                <div class="city">г. Москва</div>
                             </div>
                             <div class="text">
-                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
-                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
-                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                                <p>Программа семинара рассчитана на руководителей и топ-менеджеров, которые заинтересованы в повышении своих лидерских компетенций.</p>
+                                <p>Программа Брайана Трейси была наполнена практическими примерами и включала в себя ряд прогрессивных решений, специально адаптированных для российской действительности.</p>
+                                <p>Семинар стал отличной площадкой для желающих наладить связи и найти новых партнеров по бизнесу. Для этого была организована специальная зона для нетворкинга.</p>
+                                <p>Гостями мероприятия стали известные бизнес-лидеры нашей страны – самый титулованный бизнес-тренер  России Радислав Гандапас, Основатель компании “Рольф” Сергей Петров и Директор компании BEST T&D Group Марк Кукушкин.</p>
                             </div>
                             <ul class="features">
                                 <li>
-                                    200 человек
+                                    <span>750 человек</span>
                                     <i class="icon peoples"></i>
                                 </li>
                                 <li>
-                                    10 городов
+                                    <span>80% восторженных отзывов</span>
                                     <i class="icon city"></i>
                                 </li>
                                 <li>
-                                    3 спикера
+                                    <span>132 налаженных связей</span>
                                     <i class="icon speaker"></i>
                                 </li>
                                 <li>
                                     <a href="">
-                                        Посмотреть
+                                        <span>Как это было</span>
                                         <i class="icon video"></i>
                                     </a>
                                 </li>
@@ -406,16 +412,16 @@
                         <div class="photos">
                             <div class="carousel">
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/p1.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/_p1.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/p2.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/_p2.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/p3.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/_p3.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/p4.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/_p4.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -904,6 +910,9 @@
                                     </div>
                                 </div>
                             </form>
+                            <div class="help" id="help">
+                                <a href="#">Добавьте еще одну категорию билетов для расчета</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1416,9 +1425,10 @@
                 </ul>
             </div>
             <div class="cart">
-                <p class="total">
-                    <em>32 000</em> р.
-                </p>
+                <a class="sum" href="http://tracyacademy22.ticketforevent.com/">
+                    <p class="total">
+                    </p>
+                </a>
                 <a href="http://tracyacademy22.ticketforevent.com/" class="button blue">Купить</a>
             </div>
         </div>

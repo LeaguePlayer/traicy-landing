@@ -96,6 +96,7 @@ function Calculator() {
         return Calculator.i;
 
    	Calculator.i = {
+      initial: true,
    		current: {
    			type: 0,
    			count: 1,
@@ -130,20 +131,20 @@ function Calculator() {
    			$('.prices .inputs').fadeOut(200);
    		},
    		showInputs: function() {
-   			Calculator.i.fillInputs();
+   			this.fillInputs();
    			if (! $('.inputs').is(":visible"))
    				$('.inputs').fadeIn(200);
    		},
    		fillInputs: function() {
-   			Calculator.i.setCountText(Calculator.i.current.count);
-   			$('#discount').val(Calculator.i.getDiscount(Calculator.i.current.count)+'%');
-   			Calculator.i.calcOldPrice();
-   			Calculator.i.calcPrice();
+   			this.setCountText(this.current.count);
+   			$('#discount').val(this.getDiscount(this.current.count)+'%');
+   			this.calcOldPrice();
+   			this.calcPrice();
    		},
    		setCurrentType: function(type) {
-   			Calculator.i.current.type = type;
-   			Calculator.i.current.count = 1;
-   			Calculator.i.current.price = terms[type].price;
+   			this.current.type = type;
+   			this.current.count = 1;
+   			this.current.price = terms[type].price;
    		},
    		getDiscount: function(count) {
    			var discount = 0;
@@ -164,35 +165,49 @@ function Calculator() {
         return '<em>'+accounting.formatNumber(price, 0, " ")+'</em> р.';
       },
    		setCountText: function(count) {
-   			countSlider.slider('value', Calculator.i.current.count);
+   			countSlider.slider('value', this.current.count);
    			$('.ui-slider-handle').text(count);
-   			$("#count").val(Calculator.i.current.count);
+   			$("#count").val(this.current.count);
    		},
    		setCount: function(count) {
-   			Calculator.i.current.count = count;
-   			Calculator.i.setCountText(count);
-   			Calculator.i.fillInputs();
+   			this.current.count = count;
+   			this.setCountText(count);
+   			this.fillInputs();
 
-   			Calculator.i.calcOldPrice();
+   			this.calcOldPrice();
 
-   			Calculator.i.calcPrice();
+   			this.calcPrice();
    		},
    		calcOldPrice: function() {
-   			$('#oldprice').val(Calculator.i.formatCurrency(Calculator.i.current.price*Calculator.i.current.count));
+   			$('#oldprice').val(this.formatCurrency(this.current.price*this.current.count));
    		},
    		calcPrice: function(count) {
-   			$('#newprice').val(Calculator.i.formatCurrency(Calculator.i.current.price*Calculator.i.current.count*(1-Calculator.i.getDiscount(Calculator.i.current.count)/100)));
+   			$('#newprice').val(this.formatCurrency(this.current.price*this.current.count*(1-this.getDiscount(this.current.count)/100)));
    		},
    		addChoice: function() {
-   			$('.total .row:first').after(Calculator.i.renderChoice());
+   			$('.total .row:first').after(this.renderChoice());
    		},
+      showHelp: function(){
+        $('#help').fadeIn(200);
+      },
+      hideHelp: function(){
+        $('#help').fadeOut(200);
+      },
    		calcTotal: function() {
+        if (this.initial) {
+          this.showHelp();
+          this.initial = false;
+        }
+        else {
+          this.hideHelp();
+        }
    			$('.summary').remove();
-   			$('.total .row:last').after(Calculator.i.renderTotal());
+   			$('.total .row:last').after(this.renderTotal());
+        $('.cart .total').html(this.formatCurrencyHtml(this.getAllPrices()));
    		},
    		renderChoice: function() {
-   			var rendered = Calculator.i.choiceTemplate;
-   			rendered = rendered.replace('{type}', terms[Calculator.i.current.type].title);
+   			var rendered = this.choiceTemplate;
+   			rendered = rendered.replace('{type}', terms[this.current.type].title);
    			rendered = rendered.replace('{count}', $('#count').val());
    			rendered = rendered.replace('{discount}', $('#discount').val());
    			rendered = rendered.replace('{oldprice}', $('#oldprice').val());
@@ -200,9 +215,9 @@ function Calculator() {
    			return rendered;
    		},
    		renderTotal: function() {
-   			var rendered = Calculator.i.summaryTemplate;
-   			rendered = rendered.replace('{oldprice}', Calculator.i.formatCurrency(Calculator.i.getAllOldPrices()));
-   			rendered = rendered.replace('{newprice}', Calculator.i.formatCurrency(Calculator.i.getAllPrices()));
+   			var rendered = this.summaryTemplate;
+   			rendered = rendered.replace('{oldprice}', this.formatCurrency(this.getAllOldPrices()));
+   			rendered = rendered.replace('{newprice}', this.formatCurrency(this.getAllPrices()));
    			return rendered;
    		},
    		getAllOldPrices: function() {
@@ -240,9 +255,15 @@ function Calculator() {
    	$('#calc').on('click', function(){
    		calculator.addChoice();
    		calculator.calcTotal();
-   		$('.total').fadeIn(200);
+   		$('.prices .total').fadeIn(200);
    		return false;
    	});
+
+    $('#help a').on('click', function(){
+      $.scrollTo($('.prices .form'), 200, { offset: -100, } );
+      $('#help').fadeOut();
+      return false;
+    })
 
 	return Calculator.i;
 }
@@ -332,6 +353,8 @@ $(document).ready(function(){
       return false;
     });
   }
+
+  $(".fancybox").fancybox();
 
 
   calculator = new Calculator();
@@ -521,27 +544,28 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
-  adjustHeader();
-  history.locatePointer();
-	$('*[role="modal-trigger"]').each(function(){
-		var modal = $($(this).data('modal'));
-		if (typeof $(modal).data('left') !== 'undefined') {
-			$(modal).css('right', 'auto');
-			$(modal).css('left', ($(this).offset().left+$(modal).data('left'))+'px');
-		}
-		if (typeof $(modal).data('right') !== 'undefined') {
-			$(modal).css('left', 'auto');
-			var rt = ($(window).width() - ($(this).offset().left + $(this).outerWidth()));
-			$(modal).css('right', (rt-$(modal).data('right'))+'px');
-		}
-		if (typeof $(modal).data('top') !== 'undefined') {
-			$(modal).css('top', ($(this).offset().top+$(modal).data('top'))+'px');
-		}
-		if (typeof $(modal).data('bottom') !== 'undefined') {
-			$(modal).css('top', ($(this).offset().top+$(this).outerHeight()-$(modal).data('bottom'))+'px');
-		}
-	});
+  if ( jQuery.isReady ) {
+    adjustHeader();
+    history.locatePointer();
+  	$('*[role="modal-trigger"]').each(function(){
+  		var modal = $($(this).data('modal'));
+  		if (typeof $(modal).data('left') !== 'undefined') {
+  			$(modal).css('right', 'auto');
+  			$(modal).css('left', ($(this).offset().left+$(modal).data('left'))+'px');
+  		}
+  		if (typeof $(modal).data('right') !== 'undefined') {
+  			$(modal).css('left', 'auto');
+  			var rt = ($(window).width() - ($(this).offset().left + $(this).outerWidth()));
+  			$(modal).css('right', (rt-$(modal).data('right'))+'px');
+  		}
+  		if (typeof $(modal).data('top') !== 'undefined') {
+  			$(modal).css('top', ($(this).offset().top+$(modal).data('top'))+'px');
+  		}
+  		if (typeof $(modal).data('bottom') !== 'undefined') {
+  			$(modal).css('top', ($(this).offset().top+$(this).outerHeight()-$(modal).data('bottom'))+'px');
+  		}
+  	});
 
-  adjustCarousels();
-
+    adjustCarousels();
+  }
 });
