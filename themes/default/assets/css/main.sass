@@ -217,10 +217,10 @@ header
       .month, .weekday
         font-weight: lighter
         text-transform: uppercase
-        font-size: 16px
+        font-size: 17px
       .day
         font-weight: bold
-        font-size: 60px
+        font-size: 61px
         margin: 0 0 5px 0
       .month
         margin: 19px 0 2px 0
@@ -233,12 +233,12 @@ header
       background: url(../img/address.png) no-repeat right top
       address
         font-style: normal
-        font-size: 30px
+        font-size: 31px
         font-weight: lighter
         color: $whiteColor
         line-height: 1.2em
       .phone
-        font-size: 18px
+        font-size: 19px
         color: $yellowColor
         font-weight: bold
         span
@@ -246,7 +246,7 @@ header
       .email a
         font-weight: lighter
         color: $yellowDarkerColor
-        font-size: 14px   
+        font-size: 15px   
   .phone-request
     position: absolute
     right: 10px
@@ -267,7 +267,7 @@ header
       width: 50%
       h1
         color: $realWhiteColor
-        font-size: 28px
+        font-size: 29px
         font-weight: lighter
         padding: 30px 20px 20px 20px 
         margin: 0
@@ -279,7 +279,7 @@ header
         color: $yellowColor
         width: 120%
         margin: 0
-        font-size: 18px
+        font-size: 19px
         font-weight: lighter
         >.wrapper
           padding: 10px 20% 12px 20px
@@ -290,7 +290,7 @@ header
   .promo
     border-left: 1px rgba(255, 255, 255, 0.3) solid
     color: $yellowColor
-    font-size: 18px
+    font-size: 19px
     font-weight: lighter
     padding: 0 0 0 8px
     width: 540px
@@ -306,7 +306,7 @@ header
       text-transform: uppercase
       font-weight: bold
       color: $whiteColor
-      font-size: 16px
+      font-size: 17px
       position: relative
       left: -22px
       top: -34px
@@ -319,12 +319,13 @@ header
       vertical-align: middle
     span
       font-weight: lighter
-      font-size: 28px
+      font-size: 29px
       color: $realWhiteColor
       margin: 0 30px
     .button
       font-weight: bold
       width: 175px
+      font-size: 15px 
 nav.menu:after
   content: ''
   position: absolute
@@ -415,7 +416,6 @@ section.forwhom
       .text
         border: 3px $blackColor solid
         padding: 20px 15px 20px 200px
-        color: $grayColor
         font-size: 18px
         margin-left: 20px
       img
@@ -494,14 +494,21 @@ section.youllknow
   .content
     overflow: hidden
     margin: 0 0 20px 0
+    @extend .inline-block-container-fix
     .video
       width: 48%
-      float: left
-      margin: 0 30px 10px 0
+      @extend .inline-block-fix
+      margin: 0 0 10px 0
     .novideo 
       text-align: center
       img
         max-width: 450px
+    .right
+      @extend .inline-block-fix
+      width: 48%
+      margin-left: 4%
+      font-size: 18px
+
     ul
       margin: 0px
       li
