@@ -14,7 +14,7 @@
   display: inline-block;
   vertical-align: top; }
 
-.borderbox, section.speakers .items .content, section.history .times:before, section.history .content, section.prices .container .right .form .fright input, section.prices .container .right .form .action, section.programm .content .rule ul, section.additional .email-request .form .column input[type="email"], section.quotes .quotes > li, section.share .form .row input[type="email"], section.share .form .row textarea, .button, input[type="submit"], .customSelect, .modal .row input[type="text"], .modal .row input[type="email"], .modal .row input[type="password"], .modal .row input[type="number"], .modal .row textarea {
+.borderbox, section.speakers .items .content, section.history .times:before, section.history .content, section.history .content .left .features li, section.prices .container .right .form .fright input, section.prices .container .right .form .action, section.programm .content .rule ul, section.additional .email-request .form .column input[type="email"], section.quotes .quotes > li, section.share .form .row input[type="email"], section.share .form .row textarea, .button, input[type="submit"], .customSelect, .modal .row input[type="text"], .modal .row input[type="email"], .modal .row input[type="password"], .modal .row input[type="number"], .modal .row textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -717,16 +717,20 @@ section.history {
           vertical-align: top; }
         section.history .content .left .title h3 {
           font-size: 24px;
-          margin: 0;
+          margin: 0 30px 0 0;
           font-weight: lighter;
           color: #111111; }
+        section.history .content .left .title h4 {
+          display: block;
+          color: gray;
+          margin: 10px 0 0 0; }
         section.history .content .left .title .date {
           font-size: 18px;
           font-weight: lighter;
           color: #b2b2b2;
           position: relative;
           top: 8px;
-          margin: 0 30px; }
+          margin: 0 30px 0 0; }
         section.history .content .left .title .city:before {
           content: "";
           display: block;
@@ -767,7 +771,6 @@ section.history {
       section.history .content .left .features {
         position: relative; }
         section.history .content .left .features li:after {
-          content: "";
           display: block;
           position: absolute;
           top: 8px;
@@ -775,6 +778,9 @@ section.history {
           width: 32px;
           height: 5px;
           background: url(../img/features-arrow.png); }
+          @media screen and (min-width: 1400px) {
+            section.history .content .left .features li:after {
+              content: ""; } }
         section.history .content .left .features li:last-child:after {
           display: none; }
         section.history .content .left .features li {
@@ -783,7 +789,8 @@ section.history {
           font-size: 18px;
           text-transform: uppercase;
           font-weight: bold;
-          text-align: center; }
+          text-align: center;
+          padding: 0 20px; }
           section.history .content .left .features li span {
             display: block;
             padding: 0 16px; }

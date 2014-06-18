@@ -368,9 +368,9 @@
                 <h2>История мероприятия спикера <em>в России и СНГ</em></h2>
                 <ul class="times">
                     <li><a href="#">Апрель 2012<i></i></a></li>
-                    <li><a href="#">29-30 октября 2012<i></i></a></li>
+                    <li><a href="#">Октябрь 2012<i></i></a></li>
                     <li><a href="#">Осень 2012<i></i></a></li>
-                    <li><a href="#">25-26 октября 2013<i></i></a></li>
+                    <li><a href="#">Октябрь 2013<i></i></a></li>
                     <li><a href="#">29-30 марта 2014<i></i></a></li>
                     <li class="active"><a href="#">22 ноября 2014<i></i></a></li>
                     <li><a href="#">2015<i></i></a></li>
@@ -431,29 +431,32 @@
                     <div class="part">
                         <div class="left">
                             <div class="title">
-                                <h3>29-30 октября 2012</h3>
+                                <h3>Как сделать прорыв в бизнесе</h3>
+                                <div class="date">29-30 октября 2012</div>
+                                <div class="city">г. Москва</div>
+                                <h4>mini-MBA программа</h4>
                             </div>
                             <div class="text">
-                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
-                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
-                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                                <p>Программа мини-МВА создана Брайаном Трейси для достижения конкретной цели - существенное повышение эффективности бизнеса в течение 12 месяцев, и уже параллельно с этим она комплексно развивает бизнес-навыки, необходимые успешному руководителю или собственнику для построения прибыльного бизнеса, устойчивого к кризисным ситуациям.</p>
+                                <p>Программа "Как сделать прорыв в бизнесе" является практичной и очень интерактивной, наполненной большим количеством симуляций и бизнес-кейсов. Рабочий процесс проходит в командах из  5-6 руководителей и бизнесменов, которые помогают находить оптимальные решения именно для Вашего бизнеса.</p>
+                                <p>Большинство выпускников этой программы сообщили, что их продажи, доход или прибыльность подскочили на 30% - 40% в течение 60 дней после завершения программы, а некоторые удвоили свой доход в течение 12 месяцев.</p>
                             </div>
                             <ul class="features">
                                 <li>
-                                    200 человек
+                                    120 руководителей
                                     <i class="icon peoples"></i>
                                 </li>
                                 <li>
-                                    10 городов
+                                    Более 50 бизнес-кейсов
                                     <i class="icon city"></i>
                                 </li>
                                 <li>
-                                    3 спикера
+                                    12 заключенных бизнес-контрактов
                                     <i class="icon speaker"></i>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        Посмотреть
+                                    <a href="#">
+                                        Как это было
                                         <i class="icon video"></i>
                                     </a>
                                 </li>
@@ -462,16 +465,31 @@
                         <div class="photos">
                             <div class="carousel">
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_1.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_1_.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_2.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_2_.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_3.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_3_.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_4.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_4_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_5.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_5_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_6.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_6_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_7.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_7_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_8.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_8_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_9.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_9_.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -479,29 +497,32 @@
                     <div class="part">
                         <div class="left">
                             <div class="title">
-                                <h3>Осень 2012</h3>
+                                <h3>Серия мероприятий в городах России</h3>
+                                <div class="date">23 сентября — 1 декабря 2012</div>
+                                <div class="city">г. Новосибирск, Екатеринбург, Казань, Самара, Иркутск, Ростов-на-Дону</div>
+                                <h4>региональное турне</h4>
                             </div>
                             <div class="text">
-                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
-                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
-                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                                <p>Серия семинаров в городах России стала одним из самых ожидаемых бизнес-событий года в России. Брайан Трейси посетил 6 городов России со своими лучшими программами "Достижение максимума" и "Как сделать прорыв в бизнесе".</p>
+                                <p>Семинар "Достижение максимума: ключ к личному & бизнес успеху" - это авторская программа Брайана Трейси, построенная на более чем 10-летнем опыте проведения бизнес-семинара "Maximum Achievements" по всему миру, адаптированная специально для России. Формат проведения семинара с использованием авторского WorkBook, позволяет достичь в десятки раз больших результатов, чем самостоятельное прочтение книг или прослушивание аудио-программ.</p>
+                                <p>Программа mini-MBA "Как сделать прорыв в бизнесе создана Брайаном Трейси для достижения конкретной цели - существенное повышение эффективности бизнеса в течение 12 месяцев, и уже параллельно с этим она комплексно развивает бизнес-навыки, необходимые успешному руководителю или собственнику для построения прибыльного бизнеса, устойчивого к кризисным ситуациям.</p>
                             </div>
                             <ul class="features">
                                 <li>
-                                    200 человек
+                                    3769 участников
                                     <i class="icon peoples"></i>
                                 </li>
                                 <li>
-                                    10 городов
+                                    6 городов
                                     <i class="icon city"></i>
                                 </li>
                                 <li>
-                                    3 спикера
+                                    80% восторженных отзывов
                                     <i class="icon speaker"></i>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        Посмотреть
+                                    <a href="#">
+                                        Как это было
                                         <i class="icon video"></i>
                                     </a>
                                 </li>
@@ -510,16 +531,34 @@
                         <div class="photos">
                             <div class="carousel">
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_1.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_1_.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_2.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_2_.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_3.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_3_.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_4.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_4_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_5.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_5_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_6.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_6_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_7.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_7_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_8.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_8_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_9.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_9_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_10.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_10_.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -527,29 +566,32 @@
                     <div class="part">
                         <div class="left">
                             <div class="title">
-                                <h3>25-26 октября 2013</h3>
+                                <h3>Как достичь успеха в продажах: лучшие мировые практики экспертов и компаний</h3>
+                                <div class="date">25-26 октября 2013</div>
+                                <div class="city">г. Москва</div>
+                                <h4>семинариум</h4>
                             </div>
                             <div class="text">
-                                <p>В 1981 году Брайан Трейси создал «систему успеха», которая сначала называлась «Семинар Феникса». В 1985 году он выпустил переработанный вариант этого семинара на аудио- кассетах под названием «Психология достижений».</p>
-                                <p>Трейси является автором более 45 книг. Он написал и выпустил более 300 аудио – и видео- учебных программ. Одна из основных задач - помочь любому человеку, независимо от рода его деятельности и финансового положения, добиться успехов. Программа «Психология достижений» стала мировым бестселлером и была переведена на 20 языков.</p>
-                                <p>Книга Брайана Трейси «Достижение максимума» вошла в список 50 классических книг о мотивации и лидерстве «50 Success Classics»[1] (2004). Брайан Трейси обладает учёными степенями</p>
+                                <p>25 и 26 октября в 2013 года впервые в России с большим успехом прошел семинариум двух лучших в мире экспертов по продажам: Брайана Трейси и Нила Рекхэма. Семинариум посетили более 650 руководителей и профессионалов, занятых в продажах, маркетинге и управлении бизнесом.</p>
+                                <p>Спикеры семинариума Брайан Трейси и Нил Рэкхем - самые известные в мире эксперты, более 30 лет исследовавшие причины успеха в продажах B2B и B2С, в результате чего, каждый создал свою компанию, успешно работающую и по сей день.</p>
+                                <p>СПИН Нила Рэкхема - единственная научно обоснованная методика продаж, а метод продаж по Брайану Трейси  -  инструмент быстрого увеличения объема продаж. Оба метода являются самыми используемыми в настоящий момент в мире.</p>
                             </div>
                             <ul class="features">
                                 <li>
-                                    200 человек
+                                    650 участников
                                     <i class="icon peoples"></i>
                                 </li>
                                 <li>
-                                    10 городов
+                                    200 страниц рабочих материалов
                                     <i class="icon city"></i>
                                 </li>
                                 <li>
-                                    3 спикера
+                                    2 спикера
                                     <i class="icon speaker"></i>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        Посмотреть
+                                    <a href="#">
+                                        Как это было
                                         <i class="icon video"></i>
                                     </a>
                                 </li>
@@ -558,16 +600,55 @@
                         <div class="photos">
                             <div class="carousel">
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_2.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_2_.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_3.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_3_.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_4.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_4_.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <img src="<?= $this->getAssetsUrl(); ?>/img/photo1.jpg" alt="">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_5.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_5_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_6.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_6_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_7.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_7_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_8.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_8_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_9.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_9_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_10.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_10_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_11.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_11_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_12.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_12_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_13.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_13_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_14.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_14_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_15.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_15_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_16.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_16_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_17.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_17_.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_18.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_18_.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
