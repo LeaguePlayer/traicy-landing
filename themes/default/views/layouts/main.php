@@ -465,31 +465,31 @@
                         <div class="photos">
                             <div class="carousel">
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_1.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_1_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_1.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_1_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_2.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_2_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_2.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_2_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_3.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_3_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_3.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_3_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_4.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_4_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_4.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_4_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_5.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_5_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_5.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_5_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_6.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_6_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_6.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_6_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_7.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_7_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_7.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_7_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_8.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_8_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_8.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_8_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_9.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_9_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/2/2_9.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/2/2_9_.JPG" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -531,34 +531,34 @@
                         <div class="photos">
                             <div class="carousel">
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_1.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_1_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_1.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_1_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_2.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_2_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_2.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_2_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_3.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_3_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_3.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_3_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_4.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_4_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_4.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_4_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_5.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_5_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_5.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_5_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_6.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_6_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_6.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_6_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_7.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_7_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_7.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_7_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_8.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_8_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_8.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_8_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_9.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_9_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_9.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_9_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_10.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_10_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/3/3_10.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/3/3_10_.JPG" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -600,55 +600,55 @@
                         <div class="photos">
                             <div class="carousel">
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_2.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_2_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_2.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_2_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_3.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_3_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_3.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_3_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_4.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_4_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_4.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_4_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_5.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_5_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_5.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_5_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_6.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_6_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_6.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_6_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_7.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_7_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_7.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_7_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_8.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_8_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_8.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_8_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_9.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_9_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_9.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_9_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_10.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_10_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_10.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_10_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_11.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_11_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_11.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_11_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_12.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_12_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_12.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_12_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_13.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_13_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_13.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_13_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_14.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_14_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_14.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_14_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_15.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_15_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_15.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_15_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_16.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_16_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_16.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_16_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_17.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_17_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_17.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_17_.JPG" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_18.jpg" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_18_.jpg" alt=""></a>
+                                    <a href="<?= $this->getAssetsUrl(); ?>/img/4/4_18.JPG" class="fancybox" rel="group_1"><img src="<?= $this->getAssetsUrl(); ?>/img/4/4_18_.JPG" alt=""></a>
                                 </div>
                             </div>
                         </div>
